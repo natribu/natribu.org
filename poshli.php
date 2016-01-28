@@ -1,4 +1,4 @@
-<?php // случайное число
+<?php // СЃР»СѓС‡Р°Р№РЅРѕРµ С‡РёСЃР»Рѕ
 
 $memcache=function_exists('memcache_connect'); if(!$memcache) exit;
 $memcache=memcache_connect('localhost',ini_get('memcache.default_port'));

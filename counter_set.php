@@ -51,12 +51,12 @@ echo "
 
 //if (!mysql_num_rows(mysql_query("SELECT `lang` FROM nahui WHERE `lang`='".mysql_escape_string($lang)."'"))) {
 
-// вставить новый счетчик если не было
+// РІСЃС‚Р°РІРёС‚СЊ РЅРѕРІС‹Р№ СЃС‡РµС‚С‡РёРє РµСЃР»Рё РЅРµ Р±С‹Р»Рѕ
 mysql_query("INSERT INTO nahui (`lang`, `count`, `last_ip`) VALUES
 ('".mysql_escape_string($lang)."','".mysql_escape_string($count)."','".mysql_escape_string($last_ip)."')");
 
 echo "
-".$lang." - выставлен: ".$count." IP:".$last_ip;
+".$lang." - РІС‹СЃС‚Р°РІР»РµРЅ: ".$count." IP:".$last_ip;
 
 /*
 
@@ -66,7 +66,7 @@ echo "
 else {
 
 
-// снять показания счетчика
+// СЃРЅСЏС‚СЊ РїРѕРєР°Р·Р°РЅРёСЏ СЃС‡РµС‚С‡РёРєР°
 $sql = mysql_query("SELECT * FROM nahui WHERE `lang`='".$lang."'");
 if (mysql_num_rows($sql) == 1) {
 	$p = mysql_fetch_assoc($sql);
@@ -75,9 +75,9 @@ if (mysql_num_rows($sql) == 1) {
 }
 
 echo "
-!".$lang."=".$ncount." (IP:".$nlast_ip.") итого=".($count+$ncount);
+!".$lang."=".$ncount." (IP:".$nlast_ip.") РёС‚РѕРіРѕ=".($count+$ncount);
 
-// увеличить счетчик
+// СѓРІРµР»РёС‡РёС‚СЊ СЃС‡РµС‚С‡РёРє
 mysql_query("UPDATE nahui SET count=".$ncount." WHERE `lang`='".$lang."'");
 }
 */

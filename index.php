@@ -10,7 +10,7 @@ if (!file_exists("lang/".$lang.".php")) {
 	header("Location: http://natribu.org/"); exit();
 }
 
-//--- поехали
+//--- РїРѕРµС…Р°Р»Рё
 
 $u = poiskovik(); if($u) { $poiskovik=$u[1]; $text=$u[0]; }
 
@@ -19,7 +19,7 @@ $count = counter($lang);
 
 $memcache = new Memcached;
 $memcache->addServer('localhost',ini_get('memcache.default_port'));
-$memcache->set("count_na_$lang",$count,600); // записать в memcache
+$memcache->set("count_na_$lang",$count,600); // Р·Р°РїРёСЃР°С‚СЊ РІ memcache
 
 $count="<span id=counter>$count</span>";
 
@@ -28,7 +28,7 @@ $count="<span id=counter>$count</span>";
 $kolnah = $_COOKIE["nah"]+1;
 setcookie("nah",$kolnah,time()+86400*365, "/", ".natribu.org", 0);
 
-// Определение ЖЖ-истов
+// РћРїСЂРµРґРµР»РµРЅРёРµ Р–Р–-РёСЃС‚РѕРІ
 $lju = base64_decode($_COOKIE["lju"]);
 
 if (!$lju && ( (preg_match("/\Ahttp\:\/\/(.+?)\.livejournal\.com\/friends/", $_SERVER["HTTP_REFERER"], $m)) ||
@@ -46,7 +46,7 @@ if (!$lju && ( (preg_match("/\Ahttp\:\/\/(.+?)\.livejournal\.com\/friends/", $_S
  */
 
 
-// --- декодировать строку параметров:
+// --- РґРµРєРѕРґРёСЂРѕРІР°С‚СЊ СЃС‚СЂРѕРєСѓ РїР°СЂР°РјРµС‚СЂРѕРІ:
 eregi("([^%]*)%([^%]*)%([^%]*)", base64_decode(str_replace("-","/",$_SERVER["QUERY_STRING"]))."%", $userdata);
 
 //--------------------
@@ -95,7 +95,7 @@ if ($lju && ($userdata[1]=="")) {
 		echo " (".$kolnah.$lj_raz.")";
 	}
 	echo "</font>";
-	//if ($lju == "doctor-livsy") { echo "<br>делать вам нечего, доктор :)"; }
+	//if ($lju == "doctor-livsy") { echo "<br>РґРµР»Р°С‚СЊ РІР°Рј РЅРµС‡РµРіРѕ, РґРѕРєС‚РѕСЂ :)"; }
 	//$dnevlog = fopen("log/lj.txt","a+");
 	//fputs($dnevlog,"\n".$lju." ".$kolnah);
 	//fclose($dnevlog);
@@ -132,13 +132,13 @@ if ($bottom_vernutsa.$bottom_izbrannoe.$bottom_start.$bottom_druga) {
 	echo "<center>";
 	if ($bottom_vernutsa) {
 		echo "\n<input TYPE=\"BUTTON\" VALUE=\"".$bottom_vernutsa."\" onClick=\"window.alert('";
-		echo str_replace("\\n##\\n","'); window.alert('",str_replace("\n","\\n",str_replace("я","\\я",$bottom_vernut)));
+		echo str_replace("\\n##\\n","'); window.alert('",str_replace("\n","\\n",str_replace("СЏ","\\СЏ",$bottom_vernut)));
 		echo "'); return true;\">";
 		echo ' &nbsp; ';
 	}
 	if ($bottom_izbrannoe) {
 		echo "\n<input TYPE=\"BUTTON\" VALUE=\"".$bottom_izbrannoe."\" onClick=\"window.alert('";
-		echo str_replace("\\n##\\n","'); window.alert('",str_replace("\n","\\n",str_replace("я","\\я",$bottom_izbr)));
+		echo str_replace("\\n##\\n","'); window.alert('",str_replace("\n","\\n",str_replace("СЏ","\\СЏ",$bottom_izbr)));
 		echo "'); window.external.AddFavorite('http://natribu.org";
 		if ($lang!="ru") {
 			echo "/".$lang;
@@ -148,7 +148,7 @@ if ($bottom_vernutsa.$bottom_izbrannoe.$bottom_start.$bottom_druga) {
 	}
 	if ($bottom_start) {
 		echo "\n<input TYPE=\"BUTTON\" VALUE=\"".$bottom_start."\" onClick=\"window.alert('";
-		echo str_replace("\\n##\\n","'); window.alert('",str_replace("\n","\\n",str_replace("я","\\я",$bottom_strt)));
+		echo str_replace("\\n##\\n","'); window.alert('",str_replace("\n","\\n",str_replace("СЏ","\\СЏ",$bottom_strt)));
 		echo "'); window.external.AddFavorite('http://natribu.org";
 		if ($lang!="ru") {
 			echo "/".$lang;
@@ -158,7 +158,7 @@ if ($bottom_vernutsa.$bottom_izbrannoe.$bottom_start.$bottom_druga) {
 	}
 	if ($bottom_druga) {
 		echo "\n<input TYPE=\"BUTTON\" VALUE=\"".$bottom_druga."\" onClick=\"window.alert('";
-		echo str_replace("\\n##\\n","'); window.alert('",str_replace("\n","\\n",str_replace("я","\\я",$bottom_drug)));
+		echo str_replace("\\n##\\n","'); window.alert('",str_replace("\n","\\n",str_replace("СЏ","\\СЏ",$bottom_drug)));
 		echo "'); javascript:window.location.href='/";
 		if ($lang!="ru") {
 			echo $lang."/";
@@ -266,8 +266,8 @@ function poiskovik () {
 	// RAMBLER
 	if (ereg ("rambler.ru", $u["host"])) {
 		$s[0]=trim(urldecode($outr['words']." ".$outr['old_q']));
-		$k_koi=strlen(str_replace("-","",strtr($searchtext,"КГХЛЕОЗЫЭЪИЯЖЩЧБРТПМДЦЬСЮУНЙФШВА","--------------------------------")));
-		$k_win=strlen(str_replace("-","",strtr($searchtext,"кгхлеозыэъияжщчбртпмдцьсюунйфшва","--------------------------------")));
+		$k_koi=strlen(str_replace("-","",strtr($searchtext,"РљР“РҐР›Р•РћР—Р«Р­РЄРРЇР–Р©Р§Р‘Р РўРџРњР”Р¦Р¬РЎР®РЈРќР™Р¤РЁР’Рђ","--------------------------------")));
+		$k_win=strlen(str_replace("-","",strtr($searchtext,"РєРіС…Р»РµРѕР·С‹СЌСЉРёСЏР¶С‰С‡Р±СЂС‚РїРјРґС†СЊСЃСЋСѓРЅР№С„С€РІР°","--------------------------------")));
 		if ($k_koi < $k_win) $s[0]=iconv('cp1251','koi8-r',$s[0]);
 		$s[1]="Rambler";
 	}

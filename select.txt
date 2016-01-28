@@ -1,61 +1,59 @@
 <OPTGROUP label="xUSSR:">
-<option value="http://natribu.org/">ru: &#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081; &#1086;&#1092;&#1080;&#1089;<!-- Русский офис -->
-<option value="http://natribu.org/ua/">ua: &#1059;&#1082;&#1088;&#1072;&#1111;&#1085;&#1089;&#1100;&#1082;&#1080;&#1081; &#1086;&#1092;&#1110;&#1089;<!-- Український офіс -->
-<option value="http://natribu.org/by/">by: &#1041;&#1077;&#1083;&#1072;&#1088;&#1091;&#1089;&#1082;&#1110; &#1086;&#1092;&#1110;&#1089;<!-- Беларускі офіс -->
+<option value="http://natribu.org/">ru: Р СѓСЃСЃРєРёР№ РѕС„РёСЃ
+<option value="http://natribu.org/ua/">ua: РЈРєСЂР°С—РЅСЃСЊРєРёР№ РѕС„С–СЃ
+<option value="http://natribu.org/by/">by: Р‘РµР»Р°СЂСѓСЃРєС– РѕС„С–СЃ
 <option value="http://natribu.org/md/">md: Oficiul moldovenesc
-<option value="http://natribu.org/lv/">lv: Latvie&#353;u ofiss
-<option value="http://natribu.org/lt/">lt: Lietuvi&#363; kalba
+<option value="http://natribu.org/lv/">lv: LatvieЕЎu ofiss
+<option value="http://natribu.org/lt/">lt: LietuviЕ« kalba
 <option value="http://natribu.org/ee/">ee: Eesti kontoori
-
 <option value="http://natribu.org/uz/">uz: O'zbek ofisi
-<option value="http://natribu.org/am/">am: &#1392;&#1377;&#1397;&#1391;&#1377;&#1391;&#1377;&#1398; &#1379;&#1408;&#1377;&#1405;&#1381;&#1398;&#1397;&#1377;&#1391; <!-- армянский офис -->
-<option value="http://natribu.org/ge/">ge: &#4325;&#4304;&#4320;&#4311;&#4323;&#4314;&#4312; &#4317;&#4324;&#4312;&#4321;&#4312; (1) <!-- грузинский офис -->
-<option value="http://natribu.org/ka/">ka: &#4325;&#4304;&#4320;&#4311;&#4323;&#4314;&#4312; &#4317;&#4324;&#4312;&#4321;&#4312; (2) <!-- грузинский офис -->
-<option value="http://natribu.org/az/">az: Az&#601;rbaycan n&#252;mayind&#601;liyi <!-- азербайджанский офис -->
-<option value="http://natribu.org/kg/">kg: кыргызча офис
-<option value="http://natribu.org/kaz/">kaz: &#1179;аза&#1179; офисі
-
+<option value="http://natribu.org/am/">am: Х°ХЎХµХЇХЎХЇХЎХ¶ ХЈЦЂХЎХЅХҐХ¶ХµХЎХЇ
+<option value="http://natribu.org/ge/">ge: бѓҐбѓђбѓ бѓ—бѓЈбѓљбѓ бѓќбѓ¤бѓбѓЎбѓ (1)
+<option value="http://natribu.org/ka/">ka: бѓҐбѓђбѓ бѓ—бѓЈбѓљбѓ бѓќбѓ¤бѓбѓЎбѓ (2)
+<option value="http://natribu.org/az/">az: AzЙ™rbaycan nГјmayindЙ™liyi
+<option value="http://natribu.org/kg/">kg: РєС‹СЂРіС‹Р·С‡Р° РѕС„РёСЃ
+<option value="http://natribu.org/kaz/">kaz: Т›Р°Р·Р°Т› РѕС„РёСЃС–
 
 
 <OPTGROUP label="Europe:">
-<option value="http://natribu.org/de/">de: Deutsches B&uuml;ro
-<option value="http://natribu.org/fr/">fr: Repr&eacute;sentation fran&ccedil;aise
-<option value="http://natribu.org/ees/">ees: Oficina espa&#241;ola
-<!-- option value="http://natribu.org/es/">es: Oficina espa&ntilde;ola -->
+<option value="http://natribu.org/de/">de: Deutsches BГјro
+<option value="http://natribu.org/fr/">fr: ReprГ©sentation franГ§aise
+<option value="http://natribu.org/ees/">ees: Oficina espaГ±ola
+<!-- option value="http://natribu.org/es/">es: Oficina espaГ±ola -->
 <option value="http://natribu.org/it/">it: Ufficio Italiano
 <option value="http://natribu.org/pt/">pt: Escritorio em Portugal
 <option value="http://natribu.org/fi/">fi: Suomalainen toimisto
 <option value="http://natribu.org/scg/">scg: Kanceljaria za serbov
 <option value="http://natribu.org/pl/">pl: Biuro polskie (wpizde)
 <option value="http://natribu.org/pl2/">pl2: Biuro polskie (wchuj)
-<option value="http://natribu.org/se/">se: Svenskt kontor <!-- Шведский офис -->
-<option value="http://natribu.org/bg/">bg: Български офис
-<option value="http://natribu.org/cz/">cz: &#269;eskб pobo&#269;ka <!-- Чешский офис -->
-<option value="http://natribu.org/nl/">nl: Nederlandse bureau <!-- Голландия -->
-<option value="http://natribu.org/hr/">hr: Hrvatska poslovnica <!-- Хорватия? -->
+<option value="http://natribu.org/se/">se: Svenskt kontor <!-- РЁРІРµРґСЃРєРёР№ РѕС„РёСЃ -->
+<option value="http://natribu.org/bg/">bg: Р‘СЉР»РіР°СЂСЃРєРё РѕС„РёСЃ
+<option value="http://natribu.org/cz/">cz: ДЌeskР± poboДЌka <!-- Р§РµС€СЃРєРёР№ РѕС„РёСЃ -->
+<option value="http://natribu.org/nl/">nl: Nederlandse bureau <!-- Р“РѕР»Р»Р°РЅРґРёСЏ -->
+<option value="http://natribu.org/hr/">hr: Hrvatska poslovnica <!-- РҐРѕСЂРІР°С‚РёСЏ? -->
 
 
 <OPTGROUP label="Asia:">
-<option value="http://natribu.org/cn/">cn: &#20013;&#25991; <!-- Китайский офис -->
+<option value="http://natribu.org/cn/">cn: дё­ж–‡ <!-- РљРёС‚Р°Р№СЃРєРёР№ РѕС„РёСЃ -->
 <option value="http://natribu.org/jp/">jp: Japanese
 
 <OPTGROUP label="World:">
 <option value="http://natribu.org/en/">en: American english office
 <option value="http://natribu.org/la/">la: Oficina latinoamericana
-<option value="http://natribu.org/il/">il: &#1492;&#1502;&#1513;&#1512;&#1491; &#1492;&#1506;&#1497;&#1489;&#1512;&#1497;
-<option value="http://natribu.org/tr/">tr: T&#252;rk&#231;e ofisi <!-- Турецкий офис -->
-<option value="http://natribu.org/br/">br: Sede Brasileira <!-- Бразилия -->
+<option value="http://natribu.org/il/">il: Ч”ЧћЧ©ЧЁЧ“ Ч”ЧўЧ™Ч‘ЧЁЧ™
+<option value="http://natribu.org/tr/">tr: TГјrkГ§e ofisi <!-- РўСѓСЂРµС†РєРёР№ РѕС„РёСЃ -->
+<option value="http://natribu.org/br/">br: Sede Brasileira <!-- Р‘СЂР°Р·РёР»РёСЏ -->
 
 <OPTGROUP label="Special:">
-<option value="http://natribu.org/ru3/">ru3: Cтарая русская канцелярiя
+<option value="http://natribu.org/ru3/">ru3: CС‚Р°СЂР°СЏ СЂСѓСЃСЃРєР°СЏ РєР°РЅС†РµР»СЏСЂiСЏ
 <option value="http://natribu.org/lat/">lat: Ofis Latina
-<option value="http://natribu.org/gr/">gr: &#931;&#949; &#917;&#955;&#955;&#953;&#957;&#953;&#954;&#945;
+<option value="http://natribu.org/gr/">gr: ОЈОµ О•О»О»О№ОЅО№ОєО±
 <option value="http://natribu.org/eo/">eo: Esperanto-oficejo
-<option value="http://natribu.org/nr/">nr: &#1056;&#1091;&#1089;&#1089;&#1082;&#1072;&#1103; &#1085;&#1077;&#1087;&#1077;&#1088;&#1077;&#1082;&#1083;&#1102;&#1095;&#1077;&#1085;&#1085;&#1072;&#1103; <!-- Русская непереключенная -->
-<option value="http://natribu.org/pd/">pd: &#1055;&#1072;&#1076;&#1086;&#1085;&#1082;&#1072;&#1092;&#1092;&#1089;&#1082;&#1080;&#1081; &#1086;&#1092;&#1077;&#1079;&#1079;&#1079; <!-- падонкаффский -->
+<option value="http://natribu.org/nr/">nr: Р СѓСЃСЃРєР°СЏ РЅРµРїРµСЂРµРєР»СЋС‡РµРЅРЅР°СЏ <!-- Р СѓСЃСЃРєР°СЏ РЅРµРїРµСЂРµРєР»СЋС‡РµРЅРЅР°СЏ -->
+<option value="http://natribu.org/pd/">pd: РџР°РґРѕРЅРєР°С„С„СЃРєРёР№ РѕС„РµР·Р·Р· <!-- РїР°РґРѕРЅРєР°С„С„СЃРєРёР№ -->
 <option value="http://natribu.org/le/">le: fukk0f eng1ish
 
 
 <OPTGROUP label="Wap:">
-<option value="http://natribu.org/wap/index.wml">ru_wap: &#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081; WAP-&#1086;&#1092;&#1080;&#1089; <!-- Русский WAP-офис -->
+<option value="http://natribu.org/wap/index.wml">ru_wap: Р СѓСЃСЃРєРёР№ WAP-РѕС„РёСЃ <!-- Р СѓСЃСЃРєРёР№ WAP-РѕС„РёСЃ -->
 <option value="http://natribu.org/wap/ee/index.wml">ee_wap: Eesti kontoori wap

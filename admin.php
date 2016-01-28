@@ -5,7 +5,7 @@
 
 $adminpass = "sdddddddddddddddderfececece3lfkelrkcjlkerjckl4cjkl23io4frhj";
 
-// Определение ЖЖ-истов
+// РћРїСЂРµРґРµР»РµРЅРёРµ Р–Р–-РёСЃС‚РѕРІ
 $lju=base64_decode($_COOKIE["lju"]);
 if (!$lju && preg_match("/\Ahttp\:\/\/(.*?)\.livejournal\.com\/friends/", $_SERVER["HTTP_REFERER"], $matches)) {
     $lju=$matches[1];
@@ -17,7 +17,7 @@ if (!$lju && preg_match("/\Ahttp\:\/\/(.*?)\.livejournal\.com\/friends/", $_SERV
 //$fromlang="ru_";
 //$tolang="en_test";
 
-/// КАЖДУЮ ТАКУЮ ХЕРОВИНУ ПРАВИТЬ В ТРЕХ (!) МЕСТАХ
+/// РљРђР–Р”РЈР® РўРђРљРЈР® РҐР•Р РћР’РРќРЈ РџР РђР’РРўР¬ Р’ РўР Р•РҐ (!) РњР•РЎРўРђРҐ
 
 $imena=array(
 'poisk',
@@ -495,18 +495,18 @@ $fromlang=$_POST['fromlang'];
 $l2=getlang("lang/".$tolang.".php");
 
 if (file_exists("lang/".$tolang.".php")) {
-// если файл такой уже есть
+// РµСЃР»Рё С„Р°Р№Р» С‚Р°РєРѕР№ СѓР¶Рµ РµСЃС‚СЊ
     if ($_POST['password']!=$adminpass) {
     if ($l2['password']!=$_POST['password']) { echo "<p>wrong password"; exit (); }
     }
 }
 else
 {
-// если файла еще нет - сделать начальные установки
+// РµСЃР»Рё С„Р°Р№Р»Р° РµС‰Рµ РЅРµС‚ - СЃРґРµР»Р°С‚СЊ РЅР°С‡Р°Р»СЊРЅС‹Рµ СѓСЃС‚Р°РЅРѕРІРєРё
 $l2['password']=$_POST['password'];
 $l2['lj_user']=$lju;
-//$l2['codepage']="utf-8"; //а то заебусь потом
-$l2['codepage']=""; //а то заебусь потом
+//$l2['codepage']="utf-8"; //Р° С‚Рѕ Р·Р°РµР±СѓСЃСЊ РїРѕС‚РѕРј
+$l2['codepage']=""; //Р° С‚Рѕ Р·Р°РµР±СѓСЃСЊ РїРѕС‚РѕРј
 }
 
 

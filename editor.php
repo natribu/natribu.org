@@ -9,12 +9,12 @@ if (!file_exists("lang/".$lang.".php")) {
 	header("Location: http://natribu.org/"); exit();
 }
 
-//--- поехали
+//--- РїРѕРµС…Р°Р»Рё
 
 //header("Content-Type: text/html; charset=windows-1251");
 //header("Location: /");
 
-// Определение ЖЖ-истов
+// РћРїСЂРµРґРµР»РµРЅРёРµ Р–Р–-РёСЃС‚РѕРІ
 $lju = base64_decode($_COOKIE["lju"]);
 if (!$lju && preg_match("/\Ahttp\:\/\/(.*?)\.livejournal\.com\/friends/", $_SERVER["HTTP_REFERER"], $matches)) {
 	$lju=$matches[1];
@@ -45,11 +45,11 @@ if ($name.$prichina.$delat) {
 		$ssylka="http://natribu.org/".$lang."/?".$stroka;
 	}
 
-	print "<p>ссылка готова: <a href=".$ssylka.">нажми</a>";
+	print "<p>СЃСЃС‹Р»РєР° РіРѕС‚РѕРІР°: <a href=".$ssylka.">РЅР°Р¶РјРё</a>";
 
 	echo "<SCRIPT language=JavaScript>\nfunction highlight(x){\ndocument.forms[x].elements[0].focus()\ndocument.forms[x].elements[0].select()}\n</SCRIPT>";
 	echo "<form><center><textarea cols=120 rows=2 style=\"border: 1px solid #330000; font-size: 14px;\">".$ssylka."</textarea>";
-	echo "<font size=-1><br>херассе какая длинная! <a href=\"javascript:highlight(0)\">выделить всю</a><p>хочется видеть эту ссылку короткой и загадочной? <a href=http://tinyurl.com/create.php?url=".$ssylka.">жми сюда</a></font></center></form>";
+	echo "<font size=-1><br>С…РµСЂР°СЃСЃРµ РєР°РєР°СЏ РґР»РёРЅРЅР°СЏ! <a href=\"javascript:highlight(0)\">РІС‹РґРµР»РёС‚СЊ РІСЃСЋ</a><p>С…РѕС‡РµС‚СЃСЏ РІРёРґРµС‚СЊ СЌС‚Сѓ СЃСЃС‹Р»РєСѓ РєРѕСЂРѕС‚РєРѕР№ Рё Р·Р°РіР°РґРѕС‡РЅРѕР№? <a href=http://tinyurl.com/create.php?url=".$ssylka.">Р¶РјРё СЃСЋРґР°</a></font></center></form>";
 }
 
 include("counter.php");

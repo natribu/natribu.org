@@ -10,19 +10,19 @@ function counter ($lang) {
 
 	if (!mysql_num_rows(mysql_query("SELECT `lang` FROM nahui WHERE `lang`='".mysql_escape_string($lang)."'"))) {
 
-		// вставить новый счетчик если не было
+		// РІСЃС‚Р°РІРёС‚СЊ РЅРѕРІС‹Р№ СЃС‡РµС‚С‡РёРє РµСЃР»Рё РЅРµ Р±С‹Р»Рѕ
 		mysql_query("INSERT INTO nahui
 			(`lang`, `count`, `last_ip`)
 			VALUES
 			('".mysql_escape_string($lang)."','1','".mysql_escape_string($_SERVER["REMOTE_ADDR"])."')");
-		//echo "\nвставлен новый счетчик для языка:".$lang;
+		//echo "\nРІСЃС‚Р°РІР»РµРЅ РЅРѕРІС‹Р№ СЃС‡РµС‚С‡РёРє РґР»СЏ СЏР·С‹РєР°:".$lang;
 	} else {
-		// увеличить счетчик
+		// СѓРІРµР»РёС‡РёС‚СЊ СЃС‡РµС‚С‡РёРє
 		mysql_query("UPDATE nahui SET count=count+1,
 			last_ip='".mysql_escape_string($_SERVER["REMOTE_ADDR"])."'
 			WHERE `lang`='".mysql_escape_string($lang)."' AND last_ip!='".mysql_escape_string($_SERVER["REMOTE_ADDR"])."'");
 	}
-	// снять показания счетчика
+	// СЃРЅСЏС‚СЊ РїРѕРєР°Р·Р°РЅРёСЏ СЃС‡РµС‚С‡РёРєР°
 	$sql = mysql_query("SELECT * FROM nahui WHERE `lang`='".mysql_escape_string($lang)."'");
 	if (mysql_num_rows($sql) == 1) {
 		$p = mysql_fetch_assoc($sql);
@@ -33,10 +33,10 @@ function counter ($lang) {
 }
 
 function counter_get ($lang) {
-	// сконнектиться
+	// СЃРєРѕРЅРЅРµРєС‚РёС‚СЊСЃСЏ
 	mysql_connect('localhost', 'natribu', 'NahPass');
 	mysql_select_db('natribu');
-	// снять показания счетчика
+	// СЃРЅСЏС‚СЊ РїРѕРєР°Р·Р°РЅРёСЏ СЃС‡РµС‚С‡РёРєР°
 	$sql = mysql_query("SELECT * FROM nahui WHERE `lang`='".mysql_escape_string($lang)."'");
 	if (mysql_num_rows($sql) == 1) {
 		$p = mysql_fetch_assoc($sql);
