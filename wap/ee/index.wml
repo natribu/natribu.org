@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.2//EN" "http://www.wapforum.org/DTD/wml12.dtd">
+<wml>
+<card title="Mobiilne Mine Munni" id="0">
+<p><strong><font size="4">Mobiilne Mine Munni</font></strong><big><strong><br/>
+Ametlik waplehekülg sümboolilise suuna.</strong></big></p>
+<p><br/><b>Oi, mis see on?!</b></p>
+<p>Siin asub ametlik waplehekülg Mine Munni internetis. Siia saadavad.</p>
+<p>Kui te olete siin, see tähendab, et teid saadeti Munni. Toorusega, aga elegantselt: sai see lingi.</p>
+<p><a href="#1">Kuidas seda võiks juhtuda?!</a></p>
+<p><a href="#2">Mida tuleb mul teha?!</a></p>
+<p><a href="#3">Kuidas mul tuleb elada?!</a></p>
+<p><img src="http://lleo.homeip.net:8081/cgi-bin/na_wap_ee"/></p>
+</card>
+
+<card title="Mobiilne Mine Munni" id="1">
+<p><a href="#0">Kuidas seda võiks juhtuda?!</a></p>
+<p>Seal on populaarsemad põhjused:</p>
+<p>&nbsp;</p>
+<p>Te keppisite oma kaaslast SMS-idega. Te haavate oma kaaslast arvamusega, rikkusite teda usundi, poliitilisi musikkalne või ülejaanud vaadeid ja maitseid, või sisse tormasite teda sisse maailma või kritiseerite seda, millega ta hindas.</p>
+<p>Teile vihjavad, et ei tagastavad võlgu, ei maksa töö eest, eitavad seksiga.</p>
+<p>Teiega ei taha rääkima. See juhtub.</p>
+<p>On muidugi variaant, et te asute siin juhtumisi, leiates, näitaks, googles. Mõelge: võib olla, te pidite tõsiselt ülevaadata oma vaadet elu poole, kui google suunab teid munni?</p>
+</card>
+
+<card title="Mobiilne Mine Munni" id="2">
+<p>&nbsp;</p>
+<p><a href="#0">Mida tuleb mul teha?!</a></p>
+<p>Nõuame:</p>
+<p>&nbsp;</p>
+<p>Ülevadata oma suhe selle inimese poole.</p>
+<p>Haavuma.</p>
+<p>Teha paneku ja saada lingi selle inimesele tagasi.</p>
+</card>
+
+<card title="Mobiilne Mine Munni" id="3">
+<p><a href="#0">Kuidas mul tuleb elada?!</a></p>
+<p>&nbsp;</p>
+<p>Määletage: te ei ole1, keda saadeti siia, mitte viimane. Siia juba saadeti palju inimesi.  Oleme rõõmus teile. Mine Munni armastab teid!</p>
+</card>
+
+</wml>

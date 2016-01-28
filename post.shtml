@@ -1,0 +1,14 @@
+<HTML><HEAD><TITLE>Написать сообщение НАХУЙ</TITLE></HEAD>
+<BODY BACKGROUND="/fon1.jpg">
+<center><table><td><FORM>
+<I><font color=red>Привет, номер <!--#exec cgi="/cgi/textcount.pl"-->! Напиши свое сообщение НАХУЙ:</font></i>
+<br>Имя: &nbsp; <INPUT type=text name=НАХУЙ size=40>
+<br>Mail (URL): &nbsp; <INPUT type=text name=НАХУЙ size=40>
+<br><TEXTAREA name=НАХУЙ COLS=60 ROWS=10></TEXTAREA>
+<br><input type=checkbox name=НАХУЙ> разрешать команды html и php
+<br><input type=checkbox name=НАХУЙ> скрывать ip
+<p><input TYPE="BUTTON" VALUE="ГОТОВО" onClick="javascript:alert('Спасибо, что написали сообщение НАХУЙ!');
+javascript:window.location.href='/' ">
+</form></td></table><!-- да, это хуйнеуловитель для мессаг дебилов -->
+
+</center></body></html>
