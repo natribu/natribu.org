@@ -1,145 +1,139 @@
 <?
+$changed = "web";
 
-$changed="web";
+$poisk = '';
 
+$codepage = '';
 
+$lj_user = '';
 
+$other = '–ü–µ—Ä–µ–≤–æ–¥ –Ω–µ –¥–æ—Å–ª–æ–≤–Ω—ã–π, –Ω–æ –∑–∞—Ç–æ –ø—Ä–∞–≤–∏–ª—å–Ω—ã–π –∏ "–±–ª–∏–∑–∫–∏–π –∫ –Ω–∞—Ä–æ–¥—É". –ü–µ—Ä–µ–≤–æ–¥–∏–ª–∏ –¥–≤–æ–µ —á–µ–ª–æ–≤–µ–∫. –û–¥–∏–Ω –∏–∑ –Ω–∏—Ö –æ—Ç –ø—Ä–∏—Ä–æ–¥—ã —Ä—É—Å—Å–∫–æ–≥–æ–≤–æ—Ä—è—â–∏–π, –¥—Ä—É–≥–æ–π- –∏—Å–ø–∞–Ω–æ–≥–æ–≤–æ—Ä—è—â–∏–π. –ü–æ-–º–æ–µ–º—É —ç—Ç–æ –±–æ–ª—å—à–æ–π –ø–ª—é—Å :) –û–±–∞ —Å–æ–±–∏—Ä–∞–µ–º—Å—è –∞–∫—Ç–∏–≤–Ω–æ –ø–æ–ª—å–∑–æ–≤–∞—Ç—å—Å—è —Å—Ç—Ä–∞–Ω–∏—á–∫–æ–π, –ø–æ —Å–µ–º—É –¥—É–º–∞–µ—Ç—Å—è –º–Ω–µ, —á—Ç–æ –ø–æ—Å–ª–∞–Ω–Ω—ã—Ö –∏–∑ –∏—Å–ø–∞–Ω–∏–∏ –ø–æ–ø—Ä–∏–±–∞–≤–∏—Ç—Å—è ^^ –ø–æ–Ω–µ–º–Ω–æ–≥—É –≤—Å–µ –¥–æ–±–∞–≤–ª—é';
 
-$poisk="";
+$email = 'like_a_rain@mail.ru';
 
-$codepage="";
+$password = 'spain250189';
 
-$lj_user="";
+$headpage = 'A TOMAR POR CULO est√° AQU√ç';
 
-$other="œÂÂ‚Ó‰ ÌÂ ‰ÓÒÎÓ‚Ì˚È, ÌÓ Á‡ÚÓ Ô‡‚ËÎ¸Ì˚È Ë \"·ÎËÁÍËÈ Í Ì‡Ó‰Û\". œÂÂ‚Ó‰ËÎË ‰‚ÓÂ ˜ÂÎÓ‚ÂÍ. Œ‰ËÌ ËÁ ÌËı ÓÚ ÔËÓ‰˚ ÛÒÒÍÓ„Ó‚Óˇ˘ËÈ, ‰Û„ÓÈ- ËÒÔ‡ÌÓ„Ó‚Óˇ˘ËÈ. œÓ-ÏÓÂÏÛ ˝ÚÓ ·ÓÎ¸¯ÓÈ ÔÎ˛Ò :) Œ·‡ ÒÓ·Ë‡ÂÏÒˇ ‡ÍÚË‚ÌÓ ÔÓÎ¸ÁÓ‚‡Ú¸Òˇ ÒÚ‡ÌË˜ÍÓÈ, ÔÓ ÒÂÏÛ ‰ÛÏ‡ÂÚÒˇ ÏÌÂ, ˜ÚÓ ÔÓÒÎ‡ÌÌ˚ı ËÁ ËÒÔ‡ÌËË ÔÓÔË·‡‚ËÚÒˇ ^^ ÔÓÌÂÏÌÓ„Û ‚ÒÂ ‰Ó·‡‚Î˛";
+$epigraph = '"Un paso peque√±o para el hombre, pero un salto gigantesco para la humanidad." ¬© N.Armstrong<br>"Let my people go!" ¬© L.Armstrong';
 
-$email="like_a_rain@mail.ru";
+$media = '';
 
-$password="spain250189";
+$head = 'A TOMAR POR CULO';
 
-$headpage="A TOMAR POR CULO est&#225; AQU&#205;";
+$official_site = 'P√°gina oficial de esta direcci√≥n simb√≥lica';
 
-$epigraph="\"Un paso peque&#241;o para el hombre, pero un salto gigantesco para la humanidad.\" &copy;N.Armstrong<br>\"Let my people go!\" &copy;L.Armstrong";
+$national_office = 'Oficina espa√±ola';
 
-$media="";
+$oi_chto_eto = '¬øHu√≠, qu√© es esto?';
 
-$head="A TOMAR POR CULO";
+$zdes_raspolojeno = 'Esta es la portavoc√≠a de A TOMAR POR CULO en la Red. Aqu√≠ mandan a tomar por culo.';
 
-$official_site="P&#225;gina oficial de esta direcci&#243;n simb&#243;lica";
+$chto_eto_znachit = '¬øQu√© significa?';
 
-$national_office="Oficina espa&#241;ola";
+$vas_poslali = 'Si Usted se encuentra en la p√°gina A TOMAR POR CULO, s√≥lo puede significar que le mandan a tomar por culo. Con brutalidad, pero elegante: enviando este enlace.';
 
-$oi_chto_eto="&#191;Hu&#237;, qu&#233; es esto?";
+$kak_eto_moglo = '¬°¬øC√≥mo me ha podido suceder algo as√≠?!';
 
-$zdes_raspolojeno="Esta es la portavoc&#237;a de A TOMAR POR CULO en la Red. Aqu&#237; mandan a tomar por culo.";
+$vot_samye = 'Estos son los motivos m√°s frecuentes:';
 
-$chto_eto_znachit="&#191;Qu&#233; significa?";
+$prichiny = 'Ha agotado a su interlocutor con unas preguntas, peticiones o consejos estupidos.
+Ha enfadado a su interlocutor con unas declaraciones descuidadas: ha herido sus creencias religiosas, sus opiniones pol√≠ticas, musicales u otras concepciones y criterios. O en cierto modo ha invadido su mundo interno para poner en duda su ideolog√≠a.
+A Usted le han dado a entender que no restituiran la deuda, no pagaran por el trabajo, denegaran en las relaciones √≠ntimas.
+Simplemente no quieren relacionarse con Usted. De tiempo en tiempo esto le ocurre a todo el mundo.';
 
-$vas_poslali="Si Usted se encuentra en la p&#225;gina A TOMAR POR CULO, s&#243;lo puede significar que le mandan a tomar por culo. Con brutalidad, pero elegante: enviando este enlace.";
+$est_variant = 'Es posible que Usted haya ca√≠do en esta p√°gina por casualidad, durante una b√∫squeda. No queda m√°s remedio que revise su manera de ver las cosas, si hasta los buscadores le recomiendan sutilmente a Usted irse a tomar por culo.';
 
-$kak_eto_moglo="&#161;&#191;C&#243;mo me ha podido suceder algo as&#237;?!";
+$chto_delat = '¬øQu√© tengo que hacer ahora?';
 
-$vot_samye="Estos son los motivos m&#225;s frecuentes:";
+$sovetuem = 'Le estamos aconsejando:';
 
-$prichiny="Ha agotado a su interlocutor con unas preguntas, peticiones o consejos estupidos. 
-Ha enfadado a su interlocutor con unas declaraciones descuidadas: ha herido sus creencias religiosas, sus opiniones pol&#237;ticas, musicales u otras concepciones y criterios. O en cierto modo ha invadido su mundo interno para poner en duda su ideolog&#237;a. 
-A Usted le han dado a entender que no restituiran la deuda, no pagaran por el trabajo, denegaran en las relaciones &#237;ntimas. 
-Simplemente no quieren relacionarse con Usted. De tiempo en tiempo esto le ocurre a todo el mundo.";
+$sovety = 'Revalorizar su relaci√≥n con esta persona.
+Enfadarse de verdad y para siempre y de paso intente no respirar.';
 
-$est_variant="Es posible que Usted haya ca&#237;do en esta p&#225;gina por casualidad, durante una b&#250;squeda. No queda m&#225;s remedio que revise su manera de ver las cosas, si hasta los buscadores le recomiendan sutilmente a Usted irse a tomar por culo.";
+$kak_mne_jit = '¬øC√≥mo puedo existir despu√©s de esto?';
 
-$chto_delat="&#191;Qu&#233; tengo que hacer ahora?";
+$zapomnite = 'Gu√°rdelo Usted en la memoria: no es √∫nico y no es el √∫ltimo visitante en esta p√°gina. La abrieron el 31 de agosto de 2007 y ya la han visitado $count personas.
+¬°Cuidado con las falsificaciones! Esta p√°gina es √∫nica e inmortal. Nosotros continuamos  perfeccion√°ndola.
+Sabe que gracias a un mecanismo interactivo cada vez, cuando alguien va A TOMAR POR CULO, en el cuartel general de la Direcci√≥n oficial se oye un suspiro suave y triste. Estamos al corriente de las aventuras de Usted. ¬°A TOMAR POR CULO les adora!';
 
-$sovetuem="Le estamos aconsejando:";
+$bottom_vernutsa = 'Regresar';
 
-$sovety="Revalorizar su relaci&#243;n con esta persona. 
-Enfadarse de verdad y para siempre y de paso intente no respirar.";
-
-$kak_mne_jit="&#191;C&#243;mo puedo existir despu&#233;s de esto?";
-
-$zapomnite="Gu&#225;rdelo Usted en la memoria: no es &#250;nico y no es el &#250;ltimo visitante en esta p&#225;gina. La abrieron el 31 de agosto de 2007 y ya la han visitado \$count personas. 
-&#161;Cuidado con las falsificaciones! Esta p&#225;gina es &#250;nica e inmortal. Nosotros continuamos  perfeccion&#225;ndola. 
-Sabe que gracias a un mecanismo interactivo cada vez, cuando alguien va A TOMAR POR CULO, en el cuartel general de la Direcci&#243;n oficial se oye un suspiro suave y triste. Estamos al corriente de las aventuras de Usted. &#161;A TOMAR POR CULO les adora!";
-
-$bottom_vernutsa="Regresar";
-
-$bottom_vernut="Usted es como un ni&#241;o peque&#241;o.
-De aqu&#237; aun nadie hab&#237;a vuelto.
+$bottom_vernut = 'Usted es como un ni√±o peque√±o.
+De aqu√≠ aun nadie hab√≠a vuelto.
 ##
-Lo sentimos";
+Lo sentimos';
 
-$bottom_izbrannoe="Agregar a favoritos";
+$bottom_izbrannoe = 'Agregar a favoritos';
 
-$bottom_izbr="&#161;Felicidades! &#161;Usted es favorito!";
+$bottom_izbr = '¬°Felicidades! ¬°Usted es favorito!';
 
-$bottom_start="Establecer como p&#225;gina de inicio";
+$bottom_start = 'Establecer como p√°gina de inicio';
 
-$bottom_strt="O.O &#191;De verdad quiere hacerlo?
+$bottom_strt = 'O.O ¬øDe verdad quiere hacerlo?
 ##
-&#191;Porqu&#233;?
+¬øPorqu√©?
 ##
-Entre en el men&#250; ìOpciones de Internetî y establece la p&#225;gina como inicial";
+Entre en el men√∫ ‚ÄúOpciones de Internet‚Äù y establece la p√°gina como inicial';
 
-$bottom_druga="Mandar a tomar por culo a un amigo";
+$bottom_druga = 'Mandar a tomar por culo a un amigo';
 
-$bottom_drug="Para mandar a tomar por culo a un amigo env&#237;ele este enlace por e-mail, ICQ o MSN. 
-Nosotros no lo podemos hacer de parte de Usted. Se perder&#237;a toda la gracia.";
+$bottom_drug = 'Para mandar a tomar por culo a un amigo env√≠ele este enlace por e-mail, ICQ o MSN.
+Nosotros no lo podemos hacer de parte de Usted. Se perder√≠a toda la gracia.';
 
-$about="";
+$about = '';
 
-$perevod="&copy; Traducci&#243;n";
+$perevod = '¬© Traducci√≥n';
 
-$perevodchik="<a href=http://www.liveinternet.ru/users/nina_dos_meus_olhos/profile>Joseti HKS (&#193;ngel) & Nina dos meus olhos (TristesA)</a>";
+$perevodchik = '<a href=http://www.liveinternet.ru/users/nina_dos_meus_olhos/profile>Joseti HKS (√Ångel) & Nina dos meus olhos (TristesA)</a>';
 
-$lj_zdra="";
+$lj_zdra = '';
 
-$lj_raz="";
+$lj_raz = '';
 
-$hello_you="saluda a";
+$hello_you = 'saluda a';
 
-$hello_noprichina="pero en el caso de Usted el motivo es muy simple";
+$hello_noprichina = 'pero en el caso de Usted el motivo es muy simple';
 
-$hello_nosovet="Pero el consejo m&#225;s importante es";
+$hello_nosovet = 'Pero el consejo m√°s importante es';
 
-$otvetstvenno="<p><font size=-2>Administraci&#243;n de A TOMAR POR CULO no es responsable del contenido de las l&#237;neas rojas subrayadas.
-<br>Usted  puede crear algo parecido utilizando <a href=editor.php>el editor de A TOMAR POR CULO.</a></font>";
+$otvetstvenno = '<p><font size=-2>Administraci√≥n de A TOMAR POR CULO no es responsable del contenido de las l√≠neas rojas subrayadas.
+<br>Usted  puede crear algo parecido utilizando <a href=editor.php>el editor de A TOMAR POR CULO.</a></font>';
 
-$post="Mandar un mensaje A TOMAR POR CULO";
+$post = 'Mandar un mensaje A TOMAR POR CULO';
 
-$post_="Mandar un mensaje A TOMAR POR CULO";
+$post_ = 'Mandar un mensaje A TOMAR POR CULO';
 
-$postprivet="Hola, n&#250;mero \$count!  Aqu&#237; puedes dejar tu mensaje A TOMAR POR CULO:";
+$postprivet = 'Hola, n√∫mero ' . $count . '! Aqu√≠ puedes dejar tu mensaje A TOMAR POR CULO:';
 
-$post_name="Nombre:";
+$post_name = 'Nombre:';
 
-$post_mail="Mail (URL):";
+$post_mail = 'Mail (URL):';
 
-$post_html="Permitir html y php";
+$post_html = 'Permitir html y php';
 
-$post_ip="Esconder IP";
+$post_ip = 'Esconder IP';
 
-$post_button="LISTO";
+$post_button = 'LISTO';
 
-$post_alert="Gracias por mandar mensaje POR CULO";
+$post_alert = 'Gracias por mandar mensaje POR CULO';
 
-$post_hidden="Por cierto, era noreceptordenada para jilipollas";
+$post_hidden = 'Por cierto, era noreceptordenada para jilipollas';
 
-$disclamer="Proyecto A TOMAR POR CULO se abri&#243; el 9 de enero de 2004 en el ruso. Nosotros no mandamos a nadie, nos mandan a nosotros. Hay que entender que cualquier persona del mundo puede usar nuestro enlace. Pero nosotros ni sabemos quien a quien intentaba mandar por culo usando este  enlace. Simplemente nos alegra mucho ver a nuevos visitantes como si son ilustres invitados. 
+$disclamer = 'Proyecto A TOMAR POR CULO se abri√≥ el 9 de enero de 2004 en el ruso. Nosotros no mandamos a nadie, nos mandan a nosotros. Hay que entender que cualquier persona del mundo puede usar nuestro enlace. Pero nosotros ni sabemos quien a quien intentaba mandar por culo usando este  enlace. Simplemente nos alegra mucho ver a nuevos visitantes como si son ilustres invitados.
 ##
-Si puede traducir esta p&#225;gina en alguna otra lengua, la humanidad se lo agradecer&#225;! Entre en http://lleo.aha.ru/na/admin.php y siga las instrucciones";
+Si puede traducir esta p√°gina en alguna otra lengua, la humanidad se lo agradecer√°! Entre en http://lleo.aha.ru/na/admin.php y siga las instrucciones';
 
-$lleo="&#191;Quieres ver el site del autor de esta p&#225;gina?
+$lleo = '¬øQuieres ver el site del autor de esta p√°gina?
 ##
-Se llama Leonid Kaganov, es de Mosc&#250; y su site es en ruso. Mejor conectate con un traductor.";
+Se llama Leonid Kaganov, es de Mosc√∫ y su site es en ruso. Mejor conectate con un traductor.';
 
-$lleo_url="";
+$lleo_url = '';
 
-$e_head="POR CULO-editor";
+$e_head = 'POR CULO-editor';
 
-$e_text="Usted puede mandar por culo personalmente a un amigo, jefe, trolls de Internet, etc. En el texto A TOMAR POR CULO puede agregar tres l&#237;neas: nombre de la persona, el motivo porqu&#233; le manda a tomar por culo y un consejo para el futuro. Agregue las l&#237;neas (no hace falta todas tres) y reciba el enlace. Le aconsejamos que no pierda el sentido del humor y no b&#225;jese hasta  brutalidad y la vulgaridad. \$count personas ya hab&#237;an probado este nuevo servicio.";
+$e_text = 'Usted puede mandar por culo personalmente a un amigo, jefe, trolls de Internet, etc. En el texto A TOMAR POR CULO puede agregar tres l√≠neas: nombre de la persona, el motivo porqu√© le manda a tomar por culo y un consejo para el futuro. Agregue las l√≠neas (no hace falta todas tres) y reciba el enlace. Le aconsejamos que no pierda el sentido del humor y no b√°jese hasta  brutalidad y la vulgaridad. $count personas ya hab√≠an probado este nuevo servicio.';
 
-$e_submit="&#161;Listo! Pulsa este bot&#243;n y reciba el enlace";
+$e_submit = '¬°Listo! Pulsa este bot√≥n y reciba el enlace';
 
-$e_comment="";
-
-?>
+$e_comment = '';
