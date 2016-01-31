@@ -15,7 +15,7 @@ $password = 'levani';
 
 $headpage = 'gamoeqane, afrindi da damafrindi';
 
-$epigraph = '"ერთი ადამიანის პატარა ნაბიჯი - დიდი ნაბიჯია ადამიანობისათვის." ©ნ.არმსტრონგი<br>"Let my people go!" ©ლ.არმსტრონგი';
+$epigraph = '"ერთი ადამიანის პატარა ნაბიჯი - დიდი ნაბიჯია ადამიანობისათვის." © ნ.არმსტრონგი<br>"Let my people go!" © ლ.არმსტრონგი';
 
 $media = '';
 
