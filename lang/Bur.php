@@ -1,128 +1,124 @@
 <?
 
-$changed="web";
+$changed = 'web';
 
 
+$poisk = '';
 
+$codepage = '';
 
-$poisk="";
+$lj_user = '';
 
-$codepage="";
+$other = 'РїРµСЂРµРІРѕР¶Сѓ РЅР° Р‘СѓСЂСЏС‚СЃРєРёР№ СЏР·С‹Рє
+РµСЃС‚СЊ С‚Р°РєР°СЏ СЂРµСЃРїСѓР±Р»РёРєР° Р‘СѓСЂСЏС‚РёСЏ РІ Р РѕСЃСЃРёРё, Рё Р¶РёРІСѓС‚ РІ РЅРµР№ Р‘СѓСЂСЏС‚С‹.
+Р·С‹ СЃР»РѕРІР° РќРђРҐРЈР™ РїРѕ-Р±СѓСЂСЏС‚СЃРєРё РЅРµС‚, РµРіРѕ Р·Р°РёРјСЃС‚РІРѕРІР°Р»Рё РёР· СЂСѓСЃСЃРєРѕРіРѕ.';
 
-$lj_user="";
+$email = 'batoeff@mail.ru';
 
-$other="перевожу на Бурятский язык
-есть такая республика Бурятия в России, и живут в ней Буряты.
-зы слова НАХУЙ по-бурятски нет, его заимствовали из русского.";
+$password = '12345';
 
-$email="batoeff@mail.ru";
+$headpage = 'РќРђРҐРЈР™ Р­РќР”Р­';
 
-$password="12345";
+$epigraph = 'Р‘РёС€РёРёС…СЌРЅ С€Р°Рі';
 
-$headpage="НАХУЙ ЭНДЭ";
+$media = '';
 
-$epigraph="Бишиихэн шаг";
+$head = 'РќР°С…СѓР№';
 
-$media="";
+$official_site = 'Р­РЅСЌ РѕС„РёС†РёР°Р»СЊРЅС‹Р№ СЃР°Р№С‚ СЃРёРјРІРѕР»РёРєС‹РЅ РЅР°РїСЂР°РІР»СЊРµРЅРёС‚СЌ';
 
-$head="Нахуй";
+$national_office = 'Р‘СѓСЂСЏР°Р°Рґ РѕС„РёСЃ';
 
-$official_site="Энэ официальный сайт символикын направльенитэ";
+$oi_chto_eto = 'РћР№, Р­РЅСЌ СЋРј?';
 
-$national_office="Буряаад офис";
+$zdes_raspolojeno = 'Р­РЅРґСЌ РѕС„РёС†РёР°Р»СЊРЅРѕРµ Р±СѓСЂСЏР°Р°Рґ РїСЂРµРґСЃС‚Р°РІРёС‚РµР»СЊСЃС‚РІРѕ Р±Р°Р№РЅР°';
 
-$oi_chto_eto="Ой, Энэ юм?";
+$chto_eto_znachit = 'Р­РЅСЌ СЋРј Р±СЌ?';
 
-$zdes_raspolojeno="Эндэ официальное буряаад представительство байна";
+$vas_poslali = 'РЁР°РјСЌ РЅР°С…СѓР№ СЏР±Р° С…СЌР»СЌСЌ';
 
-$chto_eto_znachit="Энэ юм бэ?";
+$kak_eto_moglo = '';
 
-$vas_poslali="Шамэ нахуй яба хэлээ";
+$vot_samye = 'СЌРЅСЌСЌ РїСЂРёС‡РёРЅСѓСѓРґ';
 
-$kak_eto_moglo="";
+$prichiny = '';
 
-$vot_samye="энээ причинууд";
+$est_variant = '';
 
-$prichiny="";
+$chto_delat = '';
 
-$est_variant="";
+$sovetuem = '';
 
-$chto_delat="";
+$sovety = '';
 
-$sovetuem="";
+$kak_mne_jit = '';
 
-$sovety="";
+$zapomnite = '';
 
-$kak_mne_jit="";
+$bottom_vernutsa = 'СЃР°Р№С€Р°';
 
-$zapomnite="";
+$bottom_vernut = 'СЋ Р±РёС€РёС…СЌСЌРЅ?';
 
-$bottom_vernutsa="сайша";
+$bottom_izbrannoe = 'РР·Р±СЂР°РЅРЅРѕРµ СЃРѕРѕ РґРѕР±Р°РІРёС‚СЊ';
 
-$bottom_vernut="ю бишихээн?";
+$bottom_izbr = 'РЎР°Р№РЅ! С€Рё - РёР·Р±СЂР°РЅРЅС‹Р№!';
 
-$bottom_izbrannoe="Избранное соо добавить";
+$bottom_start = 'СЌРЅСЌ СЃС‚СЂР°РЅРёС†Р° - СЃС‚Р°СЂС‚РѕРІР°СЏ';
 
-$bottom_izbr="Сайн! ши - избранный!";
+$bottom_strt = '';
 
-$bottom_start="энэ страница - стартовая";
+$bottom_druga = '';
 
-$bottom_strt="";
+$bottom_drug = '';
 
-$bottom_druga="";
+$about = 'РќРђРҐРЈР™';
 
-$bottom_drug="";
+$perevod = 'Dox/|bIu';
 
-$about="НАХУЙ";
+$perevodchik = '<a href=http://tusoffka.net.ru>РўСѓСЃРѕС„РєР°</a>';
 
-$perevod="Dox/|bIu";
+$lj_zdra = '';
 
-$perevodchik="<a href=http://tusoffka.net.ru>Тусофка</a>";
+$lj_raz = '';
 
-$lj_zdra="";
+$hello_you = 'СЃР°Р№РЅ';
 
-$lj_raz="";
+$hello_noprichina = '';
 
-$hello_you="сайн";
+$hello_nosovet = '';
 
-$hello_noprichina="";
+$otvetstvenno = '';
 
-$hello_nosovet="";
+$post = '';
 
-$otvetstvenno="";
+$post_ = '';
 
-$post="";
+$postprivet = '';
 
-$post_="";
+$post_name = '';
 
-$postprivet="";
+$post_mail = '';
 
-$post_name="";
+$post_html = '';
 
-$post_mail="";
+$post_ip = '';
 
-$post_html="";
+$post_button = '';
 
-$post_ip="";
+$post_alert = '';
 
-$post_button="";
+$post_hidden = '';
 
-$post_alert="";
+$disclamer = '';
 
-$post_hidden="";
+$lleo = '';
 
-$disclamer="";
+$lleo_url = '';
 
-$lleo="";
+$e_head = '';
 
-$lleo_url="";
+$e_text = '';
 
-$e_head="";
+$e_submit = '';
 
-$e_text="";
-
-$e_submit="";
-
-$e_comment="";
-
-?>
+$e_comment = '';
