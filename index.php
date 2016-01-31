@@ -225,6 +225,7 @@ if ($_GET)
 <?
 function poiskovik()
 {
+    $s = [];
     $u = parse_url($_SERVER['HTTP_REFERER']);
     parse_str($u['query'], $outr);
     // GOOGLE

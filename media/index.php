@@ -61,7 +61,7 @@
 
 <center>
 
-<p><font size=-2>счетчик посетителей фонотеки: <!--#exec cgi="/cgi/textcount.pl"--></font>
+<p><font size=-2>счетчик посетителей фонотеки: <!--#exec cgi="/cgi/textcount.pl"--></font></p>
 
 
 </center>
