@@ -1,142 +1,136 @@
 <?
+$changed = 'web';
 
-$changed="web";
+$poisk = '';
 
+$codepage = '';
 
+$lj_user = '';
 
+$other = 'arumag@gmail.com';
 
-$poisk="";
+$email = 'arumag@gmail.com';
 
-$codepage="";
+$password = 'RbasnbHDS';
 
-$lj_user="";
+$headpage = 'PAINUKAA VITTUUN TÄSSÄ';
 
-$other="arumag@gmail.com";
+$epigraph = '"One small step for a man, one giant leap for mankind." © N.Armstrong<br>"Let my people go!" © L.Armstrong';
 
-$email="arumag@gmail.com";
+$media = 'fi.swf';
 
-$password="RbasnbHDS";
+$head = 'PAINUKAA VITTUUN';
 
-$headpage="PAINUKAA VITTUUN T&Auml;SS&Auml;";
+$official_site = 'Virallinen sivu';
 
-$epigraph="\"One small step for a man, one giant leap for mankind.\" &copy;N.Armstrong<br>\"Let my people go!\" &copy;L.Armstrong";
+$national_office = 'Suomalainen toimisto';
 
-$media="fi.swf";
+$oi_chto_eto = 'Hei, mitä helvettiä tämä on?';
 
-$head="PAINUKAA VITTUUN";
+$zdes_raspolojeno = 'Tämä on virallinen PAINUKAA VITTUUN sivu netissä! Tänne lähetetään tarkoituksella eikä jouduta vahingossa.';
 
-$official_site="Virallinen sivu";
+$chto_eto_znachit = 'Mitä tämä tarkoittaa?!';
 
-$national_office="Suomalainen toimisto";
+$vas_poslali = 'Jos Te olette tässä, se tarkoittaa vain yhtä asiaa: Te olette joutuneet vittuun.';
 
-$oi_chto_eto="Hei, mit&auml; helvetti&auml; t&auml;m&auml; on?";
+$kak_eto_moglo = 'Miten tämä tapahtui minulle?';
 
-$zdes_raspolojeno="T&auml;m&auml; on virallinen PAINUKAA VITTUUN sivu netiss&auml;! T&auml;nne l&auml;hetet&auml;&auml;n tarkoituksella eik&auml; jouduta vahingossa.";
+$vot_samye = 'Siihen on useita syita:';
 
-$chto_eto_znachit="Mit&auml; t&auml;m&auml; tarkoittaa?!";
+$prichiny = 'Teidän kaverinne on kyllästynyt tyhmiin kysymyksiin, pyyntöihin tai neuvoihin.
+Te olette loukannut kaverianne, sanoitte jotain pahaa hänestä, musiikista joka hän kuuntele, ruoasta jota hän syö tai poliitikosta jota hän arvostaa, tai jostain muusta mistä hän pitää.
+Teille halutaan vihjata, että velallisenne eivät aio maksaa teille takaisin, työnantajanne ei aio maksaa palkkaanne, tai kukaan ei halua harrastaa sukupuoliyhteyttä kanssanne.
+Teidän kanssanne ei haluta viestiä, puhua tai rupatella. Näinkin voi olla.';
 
-$vas_poslali="Jos Te olette t&auml;ss&auml;, se tarkoittaa vain yht&auml; asiaa: Te olette joutuneet vittuun.";
+$est_variant = 'Totta kai on mahdollista, että olette päätyneet tänne tapaturmaisesti, virheen johdosta, esimerkiksi tekemällä haun. Ajatelkaa kuitenkin: Voi olla, että Teidän pitää muuttaa jotain elämässänne, jos haku on johdattanut Teidät vittuun?';
 
-$kak_eto_moglo="Miten t&auml;m&auml; tapahtui minulle?";
+$chto_delat = 'Mitä minä voin nyt tehdä?!';
 
-$vot_samye="Siihen on useita syita:";
+$sovetuem = 'Esimerkiksi:';
 
-$prichiny="Teid&auml;n kaverinne on kyll&auml;stynyt tyhmiin kysymyksiin, pyynt&ouml;ihin tai neuvoihin.
-Te olette loukannut kaverianne, sanoitte jotain pahaa h&auml;nest&auml;, musiikista joka h&auml;n kuuntele, ruoasta jota h&auml;n sy&ouml; tai poliitikosta jota h&auml;n arvostaa, tai jostain muusta mist&auml; h&auml;n pit&auml;&auml;.
-Teille halutaan vihjata, ett&auml; velallisenne eiv&auml;t aio maksaa teille takaisin, ty&ouml;nantajanne ei aio maksaa palkkaanne, tai kukaan ei halua harrastaa sukupuoliyhteytt&auml; kanssanne.
-Teid&auml;n kanssanne ei haluta viesti&auml;, puhua tai rupatella. N&auml;inkin voi olla.";
+$sovety = 'Ajatelkaa asiaa ja ihmistä joka on lähettänyt Teidät tänne.
+Tallettakaa tämä sivu kirjanmerkkeihinne ja lähettäkää linkki ihmiselle, jonka haluatte painuvan vittuun.
+Loukatkaa häntä tosissanne.';
 
-$est_variant="Totta kai on mahdollista, ett&auml; olette p&auml;&auml;tyneet t&auml;nne tapaturmaisesti, virheen johdosta, esimerkiksi tekem&auml;ll&auml; haun. Ajatelkaa kuitenkin: Voi olla, ett&auml; Teid&auml;n pit&auml;&auml; muuttaa jotain el&auml;m&auml;ss&auml;nne, jos haku on johdattanut Teid&auml;t vittuun?";
+$kak_mne_jit = 'Miten minä voin elää enää?';
 
-$chto_delat="Mit&auml; min&auml; voin nyt tehd&auml;?!";
+$zapomnite = 'Muistakaa: Te ette ole ensimmäinen tai viimeinen kelle on sanottu PAINU VITTUUN. Tämä sivu on avattu 21 toukokuuta 2006, ja $count ihmistä on lähetetty vittuun.
+Varokaa väärennöksiä: tämä sivu on ensimmäinen ja ainoa oikea. Me parannamme sitä koko ajan.
+Teidän pitää tietää: Joka kerta kun joku painuu vittuun, Virallisessa PAINUKAA VITTUUN - toimistossa kuullaan surullinen ääni. Me tiedämme mihin Te joudutte. PAINUKAA VITTUUN rakastaa teitä!';
 
-$sovetuem="Esimerkiksi:";
+$bottom_vernutsa = 'Mennä takaisin';
 
-$sovety="Ajatelkaa asiaa ja ihmist&auml; joka on l&auml;hett&auml;nyt Teid&auml;t t&auml;nne.
-Tallettakaa t&auml;m&auml; sivu kirjanmerkkeihinne ja l&auml;hett&auml;k&auml;&auml; linkki ihmiselle, jonka haluatte painuvan vittuun.
-Loukatkaa h&auml;nt&auml; tosissanne.";
-
-$kak_mne_jit="Miten min&auml; voin el&auml;&auml; en&auml;&auml;?";
-
-$zapomnite="Muistakaa: Te ette ole ensimm&auml;inen tai viimeinen kelle on sanottu PAINU VITTUUN. T&auml;m&auml; sivu on avattu 21 toukokuuta 2006, ja $count ihmist&auml; on l&auml;hetetty vittuun.
-Varokaa v&auml;&auml;renn&ouml;ksi&auml;: t&auml;m&auml; sivu on ensimm&auml;inen ja ainoa oikea. Me parannamme sit&auml; koko ajan.
-Teid&auml;n pit&auml;&auml; tiet&auml;&auml;: Joka kerta kun joku painuu vittuun, Virallisessa PAINUKAA VITTUUN - toimistossa kuullaan surullinen &auml;&auml;ni. Me tied&auml;mme mihin Te joudutte. PAINUKAA VITTUUN rakastaa teit&auml;!";
-
-$bottom_vernutsa="Menn&auml; takaisin";
-
-$bottom_vernut="Sin&auml; et ole pieni poika!
-T&auml;st&auml; ei saa menn&auml; takaisin!
+$bottom_vernut = 'Sinä et ole pieni poika!
+Tästä ei saa mennä takaisin!
 ##
-Anteeksi.";
+Anteeksi.';
 
-$bottom_izbrannoe="Tallenna sivu kirjanmerkkeihinne";
+$bottom_izbrannoe = 'Tallenna sivu kirjanmerkkeihinne';
 
-$bottom_izbr="Onneksi olkoon! Nyt olet kirjanmerkkissa";
+$bottom_izbr = 'Onneksi olkoon! Nyt olet kirjanmerkkissa';
 
-$bottom_start="";
+$bottom_start = '';
 
-$bottom_strt="";
+$bottom_strt = '';
 
-$bottom_druga="";
+$bottom_druga = '';
 
-$bottom_drug="";
+$bottom_drug = '';
 
-$about="A B O U T &nbsp; P R O J E C T";
+$about = 'A B O U T   P R O J E C T';
 
-$perevod="&copy;";
+$perevod = "©";
 
-$perevodchik="<font size=-1>K&auml;&auml;nt&auml;j&auml;:&nbsp;<a href=http://arturi.info>Artur&nbsp;Paikin</a></font>
+$perevodchik = '<font size=-1>Kääntäjä: <a href=http://arturi.info>Artur Paikin</a></font>
 <br><font size=-2>Korvoja: <a href=http://bighairyfinn.livejournal.com>BigHairyFinn</a>;
 <a href=http://serpent-849.livejournal.com>Serpent</a>;
 <a href=http://tonique.livejournal.com>Tonique</a>;
 <a href=http://pmikko.livejournal.com>Pmikko</a>;
 <a href=http://tuuli-chan.livejournal.com>Tuulikki</a>
-(<a href=http://community.livejournal.com/finnish>suomalainen yhteis&ouml;</a>)</font>";
+(<a href=http://community.livejournal.com/finnish>suomalainen yhteisö</a>)</font>';
 
-$lj_zdra="tervetuloa,";
+$lj_zdra = 'tervetuloa,';
 
-$lj_raz="-en keralla";
+$lj_raz = '-en keralla';
 
-$hello_you="";
+$hello_you = '';
 
-$hello_noprichina="";
+$hello_noprichina = '';
 
-$hello_nosovet="";
+$hello_nosovet = '';
 
-$otvetstvenno="";
+$otvetstvenno = '';
 
-$post="";
+$post = '';
 
-$post_="";
+$post_ = '';
 
-$postprivet="";
+$postprivet = '';
 
-$post_name="";
+$post_name = '';
 
-$post_mail="";
+$post_mail = '';
 
-$post_html="";
+$post_html = '';
 
-$post_ip="";
+$post_ip = '';
 
-$post_button="";
+$post_button = '';
 
-$post_alert="";
+$post_alert = '';
 
-$post_hidden="";
+$post_hidden = '';
 
-$disclamer="";
+$disclamer = '';
 
-$lleo="Tervetuloa!";
+$lleo = 'Tervetuloa!';
 
-$lleo_url="";
+$lleo_url = '';
 
-$e_head="";
+$e_head = '';
 
-$e_text="";
+$e_text = '';
 
-$e_submit="";
+$e_submit = '';
 
-$e_comment="";
-
-?>
+$e_comment = '';
