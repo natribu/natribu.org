@@ -10,7 +10,7 @@ if (!$_GET['lang']) {
             echo "<a href=./?lang=$lang>$lang</a> | ";
         }
     }
-} else if (preg_match('/^[a-z0-9_-]+$/', $_GET['lang'])) {
+} else if (preg_match('/^[a-z0-9_-]+$/i', $_GET['lang'])) {
     $fields = [
         'changed',
         'codepage',
