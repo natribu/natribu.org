@@ -1,145 +1,137 @@
 <?
+$changed = 'web';
 
-$changed="web";
+$poisk = 'PatÅ™Ã­ VÃ¡m to! PÅ™Ã­Å¡tÄ› uÅ¾ nebudete hledat v <b>Seznamu</b> nejaky hovadiny jako <b>Â«pÃ­ÄaÂ»</b> a podobnÄ›.';
 
+$lj_user = '';
 
+$other = 'Ã‡Ã¤Å•Ä‘Ã®Ã¢!
+Ä†ÄÃ¢Ã³ Ã¢ Ã—ÄºÅ‘ÄÄ, Ä‘ÄºÅ™ÄÃ« ÄÃ®Ä›Ã®Ã·Ã¼ Å„Å•Ã©ÅˆÃ³ Å„ ÄÄºÄ‘ÄºÃ¢Ã®Ã¤Ã®Ä›. ÃÃ­ ÅˆÃ®ÄƒÃ® Å„ÅˆÃ®ÄÅˆ! ÅƒÅˆÅ•Ä‘Å•Ã«Å„Ë™, Ã·ÅˆÃ®Ã¡ Ã¢Å„Äº Å„Ã®Ã®ÅˆÃ¢ÄºÅˆÅ„ÅˆÃ¢Ã®Ã¢Å•Ã«Ã® Å„ÅˆÅ•Ã­Ã¤Å•Ä‘Ã³ Ä Ã¡Å±Ã«Ã® ÄÃ®Ã­Ë™ÅˆÃ­Ã® Ä Ä‘Ä‡Å•Ã¡ÄºÃ«Ã¼Ã­Ã®. ÄÃ®Ä™Å• ÄÄºÄ‘ÄºÃ¢ÄºÃ« Ã®Å„Ã­Ã®Ã¢Ã­Ã³Å£ Ã·Å•Å„ÅˆÃ¼ â€” ÄÃ®ÅˆÃ®Ä› Ä ÄƒÃ«Å•Ã¢Ã­Ã³Å£.
+ÃÅ•Ã¤ÄºÅ£Å„Ã¼ ÄÃ®Ä‘Å•Ã¤Ã³ÄºÅˆ!
+Ã‚Ã®Ã¢Å•Ã­
+P.S. ÄÃ®Ë™Ã¢ÄÃ«Å„Ë™ Ä™Ã®Å„Ë™Ä™: Ã­Å•Ã¤Ã® Ã¢Å±Å„ÅˆÅ•Ã¢Ã«Ë™ÅˆÃ¼ Ä™Ã®Ã¤ÄÄ‘Ã®Ã¢Ä™Ã³ Ã­Å• windows-1250!!! Ä˜Ã³Ã¤Å• ÄÄÅ„Å•ÅˆÃ¼?
+';
 
+$email = 'dla-govna@yandex.ru';
 
-$poisk="Pat&#345;í Vám to! P&#345;íšt&#283; u nebudete hledat v <b>Seznamu</b> nejaky hovadiny jako <b>«pí&#269;a»</b> a podobn&#283;.";
+$password = '123456';
 
-$codepage="windows-1250";
+$headpage = 'DOPÃÄŒI TADY';
 
-$lj_user="";
+$epigraph = 'Â«Je to malÃ½ krÅ¯Äek pro ÄlovÄ›ka, ale velkÃ½ skok pro lidstvo.Â» Â© N. Armstrong<br>Â«Let my people go!Â» Â© L. Armstrong';
 
-$other="Çäàğîâ!
-Æèâó â ×åõèè, ğåøèë ïîìî÷ü ñàéòó ñ ïåğåâîäîì. Îí òîãî ñòîèò! Ñòàğàëñÿ, ÷òîá âñå ñîîòâåòñòâîâàëî ñòàíäàğó è áûëî ïîíÿòíî è ğæàáåëüíî. Ïîêà ïåğåâåë îñíîâíóş ÷àñòü — ïîòîì è ãëàâíóş.
-Íàäåşñü ïîğàäóåò!
-Âîâàí
-P.S. Ïîÿâèëñÿ êîñÿê: íàäî âûñòàâëÿòü êîäèğîâêó íà windows-1250!!! Êóäà ïèñàòü?
-<meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1250\">";
+$media = '';
 
-$email="dla-govna@yandex.ru";
+$head = 'DOPÃÄŒI';
 
-$password="123456";
+$official_site = 'oficiÃ¡lnÃ­ strÃ¡nky symbolickÃ©ho posÃ­lÃ¡nÃ­';
 
-$headpage="DOPÍ&#268;I TADY";
+$national_office = 'ÄeskÃ¡ poboÄka';
 
-$epigraph="«Je to malı kr&#367;&#269;ek pro &#269;lov&#283;ka, ale velkı skok pro lidstvo.» &copy;N. Armstrong<br>«Let my people go!» &copy;L. Armstrong";
+$oi_chto_eto = 'No vida, co to je?';
 
-$media="";
+$zdes_raspolojeno = 'Zde se nachÃ¡zÃ­ oficiÃ¡lnÃ­ poboÄka DOPÃÄŒI na internetu. Sem â€” posilajÃ­.';
 
-$head="DOPÍ&#268;I";
+$chto_eto_znachit = 'Co to mÃ¡ znamenat?';
 
-$official_site="oficiální stránky symbolického posílání";
+$vas_poslali = 'Pokud jste se ocitl na tÃ©hle strÃ¡nce, znamena to jedinÃ©: nekdo VÃ¡s poslal dopÃ­Äi. Drze, ale pÅ™ece jen elegantnÄ›: tim, Å¾e VÃ¡m poslal odkaz.';
 
-$national_office="&#269;eská pobo&#269;ka";
+$kak_eto_moglo = 'Jak se mi to mohlo jenom stat?';
 
-$oi_chto_eto="No vida, co to je?";
+$vot_samye = 'Zde jsou nejÄastejÅ¡Ã­ dÅ¯vody:';
 
-$zdes_raspolojeno="Zde se nachází oficiální pobo&#269;ka DOPÍ&#268;I na internetu. Sem — posilají.";
+$prichiny = 'Unudil jste nÄ›koho debilnimi otazkami, Å¾Ã¡dostema nebo radami.
+Urazil jste nÄ›koho neopatrnÃ½m rÄenÃ­m: dotkul jste se religioznÃ­ch, politickich, hudebnÃ­ch a jinÃ½ch nÃ¡zorÅ¯, nebo jinÃ½m zpÅ¯sobem urazil jeho vnitÅ™nÃ­ svÄ›t a zkritizoval to, co je mu drahÃ©.
+ChtejÃ­ VÃ¡m Å™ict, Å¾e nevratÃ­ dluh, nezaplatÃ­ za prÃ¡ci Äi odmitajÃ­ sexualnÃ­ styk.
+Proste se s VÃ¡ma nechtÄ›jÃ­ nadÃ¡le komunikovat. To se takÃ© stÃ¡va.';
 
-$chto_eto_znachit="Co to má znamenat?";
+$est_variant = 'SamozÅ™ejmÄ›, je tady takÃ© varianta, Å¾e jste se zde ocitl Äirou nÃ¡hodou, napÅ™iklad, nahodnÄ› jste narazil na poboÄku DOPÃÄŒI na Seznamu. Ale zamyslete se: pravdÄ›podobne je tÅ™eba pÅ™ehodnotit svÅ¯j Å¾ivotnÃ­ postoj, podud i vyhledÃ¡vaÄi posilajÃ­ VÃ¡s dopÃ­Äi.';
 
-$vas_poslali="Pokud jste se ocitl na téhle stránce, znamena to jediné: nekdo Vás poslal dopí&#269;i. Drze, ale p&#345;ece jen elegantn&#283;: tim, e Vám poslal odkaz.";
+$chto_delat = 'Co teÄ mam dÄ›lat?';
 
-$kak_eto_moglo="Jak se mi to mohlo jenom stat?";
+$sovetuem = 'Radime VÃ¡m:';
 
-$vot_samye="Zde jsou nej&#269;astejší d&#367;vody:";
+$sovety = 'PÅ™ehodnoÅ¥te svÅ¯j nÃ¡zor na toho Äloveka, kterÃ¡ VÃ¡m poslal odkaz.
+VÃ¡Å¾ne se na nej naÅ¡tvÄ›te.
+Zapamatujte si adresu a pÅ™Ã­Å¡tÄ› poÅ¡lete dopÃ­Äi nÄ›koho naoplatku.';
 
-$prichiny="Unudil jste n&#283;koho debilnimi otazkami, ádostema nebo radami.
-Urazil jste n&#283;koho neopatrnım r&#269;ením: dotkul jste se religiozních, politickich, hudebních a jinıch názor&#367;, nebo jinım zp&#367;sobem urazil jeho vnit&#345;ní sv&#283;t a zkritizoval to, co je mu drahé.
-Chtejí Vám &#345;ict, e nevratí dluh, nezaplatí za práci &#269;i odmitají sexualní styk.
-Proste se s Váma necht&#283;jí nadále komunikovat. To se také stáva.";
+$kak_mne_jit = 'Jak teÄ mam asi Å¾Ã­t?!';
 
-$est_variant="Samoz&#345;ejm&#283;, je tady také varianta, e jste se zde ocitl &#269;irou náhodou, nap&#345;iklad, nahodn&#283; jste narazil na pobo&#269;ku DOPÍ&#268;I na Seznamu. Ale zamyslete se: pravd&#283;podobne je t&#345;eba p&#345;ehodnotit sv&#367;j ivotní postoj, podud i vyhledáva&#269;i posilají Vás dopí&#269;i.";
+$zapomnite = 'Zapamatujte si: nejste prvnÃ­ koho poslali dopÃ­Äi. Tyhle strÃ¡nky byly otevÅ™enÃ½ 9 ledna 2004, a dopÃ­Äi sem poslali jiÅ¾ count lidÃ­.';
 
-$chto_delat="Co te&#271; mam d&#283;lat?";
+$bottom_vernutsa = 'ZpÄ›t';
 
-$sovetuem="Radime Vám:";
-
-$sovety="P&#345;ehodno&#357;te sv&#367;j názor na toho &#269;loveka, která Vám poslal odkaz.
-Váne se na nej naštv&#283;te.
-Zapamatujte si adresu a p&#345;íšt&#283; pošlete dopí&#269;i n&#283;koho naoplatku.";
-
-$kak_mne_jit="Jak te&#271; mam asi ít?!";
-
-$zapomnite="Zapamatujte si: nejste první koho poslali dopí&#269;i. Tyhle stránky byly otev&#345;enı 9 ledna 2004, a dopí&#269;i sem poslali ji count lidí.";
-
-$bottom_vernutsa="Zp&#283;t";
-
-$bottom_vernut="Jste jak malej!
-Odsa&#271; se ješt&#283; nikdo nevracel.
+$bottom_vernut = 'Jste jak malej!
+OdsaÄ se jeÅ¡tÄ› nikdo nevracel.
 ##
-Promi&#328;te.";
+PromiÅˆte.';
 
-$bottom_izbrannoe="P&#345;idat k oblíbenım";
+$bottom_izbrannoe = 'PÅ™idat k oblÃ­benÃ½m';
 
-$bottom_izbr="Gratulují! Jste — oblíbenı!";
+$bottom_izbr = 'GratulujÃ­! Jste â€” oblÃ­benÃ½!';
 
-$bottom_start="Nastavit jako domovskou stránku";
+$bottom_start = 'Nastavit jako domovskou strÃ¡nku';
 
-$bottom_strt="Ned&#283;sí Vás, náhodou, riziko zhoršit svou náladu?
+$bottom_strt = 'NedÄ›sÃ­ VÃ¡s, nÃ¡hodou, riziko zhorÅ¡it svou nÃ¡ladu?
 ##
-Klepn&#283;te na Nástroje &rarr; Monosti Internetu... a nastavte si co chcete.
-Nikdo jinej to za Vás neud&#283;lá!";
+KlepnÄ›te na NÃ¡stroje â†’ MoÅ¾nosti Internetu... a nastavte si co chcete.
+Nikdo jinej to za VÃ¡s neudÄ›lÃ¡!';
 
-$bottom_druga="Poslat kámoše";
+$bottom_druga = 'Poslat kÃ¡moÅ¡e';
 
-$bottom_drug="Pokud chcete poslat kámoše, pošlete mu odkaz emailem nebo na ICQ.
-Nem&#367;eme to udelat za Vás — ztratí se effekt.
+$bottom_drug = 'Pokud chcete poslat kÃ¡moÅ¡e, poÅ¡lete mu odkaz emailem nebo na ICQ.
+NemÅ¯Å¾eme to udelat za VÃ¡s â€” ztratÃ­ se effekt.
 ##
-Hodn&#283; št&#283;stí v p&#345;átelství!";
+HodnÄ› Å¡tÄ›stÃ­ v pÅ™Ã¡telstvÃ­!';
 
-$about="";
+$about = '';
 
-$perevod="&copy; Vlado";
+$perevod = 'Â© Vlado';
 
-$perevodchik="<a href=mailto:dla-govna@yandex.ru>@ Vlado</a>";
+$perevodchik = '<a href=mailto:dla-govna@yandex.ru>@ Vlado</a>';
 
-$lj_zdra="";
+$lj_zdra = '';
 
-$lj_raz="";
+$lj_raz = '';
 
-$hello_you="";
+$hello_you = '';
 
-$hello_noprichina="";
+$hello_noprichina = '';
 
-$hello_nosovet="";
+$hello_nosovet = '';
 
-$otvetstvenno="";
+$otvetstvenno = '';
 
-$post="";
+$post = '';
 
-$post_="";
+$post_ = '';
 
-$postprivet="";
+$postprivet = '';
 
-$post_name="";
+$post_name = '';
 
-$post_mail="";
+$post_mail = '';
 
-$post_html="";
+$post_html = '';
 
-$post_ip="";
+$post_ip = '';
 
-$post_button="";
+$post_button = '';
 
-$post_alert="";
+$post_alert = '';
 
-$post_hidden="";
+$post_hidden = '';
 
-$disclamer="";
+$disclamer = '';
 
-$lleo="";
+$lleo = '';
 
-$lleo_url="";
+$lleo_url = '';
 
-$e_head="";
+$e_head = '';
 
-$e_text="";
+$e_text = '';
 
-$e_submit="";
+$e_submit = '';
 
-$e_comment="";
-
-?>
+$e_comment = '';
