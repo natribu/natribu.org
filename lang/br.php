@@ -1,138 +1,132 @@
 <?
 
-$changed="web";
+$changed = 'web';
 
 
+$poisk = '';
 
+$lj_user = '';
 
-$poisk="";
+$other = '';
 
-$codepage="ISO-8859-1";
+$email = 'paesrod@terra.com.br';
 
-$lj_user="";
+$password = 'jocobr';
 
-$other="";
+$headpage = 'FODA-SE!
+A PÃ¡gina Oficial da SugestÃ£o SimbÃ³lica da ModificaÃ§Ã£o do Modelo de Comportamento';
 
-$email="paesrod@terra.com.br";
+$epigraph = '"Relaxe e goze" ministra brasileira sobre crise aÃ©rea no paÃ­s.';
 
-$password="jocobr";
+$media = '';
 
-$headpage="FODA-SE!
-A Página Oficial da Sugestão Simbólica da Modificação do Modelo de Comportamento";
+$head = 'FODA-SE!';
 
-$epigraph="\"Relaxe e goze\" ministra brasileira sobre crise aérea no país.";
+$official_site = 'FODA-SE!
+A PÃ¡gina Oficial da SugestÃ£o SimbÃ³lica da ModificaÃ§Ã£o do Modelo de Comportamento';
 
-$media="";
+$national_office = 'Sede Brasileira - em portuguÃªs';
 
-$head="FODA-SE!";
+$oi_chto_eto = 'Caralho! O quÃª que Ã© isso?';
 
-$official_site="FODA-SE!
-A Página Oficial da Sugestão Simbólica da Modificação do Modelo de Comportamento";
+$zdes_raspolojeno = 'ISSO Ã© uma representaÃ§Ã£o oficial na Internet do FODA-SE!. Aqui, as pessoas estÃ£o sendo mandadas para foderem-se.';
 
-$national_office="Sede Brasileira - em português";
+$chto_eto_znachit = 'Caralho! O que estÃ¡ acontecendo?';
 
-$oi_chto_eto="Caralho! O quê que é isso?";
+$vas_poslali = 'Se vocÃª estÃ¡ nesta pÃ¡gina, significa somente uma coisa: VocÃª foi mandado a foder-se. Com o envio deste link alguÃ©m usou esta rude, porÃ©m elegante maneira de sugestÃ£o de mudanÃ§a do seu modelo de comportamento para o seguinte: FODA-SE!';
 
-$zdes_raspolojeno="ISSO é uma representação oficial na Internet do FODA-SE!. Aqui, as pessoas estão sendo mandadas para foderem-se.";
+$kak_eto_moglo = 'Merda ! Como isso aconteceu comigo?!';
 
-$chto_eto_znachit="Caralho! O que está acontecendo?";
+$vot_samye = 'Aqui estÃ£o as razÃµes as mais comuns:';
 
-$vas_poslali="Se você está nesta página, significa somente uma coisa: Você foi mandado a foder-se. Com o envio deste link alguém usou esta rude, porém elegante maneira de sugestão de mudança do seu modelo de comportamento para o seguinte: FODA-SE!";
+$prichiny = 'Seu (sua) parceiro (a) de conversaÃ§Ã£o comeÃ§ou a ficar doente e cansado(a) das suas perguntas estÃºpidas, pedidos retardados ou conselhos bestas;
+VocÃª insultou seu (sua) parceiro (a) de conversaÃ§Ã£o desfazendo da sua religiÃ£o ou opiniÃ£o polÃ­tica, musical ou cinematogrÃ¡fica, ou criticou sua vida pessoal e/ou coisas que lhe sÃ£o muito queridas e particulares;
+AlguÃ©m estÃ¡ sugerindo que nÃ£o lhe pagarÃ¡ o dinheiro que deve ou nÃ£o farÃ¡ um trabalho que pediu ou nÃ£o devolverÃ¡ alguma coisa que pediu emprestado.
+AlguÃ©m estÃ¡ sugerindo que nÃ£o farÃ¡ sexo com vocÃª hoje, amanhÃ£ e nem nunca mais;
+AlguÃ©m apenas nÃ£o quer ter vocÃª por perto. Infelizmente, isso tambÃ©m acontece Â…';
 
-$kak_eto_moglo="Merda ! Como isso aconteceu comigo?!";
+$est_variant = 'Naturalmente, existe a possibilidade de ter acessado esta pÃ¡gina acidentalmente. VocÃª pode ter, por exemplo, encontrado este link em um mecanismo de busca... Se for este o caso, talvez vocÃª deva considerar a  respeito do fato de um mecanismo de busca automÃ¡tico e sem vida estar sugerindo que FODA-SE! e fazer um exame profundo e extenso na sua vida.';
 
-$vot_samye="Aqui estão as razões as mais comuns:";
+$chto_delat = 'Droga!!! O que eu faÃ§o agora?!';
 
-$prichiny="Seu (sua) parceiro (a) de conversação começou a ficar doente e cansado(a) das suas perguntas estúpidas, pedidos retardados ou conselhos bestas; 
-Você insultou seu (sua) parceiro (a) de conversação desfazendo da sua religião ou opinião política, musical ou cinematográfica, ou criticou sua vida pessoal e/ou coisas que lhe são muito queridas e particulares; 
-Alguém está sugerindo que não lhe pagará o dinheiro que deve ou não fará um trabalho que pediu ou não devolverá alguma coisa que pediu emprestado.
-Alguém está sugerindo que não fará sexo com você hoje, amanhã e nem nunca mais; 
-Alguém apenas não quer ter você por perto. Infelizmente, isso também acontece …";
+$sovetuem = 'Aqui estÃ£o algumas das coisas que pode fazer se vocÃª se encontrar nesta situaÃ§Ã£o:';
 
-$est_variant="Naturalmente, existe a possibilidade de ter acessado esta página acidentalmente. Você pode ter, por exemplo, encontrado este link em um mecanismo de busca... Se for este o caso, talvez você deva considerar a  respeito do fato de um mecanismo de busca automático e sem vida estar sugerindo que FODA-SE! e fazer um exame profundo e extenso na sua vida.";
+$sovety = 'Reconsiderar a sua abordagem e atitude com pessoa que te mandou aqui;
+Levar esta sugestÃ£o a nÃ­vel pessoal e ficar putificado com pessoa que te mandou aqui;
+Adicionar este site aos seus FAVORITOS e sempre que houver a necessidade de dizer para alguÃ©m que FODA-SE! envie este link.';
 
-$chto_delat="Droga!!! O que eu faço agora?!";
+$kak_mne_jit = 'Como vou continuar seguindo com a minha existÃªncia AGORA?!';
 
-$sovetuem="Aqui estão algumas das coisas que pode fazer se você se encontrar nesta situação:";
+$zapomnite = 'Leve em consideraÃ§Ã£o: vocÃª nÃ£o Ã© a primeira pessoa que foi mandada a FODER-SE! Este site foi inaugurado em 25 de julho de 2005 e milhares de pessoas jÃ¡ foram enviadas para cÃ¡. ($count).
+Cuidado com as imitaÃ§Ãµes! Este site Ã© o primeiro e Ãºnico desde sua existÃªncia e nÃ³s estamos sempre implementando aperfeiÃ§oamentos!
+Tenha em mente: Cada vez que alguÃ©m leva um FODA-SE! atravÃ©s deste site, as caixas de som situadas no escritÃ³rio matriz oficial emitem um suspiro triste. NÃ³s estamos cientes das suas mancadas! FODA-SE aprecia sua presenÃ§a e deseja que volte sempre!';
 
-$sovety="Reconsiderar a sua abordagem e atitude com pessoa que te mandou aqui; 
-Levar esta sugestão a nível pessoal e ficar putificado com pessoa que te mandou aqui; 
-Adicionar este site aos seus FAVORITOS e sempre que houver a necessidade de dizer para alguém que FODA-SE! envie este link.";
+$bottom_vernutsa = 'PÃGINA ANTERIOR';
 
-$kak_mne_jit="Como vou continuar seguindo com a minha existência AGORA?!";
+$bottom_vernut = 'NÃ£o seja infantil, nÃ£o tem como escapar daqui!';
 
-$zapomnite="Leve em consideração: você não é a primeira pessoa que foi mandada a FODER-SE! Este site foi inaugurado em 25 de julho de 2005 e milhares de pessoas já foram enviadas para cá. ($count).
-Cuidado com as imitações! Este site é o primeiro e único desde sua existência e nós estamos sempre implementando aperfeiçoamentos! 
-Tenha em mente: Cada vez que alguém leva um FODA-SE! através deste site, as caixas de som situadas no escritório matriz oficial emitem um suspiro triste. Nós estamos cientes das suas mancadas! FODA-SE aprecia sua presença e deseja que volte sempre!";
+$bottom_izbrannoe = 'ADICIONE AOS FAVORITOS';
 
-$bottom_vernutsa="PÁGINA ANTERIOR";
+$bottom_izbr = 'ParabÃ©ns,vocÃª foi favoritado!';
 
-$bottom_vernut="Não seja infantil, não tem como escapar daqui!";
+$bottom_start = 'FAÃ‡A DESTA PÃGINA SUA PÃGINA INICIAL';
 
-$bottom_izbrannoe="ADICIONE AOS FAVORITOS";
+$bottom_strt = 'VÃ¡ em ferramentas no menu superior do seu navegador, e em opÃ§Ãµes da internet na guia geral configure esta pÃ¡gina como a inicial.';
 
-$bottom_izbr="Parabéns,você foi favoritado!";
+$bottom_druga = 'DÃŠ AO SEU AMIGO(A) UMA BANANA';
 
-$bottom_start="FAÇA DESTA PÁGINA SUA PÁGINA INICIAL";
+$bottom_drug = 'Para dar uma banana ao seu amigo(a)envie o endereÃ§o deste site por e-mail, ICQ, messenger ou seja lÃ¡ como, contanto que chegue nele(a)
+NÃ£o seria engraÃ§ado o suficiente se fizÃ©ssemos este serviÃ§o por vocÃª!
+Curta a sua amizade!';
 
-$bottom_strt="Vá em ferramentas no menu superior do seu navegador, e em opções da internet na guia geral configure esta página como a inicial.";
+$about = '';
 
-$bottom_druga="DÊ AO SEU AMIGO(A) UMA BANANA";
+$perevod = 'Rodrigo Paes';
 
-$bottom_drug="Para dar uma banana ao seu amigo(a)envie o endereço deste site por e-mail, ICQ, messenger ou seja lá como, contanto que chegue nele(a)
-Não seria engraçado o suficiente se fizéssemos este serviço por você!
-Curta a sua amizade!";
+$perevodchik = '';
 
-$about="";
+$lj_zdra = '';
 
-$perevod="Rodrigo Paes";
+$lj_raz = '';
 
-$perevodchik="";
+$hello_you = '';
 
-$lj_zdra="";
+$hello_noprichina = '';
 
-$lj_raz="";
+$hello_nosovet = '';
 
-$hello_you="";
+$otvetstvenno = '';
 
-$hello_noprichina="";
+$post = '';
 
-$hello_nosovet="";
+$post_ = '';
 
-$otvetstvenno="";
+$postprivet = '';
 
-$post="";
+$post_name = '';
 
-$post_="";
+$post_mail = '';
 
-$postprivet="";
+$post_html = '';
 
-$post_name="";
+$post_ip = '';
 
-$post_mail="";
+$post_button = '';
 
-$post_html="";
+$post_alert = '';
 
-$post_ip="";
+$post_hidden = '';
 
-$post_button="";
+$disclamer = '';
 
-$post_alert="";
+$lleo = '';
 
-$post_hidden="";
+$lleo_url = '';
 
-$disclamer="";
+$e_head = '';
 
-$lleo="";
+$e_text = '';
 
-$lleo_url="";
+$e_submit = '';
 
-$e_head="";
-
-$e_text="";
-
-$e_submit="";
-
-$e_comment="";
-
-?>
+$e_comment = '';
