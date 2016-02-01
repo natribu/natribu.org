@@ -2,14 +2,6 @@
 parse_ini_file('');
 $adminpass = 'sdddddddddddddddderfececece3lfkelrkcjlkerjckl4cjkl23io4frhj';
 
-// Определение ЖЖ-истов
-$lju = base64_decode($_COOKIE['lju']);
-if (!$lju && preg_match("/\Ahttp\:\/\/(.*?)\.livejournal\.com\/friends/", $_SERVER['HTTP_REFERER'], $matches)) {
-    $lju = $matches[1];
-    setcookie('lju', base64_encode($lju), time() + 86400 * 365, '/');
-}
-
-
 //print "<pre>test<p>";
 //$fromlang="ru_";
 //$tolang="en_test";
@@ -509,16 +501,10 @@ if ($_POST['action'] === "edit") {
     } else {
 // если файла еще нет - сделать начальные установки
         $l2['password'] = $_POST['password'];
-        $l2['lj_user'] = $lju;
-//$l2['codepage']="utf-8"; //а то заебусь потом
-        $l2['codepage'] = ''; //а то заебусь потом
     }
 
 
-    $codepage = 'windows-1251';
-    if ($l2['codepage']) {
-        $codepage = $l2['codepage'];
-    }
+    $codepage = 'utf-8';
     header('Content-Type: text/html; charset=' . $codepage);
 
 

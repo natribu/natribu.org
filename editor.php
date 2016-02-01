@@ -11,13 +11,6 @@ if (!file_exists('lang/' . $lang . '.php')) {
 }
 
 //--- поехали
-// Определение ЖЖ-истов
-$lju = base64_decode($_COOKIE["lju"]);
-if (!$lju && preg_match("/^http\:\/\/(.*?)\.livejournal\.com\/friends/", $_SERVER['HTTP_REFERER'], $matches)) {
-    $lju = $matches[1];
-    setcookie('lju', base64_encode($lju), time() + 86400 * 365, '/');
-}
-
 $name = str_replace('&amp;', '&', htmlspecialchars(trim($_POST['name'], ENT_QUOTES)));
 $prichina = str_replace('&amp;', '&', htmlspecialchars(trim($_POST['prichina'], ENT_QUOTES)));
 $delat = str_replace('&amp;', '&', htmlspecialchars(trim($_POST['delat'], ENT_QUOTES)));

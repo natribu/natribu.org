@@ -28,24 +28,6 @@ $count="<span id=counter>$count</span>";
 $kolnah = $_COOKIE["nah"]+1;
 setcookie("nah",$kolnah,time()+86400*365, "/", ".natribu.org", 0);
 
-// Определение ЖЖ-истов
-$lju = base64_decode($_COOKIE["lju"]);
-
-if (!$lju && ( (preg_match("/\Ahttp\:\/\/(.+?)\.livejournal\.com\/friends/", $_SERVER["HTTP_REFERER"], $m)) ||
-	(preg_match("/\Ahttp\:\/\/users\.livejournal\.com\/(.+?)\/friends/", $_SERVER["HTTP_REFERER"], $m)) ) ) {
-	$lju=$m[1];
-	setcookie("lju", base64_encode($lju), time()+86400*365, "/", ".natribu.org", 0);
-}
-
-
-/*
- if (!$lju && preg_match("/\Ahttp\:\/\/(.*?)\.livejournal\.com\/friends/", $_SERVER["HTTP_REFERER"], $matches)) {
- $lju=$matches[1];
- setcookie("lju", base64_encode($lju), time()+86400*365, "/", ".natribu.org", 0);
- }
- */
-
-
 // --- декодировать строку параметров:
 eregi("([^%]*)%([^%]*)%([^%]*)", base64_decode(str_replace("-","/",$_SERVER["QUERY_STRING"]))."%", $userdata);
 
@@ -88,18 +70,6 @@ if ($media) {
 echo "</td></tr></table>
 <center><table width=70%><td valign=center><div align=justify>
 <h1><center><p>".$head."<br><small>".$official_site.($userdata[1]?"<br><font size=+1 color=red><u>".$hello_you.$userdata[1]."</u></font>":"");
-
-if ($lju && ($userdata[1]=="")) {
-	echo "<br><font size=-1>".$lj_zdra." <img src=http://stat.livejournal.com/img/userinfo.gif style=\"vertical-align: center;\"><a href=http://".$lju.".livejournal.com>".$lju."</a>";
-	if ($kolnah > 1) {
-		echo " (".$kolnah.$lj_raz.")";
-	}
-	echo "</font>";
-	//if ($lju == "doctor-livsy") { echo "<br>делать вам нечего, доктор :)"; }
-	//$dnevlog = fopen("log/lj.txt","a+");
-	//fputs($dnevlog,"\n".$lju." ".$kolnah);
-	//fclose($dnevlog);
-}
 
 echo "<FORM><select name=lo onChange=\" {for (var i=0; i < this.length; i++){if (this.options[i].selected){top.window.location=this.options[i].value;break;} } }\">";
 
@@ -413,6 +383,6 @@ function poiskovik () {
 	if (ereg ("go.mail.ru/search", $u["host"].$u["path"])) {
     $s[0]=trim(urldecode($outr['q']." ".$outr['old_q']));
     $s[1]="Go.mail.ru";
-} 
+}
 return $s;
 }
