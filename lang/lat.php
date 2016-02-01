@@ -8,13 +8,13 @@ $password="basnpbHDS";
 
 
 $headpage="INPENEM - Publicius fitus symbolicii intentionis.";
-$epigraph="\"Gradus unus hominius est gradus magnus hominitati.\" &copy;N.Armstrong
-<br>\"Let my people go!\" &copy;L.Armstrong";
+$epigraph="\"Gradus unus hominius est gradus magnus hominitati.\" Â©N.Armstrong
+<br>\"Let my people go!\" Â©L.Armstrong";
 
 $media="lat.swf";
 
 $head="INPENEM";
-$official_site="Publicius fitus symbolicii intentionis.";
+$official_site="PubliciusÂ fitus symboliciiÂ intentionis.";
 $national_office="Ofis Latina";
 
 $oi_chto_eto="Ou, quid id est?!";
@@ -44,7 +44,7 @@ Cave falsum: ea pagina originis et sola est. Semper eam perficimus.
 Sci: per specisle interactivium instrumentum, quisgue casus, cum aliguis inpenem vadeat, in praetorio habitatione Oficialis intentionis circumsonat ex columnicolis tranguillum tristie susprium. Nos in directione casuum. Inpene te amat!";
 
 
-// êíîïêè
+// ÐºÐ½Ð¾Ð¿ÐºÐ¸
 
 $bottom_vernutsa="Redere pone";
 $bottom_vernut="Ut tu qui puer? Sis deninc etiam nemo redebat!
@@ -66,10 +66,10 @@ Nos provobis id facere non possumus - quia occidit effectus.
 ##
 Fortunam in amicitia!";
 
-// îñòàëüíîå
+// Ð¾ÑÑ‚Ð°Ð»ÑŒÐ½Ð¾Ðµ
 
-$about="A B O U T &nbsp; P R O J E C T";
-$perevod="&copy;translate:";
+$about="A B O U T Â  P R O J E C T";
+$perevod="Â©translate:";
 $perevodchik="Recuerdos Todos Los Suyos";
 
 
@@ -86,7 +86,5 @@ $post_button="";
 $post_alert="";
 $post_hidden="";
 
-$disclamer="In guestione nocentum. Elucidatio idiotis totalibus: ipsi nos nulluv hominem nusquam mittimus, mittunt ad nos. Necessitate est intelligere, ut citatam in representationem nostrum posit uti quilibet homo mundi, ad id ea et facta est. Sed periculum in nos non recipimus pro ejus actionibus et contumeliis, quibus is temptabat facere. Quasi tu prospicis, nos etiam ignoramus, quis et quem mittabat cum auxilio communicationis nostril. Nos simpliciter guadi sunt cujusque visitatori sicut carissimo hospiti. 
+$disclamer="In guestione nocentum. Elucidatio idiotis totalibus: ipsi nos nulluv hominem nusquam mittimus, mittunt ad nos. Necessitate est intelligere, ut citatam in representationem nostrum posit uti quilibet homo mundi, ad id ea et facta est. Sed periculum in nos non recipimus pro ejus actionibus et contumeliis, quibus is temptabat facere. Quasi tu prospicis, nos etiam ignoramus, quis et quem mittabat cum auxilio communicationis nostril. Nos simpliciter guadi sunt cujusque visitatori sicut carissimo hospiti.
 Ad questionem peregrini filialis. Sit u paratus est juvare in traducione oficislis representatione etiam-nun in aliqua peregrina lingua - humanum socium tibi gratum erit. Conjunge nobiscum, utiliens emailum auctoris proecti (homo sapiens prospiciet invenire emailum, autem stulto melius est temperare de traditionibus).";
-
-?>

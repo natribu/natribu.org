@@ -25,13 +25,13 @@ $media="";
 
 $head="ROTOP";
 
-$official_site="officiële site van sylbolische oprotten";
+$official_site="officiÐ»le site van sylbolische oprotten";
 
 $national_office="nederlandse bureau";
 
 $oi_chto_eto="Ai, wat is dat?";
 
-$zdes_raspolojeno="Hier is officiële agentschap van ROTOP op internet. Men stuurt hier";
+$zdes_raspolojeno="Hier is officiÐ»le agentschap van ROTOP op internet. Men stuurt hier";
 
 $chto_eto_znachit="Wat betekent het?";
 

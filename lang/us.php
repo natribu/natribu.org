@@ -1,77 +1,75 @@
 <?
 
-$changed="web";
+$changed = "web";
 
 
+$poisk = "";
 
+$codepage = "";
 
-$poisk="";
+$lj_user = "";
 
-$codepage="";
+$other = "Ð‘Ð¾Ð»ÐµÐµ Ñ€Ð°Ð·Ð³Ð¾Ð²Ð¾Ñ€Ð½Ñ‹Ð¹ Ð²Ð°Ñ€Ð¸Ð°Ð½Ñ‚... Ñ Ð¾Ð±Ð¸Ð»Ð¸ÐµÐ¼ Ð½ÐµÐ·Ð°ÐºÑ€Ñ‹Ñ‚Ð°Ñ… Ð½ÐµÑ†ÐµÐ½Ð·ÑƒÑ€Ð½Ñ‹Ñ… ÑÐ»Ð¾Ð² Ð¸ Ð²Ñ‹Ñ€Ð°Ð¶ÐµÐ½Ð¸Ð¹ Ð´Ð»Ñ Ð¿Ñ€Ð¸Ð´Ð°Ð½Ð¸Ñ ÑÐ¼Ð¾Ñ†Ð¸Ð¾Ð½Ð°Ð»ÑŒÐ½Ð¾Ð¹ Ð¾ÐºÑ€Ð°ÑÐºÐ¸.
+Ð´ÐµÐ»Ð°Ð¹ Ñ ÑÑ‚Ð¸Ð¼ Ñ‡Ñ‚Ð¾ Ñ…Ð¾Ñ‡ÐµÑˆÑŒ)
+upd Ð¿Ñ€Ð¾Ð±Ð»ÐµÐ¼Ñ‹ Ñ Ð°Ð¿Ð¾ÑÑ‚Ñ€Ð¾Ñ„Ð°Ð¼Ð¸
+Ñ„Ð¿Ñ€Ð¾Ñ‡ÐµÐ¼ Ñ Ð–Ð£Ð¢ÐšÐž Ð±Ð¾ÑÐ½ÑŽ Ð¼Ð½Ðµ ÐºÐ°Ð¶ÐµÑ‚ÑÑ)
+ÐµÑ‰Ñ‘ Ñ ÑÑ‡Ñ‘Ñ‚Ñ‡Ð¸ÐºÐ¾Ð¼ Ñ‚ÑƒÐ¿Ð»ÑŽ Ñ…Ð· Ñ‡Ñ‘ Ð´ÐµÐ»Ð°Ñ‚ÑŒ Ð¶)";
 
-$lj_user="";
+$email = "kejim.sr@gmail.com";
 
-$other="Áîëåå ðàçãîâîðíûé âàðèàíò... ñ îáèëèåì íåçàêðûòàõ íåöåíçóðíûõ ñëîâ è âûðàæåíèé äëÿ ïðèäàíèÿ ýìîöèîíàëüíîé îêðàñêè.
-äåëàé ñ ýòèì ÷òî õî÷åøü)
-upd ïðîáëåìû ñ àïîñòðîôàìè
-ôïðî÷åì ÿ ÆÓÒÊÎ áîÿíþ ìíå êàæåòñÿ)
-åù¸ ñ ñ÷¸ò÷èêîì òóïëþ õç ÷¸ äåëàòü æ)";
+$password = "chfkzyfdfc";
 
-$email="kejim.sr@gmail.com";
+$headpage = "U've been officially told to FUCK OFF, bya.";
 
-$password="chfkzyfdfc";
-
-$headpage="U\'ve been officially told to FUCK OFF, bya.";
-
-$epigraph="\"One small step for a man, one giant leap for mankind.\" ©N.Armstrong
+$epigraph = "\"One small step for a man, one giant leap for mankind.\" Â©N.Armstrong
 <br>
-\"Let my people go!\" ©L.Armstrong
+\"Let my people go!\" Â©L.Armstrong
 <br>
-This shit above is just to let ya nigga understand u\'ve made a great step towards someone\'s dick.";
+This shit above is just to let ya nigga understand u've made a great step towards someone's dick.";
 
-$media="";
+$media = "";
 
-$head="\"FUCK OFF\" site.";
+$head = "\"FUCK OFF\" site.";
 
-$official_site="place of thinkin\'bout ur fuckin actions";
+$official_site = "place of thinkin'bout ur fuckin actions";
 
-$national_office="United States Ghetto Office";
+$national_office = "United States Ghetto Office";
 
-$oi_chto_eto="What the...";
+$oi_chto_eto = "What the...";
 
-$zdes_raspolojeno="This is where real niggas officialy spend time fuckin around. Bitch-made-niggaz who were told to fuck off find the end of their long way here.";
+$zdes_raspolojeno = "This is where real niggas officialy spend time fuckin around. Bitch-made-niggaz who were told to fuck off find the end of their long way here.";
 
-$chto_eto_znachit="What the FUCK did you meah, uh?!!";
+$chto_eto_znachit = "What the FUCK did you meah, uh?!!";
 
-$vas_poslali="If you find yourself here, you were told to FUCK OFF. Ain\'t you retard realised it yet? Easy to see.";
+$vas_poslali = "If you find yourself here, you were told to FUCK OFF. Ain't you retard realised it yet? Easy to see.";
 
-$kak_eto_moglo="What was it? How the hell did i get here?";
+$kak_eto_moglo = "What was it? How the hell did i get here?";
 
-$vot_samye="Oh.. you really ARE a retard, sucka\'. BECAUSE OF:";
+$vot_samye = "Oh.. you really ARE a retard, sucka'. BECAUSE OF:";
 
-$prichiny="Beeing rude when a nigga asked you for something. Check if you have a nose broken, punk.
+$prichiny = "Beeing rude when a nigga asked you for something. Check if you have a nose broken, punk.
 You have told a nigga that he is wrong about something. Still dont have anything broken? Leg probably?
 A nigga took your stuff and refuses to give back. Strange, isnt it? You surely must have something broken. I know you do.
 A hoe told you to go fuck yourself, cuz she finds you retard.
 Everybody just tells you to fuck off cuz they all dont wanna mess up with you. Shit happens, scum.";
 
-$est_variant="There is also a chance that you were sent gere by a search engine. Then it\'s useless to explain you why - niggas will just shoot you on sight without explaining. Such scum shouldn\'t even have a chance to survive.";
+$est_variant = "There is also a chance that you were sent gere by a search engine. Then it's useless to explain you why - niggas will just shoot you on sight without explaining. Such scum shouldn't even have a chance to survive.";
 
-$chto_delat="So what the hell am I supposed to do now?";
+$chto_delat = "So what the hell am I supposed to do now?";
 
-$sovetuem="We dont give a fuck.";
+$sovetuem = "We dont give a fuck.";
 
-$sovety="";
+$sovety = "";
 
-$kak_mne_jit="How should i go on living with THIS?!!!";
+$kak_mne_jit = "How should i go on living with THIS?!!!";
 
-$zapomnite="You ain\'t first asshole who was told to fuck off.
-Since Jan 9, 2004 we have told to fuck off and shot down <ñêîëüêî-òî> motherfuckers.
-Copyright reserved - we\'re the first and the most reliable bitch-niggas\' ass-kickers.";
+$zapomnite = "You ain't first asshole who was told to fuck off.
+Since Jan 9, 2004 we have told to fuck off and shot down <ÑÐºÐ¾Ð»ÑŒÐºÐ¾-Ñ‚Ð¾> motherfuckers.
+Copyright reserved - we're the first and the most reliable bitch-niggas' ass-kickers.";
 
-$bottom_vernutsa="Get the fuck outta here";
+$bottom_vernutsa = "Get the fuck outta here";
 
-$bottom_vernut="What the fuck man? Noone escaped this place yet..
+$bottom_vernut = "What the fuck man? Noone escaped this place yet..
 ##
 No way.
 ##
@@ -81,73 +79,71 @@ Click-click
 ##
 BANG!!!!!11111";
 
-$bottom_izbrannoe="Remember this.";
+$bottom_izbrannoe = "Remember this.";
 
-$bottom_izbr="Ya\'ll remember this, punk!
+$bottom_izbr = "Ya'll remember this, punk!
 I assure you.";
 
-$bottom_start="Neva eva forget it.";
+$bottom_start = "Neva eva forget it.";
 
-$bottom_strt="Write it somewhere in your notebook.
+$bottom_strt = "Write it somewhere in your notebook.
 ##
 Looser.";
 
-$bottom_druga="Give a finger to a nigga";
+$bottom_druga = "Give a finger to a nigga";
 
-$bottom_drug="Go to your friend, sucker and tell him to fuck off yourself!
+$bottom_drug = "Go to your friend, sucker and tell him to fuck off yourself!
 ##
 Sucker, stop using this shit to do it - go and tell.";
 
-$about="About FUCKOFF";
+$about = "About FUCKOFF";
 
-$perevod="kejim";
+$perevod = "kejim";
 
-$perevodchik="";
+$perevodchik = "";
 
-$lj_zdra="";
+$lj_zdra = "";
 
-$lj_raz="";
+$lj_raz = "";
 
-$hello_you="";
+$hello_you = "";
 
-$hello_noprichina="";
+$hello_noprichina = "";
 
-$hello_nosovet="";
+$hello_nosovet = "";
 
-$otvetstvenno="";
+$otvetstvenno = "";
 
-$post="";
+$post = "";
 
-$post_="";
+$post_ = "";
 
-$postprivet="";
+$postprivet = "";
 
-$post_name="";
+$post_name = "";
 
-$post_mail="";
+$post_mail = "";
 
-$post_html="";
+$post_html = "";
 
-$post_ip="";
+$post_ip = "";
 
-$post_button="";
+$post_button = "";
 
-$post_alert="";
+$post_alert = "";
 
-$post_hidden="";
+$post_hidden = "";
 
-$disclamer="";
+$disclamer = "";
 
-$lleo="";
+$lleo = "";
 
-$lleo_url="";
+$lleo_url = "";
 
-$e_head="";
+$e_head = "";
 
-$e_text="";
+$e_text = "";
 
-$e_submit="";
+$e_submit = "";
 
-$e_comment="";
-
-?>
+$e_comment = "";

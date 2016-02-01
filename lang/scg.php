@@ -1,128 +1,124 @@
 <?
 
-$changed="web";
+$changed = "web";
 
 
+$poisk = "To za te dobra shkola!";
 
+$codepage = "";
 
-$poisk="To za te dobra shkola!";
+$lj_user = "";
 
-$codepage="";
+$other = "Pyshai kyrec - ÑÐ¾ÑÐ¸ Ñ…ÑƒÐ¹ (Ð³Ñ€ÑƒÐ±ÐµÐµ Ð½ÐµÐºÑƒÐ´Ð°)
+Pichka - Ð¿Ð¸Ð·Ð´Ð°
+Pizda materina - Ð¸ Ñ‚Ð°Ðº Ð¿Ð¾Ð½ÑÑ‚Ð½Ð¾";
 
-$lj_user="";
+$email = "diabolissimo@nard.ru";
 
-$other="Pyshai kyrec - ñîñè õóé (ãðóáåå íåêóäà)
-Pichka - ïèçäà
-Pizda materina - è òàê ïîíÿòíî";
+$password = "7777";
 
-$email="diabolissimo@nard.ru";
+$headpage = "Pyshai ovde";
 
-$password="7777";
+$epigraph = "";
 
-$headpage="Pyshai ovde";
+$media = "";
 
-$epigraph="";
+$head = "Pyshai kyrec";
 
-$media="";
+$official_site = "Ovde mogyche da popyshaesh dobro";
 
-$head="Pyshai kyrec";
+$national_office = "Kanceljaria za serbov";
 
-$official_site="Ovde mogyche da popyshaesh dobro";
+$oi_chto_eto = "Shta to?";
 
-$national_office="Kanceljaria za serbov";
+$zdes_raspolojeno = "Ovde e oficialno mogyche idesh da pyshash!";
 
-$oi_chto_eto="Shta to?";
+$chto_eto_znachit = "Shta e to?";
 
-$zdes_raspolojeno="Ovde e oficialno mogyche idesh da pyshash!";
+$vas_poslali = "Neko da kazal vam pyshati kyrec, za to vi ste ovde!";
 
-$chto_eto_znachit="Shta e to?";
+$kak_eto_moglo = "Kako to mogyche da Ð¸Ð½Ð²Ñƒ so mnom?";
 
-$vas_poslali="Neko da kazal vam pyshati kyrec, za to vi ste ovde!";
+$vot_samye = "Ovde Ñƒ sve za to!";
 
-$kak_eto_moglo="Kako to mogyche da èíâó so mnom?";
+$prichiny = "Vi ste perdo staro a mogyche i mnogo bole nego samo to!";
 
-$vot_samye="Ovde ó sve za to!";
+$est_variant = "Mogyche to byde ne tvoa greshka!";
 
-$prichiny="Vi ste perdo staro a mogyche i mnogo bole nego samo to!";
+$chto_delat = "Shta mogyche da yradim?";
 
-$est_variant="Mogyche to byde ne tvoa greshka!";
+$sovetuem = "To!";
 
-$chto_delat="Shta mogyche da yradim?";
+$sovety = "Promenise!";
 
-$sovetuem="To!";
+$kak_mne_jit = "Kako da zhivem?";
 
-$sovety="Promenise!";
+$zapomnite = "Ti ste ne pervi a mogyche i pervi serb ovde!";
 
-$kak_mne_jit="Kako da zhivem?";
+$bottom_vernutsa = "";
 
-$zapomnite="Ti ste ne pervi a mogyche i pervi serb ovde!";
+$bottom_vernut = "";
 
-$bottom_vernutsa="";
+$bottom_izbrannoe = "";
 
-$bottom_vernut="";
+$bottom_izbr = "";
 
-$bottom_izbrannoe="";
+$bottom_start = "";
 
-$bottom_izbr="";
+$bottom_strt = "";
 
-$bottom_start="";
+$bottom_druga = "";
 
-$bottom_strt="";
+$bottom_drug = "";
 
-$bottom_druga="";
+$about = "";
 
-$bottom_drug="";
+$perevod = "Diabolissimo";
 
-$about="";
+$perevodchik = "<a href=http://diabolissimo.narod.ru>Diabolissimo</a>";
 
-$perevod="Diabolissimo";
+$lj_zdra = "";
 
-$perevodchik="<a href=http://diabolissimo.narod.ru>Diabolissimo</a>";
+$lj_raz = "";
 
-$lj_zdra="";
+$hello_you = "";
 
-$lj_raz="";
+$hello_noprichina = "";
 
-$hello_you="";
+$hello_nosovet = "";
 
-$hello_noprichina="";
+$otvetstvenno = "";
 
-$hello_nosovet="";
+$post = "";
 
-$otvetstvenno="";
+$post_ = "";
 
-$post="";
+$postprivet = "";
 
-$post_="";
+$post_name = "";
 
-$postprivet="";
+$post_mail = "";
 
-$post_name="";
+$post_html = "";
 
-$post_mail="";
+$post_ip = "";
 
-$post_html="";
+$post_button = "";
 
-$post_ip="";
+$post_alert = "";
 
-$post_button="";
+$post_hidden = "";
 
-$post_alert="";
+$disclamer = "";
 
-$post_hidden="";
+$lleo = "";
 
-$disclamer="";
+$lleo_url = "";
 
-$lleo="";
+$e_head = "";
 
-$lleo_url="";
+$e_text = "";
 
-$e_head="";
+$e_submit = "";
 
-$e_text="";
-
-$e_submit="";
-
-$e_comment="";
-
-?>
+$e_comment = "";

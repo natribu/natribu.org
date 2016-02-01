@@ -1,89 +1,87 @@
 <?
 
-$password="baERsnbHDS";
+$password = "baERsnbHDS";
 
 //$charset="windows-1251"
 
-// Sanjar _CNN_ <cnnsanj@mail.ru> Û¡Œƒ÷¡“
+// Sanjar _CNN_ <cnnsanj@mail.ru> —É–ë–û–î–¶–ë–¢
 
-$headpage="Odamlarni yuborishning rasmiy sahifasi.";
-$epigraph="\"Yagona shaxsning bir qadami, butun insoniyatning buyuk sakrashi\" &copy;N.Armstrong<br>\"Let my people go!\" &copy;L.Armstrong";
+$headpage = "Odamlarni yuborishning rasmiy sahifasi.";
+$epigraph = "\"Yagona shaxsning bir qadami, butun insoniyatning buyuk sakrashi\" ¬©N.Armstrong<br>\"Let my people go!\" ¬©L.Armstrong";
 
-$media="";
+$media = "";
 
-$head="Õ¿’”…";
-$official_site="Odamlarni yuborishning rasmiy sahifasi.";
-$national_office="O'zbek ofisi";
+$head = "–ù–ê–•–£–ô";
+$official_site = "Odamlarni yuborishning rasmiy sahifasi.";
+$national_office = "O'zbek ofisi";
 
-$oi_chto_eto="Voy! Qayerga kelib qoldim?!";
-$zdes_raspolojeno="Bu yerda Õ‡ıÛÈ (Qo'toq)ning rasmiy ofisi joylashgan. Odatda bu yerga yuborishadi.";
+$oi_chto_eto = "Voy! Qayerga kelib qoldim?!";
+$zdes_raspolojeno = "Bu yerda –ù–∞—Ö—É–π (Qo'toq)ning rasmiy ofisi joylashgan. Odatda bu yerga yuborishadi.";
 
-$chto_eto_znachit="Bu nima degani?";
-$vas_poslali="Agar siz bu sahifaga kelib qolgan b'lsangiz, bu faqat bir narsani anglatadi: sizni Õ‡ıÛÈ ga (Qo'toqqa) yuborishdi, aniqrog'i sizga: \"œÓ¯ÂÎ Ì‡ıÛÈ\" deyishdi. Qo'pol bo'lsada, juda chiroyli: bu saytni adresi orqali.";
+$chto_eto_znachit = "Bu nima degani?";
+$vas_poslali = "Agar siz bu sahifaga kelib qolgan b'lsangiz, bu faqat bir narsani anglatadi: sizni –ù–∞—Ö—É–π ga (Qo'toqqa) yuborishdi, aniqrog'i sizga: \"–ü–æ—à–µ–ª –Ω–∞—Ö—É–π\" deyishdi. Qo'pol bo'lsada, juda chiroyli: bu saytni adresi orqali.";
 
-$kak_eto_moglo="Bu hol qanday yuz berishi mumkin edi?";
-$vot_samye="Buning asosiy sabablari:";
-$prichiny="Siz suhbatdoshingizni jinnicha savollar, iltimoslar va maslahatlar  bilan joniga tegdingiz.
+$kak_eto_moglo = "Bu hol qanday yuz berishi mumkin edi?";
+$vot_samye = "Buning asosiy sabablari:";
+$prichiny = "Siz suhbatdoshingizni jinnicha savollar, iltimoslar va maslahatlar  bilan joniga tegdingiz.
 Siz suhbatdoshingizni qo'pol gap bilan hafa qildingiz: uni diniy, siyosiy, musiqiy qarashlarini qo'pol ravishda haqoratladiz, yoki boshqa usullar bilan o'sha shaxsning ichki duniosini qoraladingiz va u qadrlaydigan narsani yerga urdingiz.
 Sizga qarzni qaytarmaslik, oylikni bermaslik va jinsiy aloqa (sex)ni rad etish to'g'risida shu ravishda habar berishdi.
 Shu odam shunchaki siz bilan gaplashgisi kelmayapti. Bunaqasi ham bolib turadi.";
-$est_variant="Bundan tashqari siz bilmasdan (behosdan) bu saytga kelib qolgan bolishingiz mumkin, masalan internetda qidiryapganda. Ammo, baribir siz o'zingizni hayotingiz haqida oylab ko'ring, ahir sizga hatto internet ham \"œÓ¯ÂÎ Ì‡ıÛÈ\" deyapti.";
+$est_variant = "Bundan tashqari siz bilmasdan (behosdan) bu saytga kelib qolgan bolishingiz mumkin, masalan internetda qidiryapganda. Ammo, baribir siz o'zingizni hayotingiz haqida oylab ko'ring, ahir sizga hatto internet ham \"–ü–æ—à–µ–ª –Ω–∞—Ö—É–π\" deyapti.";
 
-$chto_delat="Endi nima qilay?";
-$sovetuem="Maslahatlar:";
-$sovety="Bu inson haqida o'z fikringizni boshqatdan oylab ko'ring. 
+$chto_delat = "Endi nima qilay?";
+$sovetuem = "Maslahatlar:";
+$sovety = "Bu inson haqida o'z fikringizni boshqatdan oylab ko'ring.
 Bu kishidan jiddiy arazlang.
 Saytni saqlab qo'ying va keyingi gal siz ham yoqmagan odamizga yuboring.";
 
-$kak_mne_jit="Men endi qanday yashayman???!!!";
-$zapomnite="Esda tuting: Siz bu yerga yuborilganlardan birinchisi emassiz. Bu sahifa 2005 yilning 3 martda ochilgan va bu yerda uje $count ta odam bo'lgan.
+$kak_mne_jit = "Men endi qanday yashayman???!!!";
+$zapomnite = "Esda tuting: Siz bu yerga yuborilganlardan birinchisi emassiz. Bu sahifa 2005 yilning 3 martda ochilgan va bu yerda uje $count ta odam bo'lgan.
 Yolg'on saytlardan ehtiot boling, bizning sayt internetda yagona va biz har doim yangilanib turamiz.
-Shuni bilingki: Har gal kimnidir qo'toqqa (Õ‡ıÛÈga) yuborilganda, qo'toqning Rasmiy markazda past ovozli ho'rsinish yuz beradi. Biz sizning barcha qiliqlaringiz haqida habardormiz. Õ‡ıÛÈ (Qo'toq) sizni sevadi!!!";
+Shuni bilingki: Har gal kimnidir qo'toqqa (–ù–∞—Ö—É–πga) yuborilganda, qo'toqning Rasmiy markazda past ovozli ho'rsinish yuz beradi. Biz sizning barcha qiliqlaringiz haqida habardormiz. –ù–∞—Ö—É–π (Qo'toq) sizni sevadi!!!";
 
 
-// ÍÌÓÔÍË
+// –∫–Ω–æ–ø–∫–∏
 
-$bottom_vernutsa="Ortga qaytish";
-$bottom_vernut="Nega yosh bolaga o\'hshaysiz?
+$bottom_vernutsa = "Ortga qaytish";
+$bottom_vernut = "Nega yosh bolaga o'hshaysiz?
 Bu erdan hali hechkim qaytmagan.
 ##
 Kechirasiz.";
 
-$bottom_izbrannoe="Tanlanganlar ichiga kiritish"; //Tanlangan sahifalarga qo'shish
-$bottom_izbr="Tabriklaymiz! Endi siz ham tanlanganlar safidasiz!";
+$bottom_izbrannoe = "Tanlanganlar ichiga kiritish"; //Tanlangan sahifalarga qo'shish
+$bottom_izbr = "Tabriklaymiz! Endi siz ham tanlanganlar safidasiz!";
 
-$bottom_start="Bu sahifani bosh sahifaga o'tqazish"; //Saytni bosh bosh sahifaga qo'shish
-$bottom_strt="Bu bilan siz o\'zingizni kayfiyatingizni buzmaysizmi?
+$bottom_start = "Bu sahifani bosh sahifaga o'tqazish"; //Saytni bosh bosh sahifaga qo'shish
+$bottom_strt = "Bu bilan siz o'zingizni kayfiyatingizni buzmaysizmi?
 ##
-Internet Explorerning Ì‡ÒÚÓÈÍË menusiga kirib buni o\'ziz qiling.
+Internet Explorerning –Ω–∞—Å—Ç—Ä–æ–π–∫–∏ menusiga kirib buni o'ziz qiling.
 Hech kim siz uchun bu ishni bajarmaydi.";
 
-$bottom_druga="Do'stimni ham shu erga yuboray"; //Do'stimni ham shu erga yuboray
-$bottom_drug="Do\'stingizni yuborish uchun unga ushbu sahifaning
+$bottom_druga = "Do'stimni ham shu erga yuboray"; //Do'stimni ham shu erga yuboray
+$bottom_drug = "Do'stingizni yuborish uchun unga ushbu sahifaning
 adresini e-mail yoki ICQ orqali yuboring.
-Agar biz sizning o\'rningizga buni qilsak ta\'siri bo\'lmaydi.
+Agar biz sizning o'rningizga buni qilsak ta'siri bo'lmaydi.
 ##
-Do\'stligingizga omad!";
+Do'stligingizga omad!";
 
-//Ó·ËıÍga hat yozay! - (Ó¡–…”¡‘ÿ –…”ÿÕœ Ó¡»’ )		
+//–æ–±–∏—Ö–∫ga hat yozay! - (–æ–ë–†–ô–£–ë–§–® –†–ô–£–®–ù–ü –æ–ë–ò–•–ö)
 
-// ÓÒÚ‡Î¸ÌÓÂ
+// –æ—Å—Ç–∞–ª—å–Ω–æ–µ
 
-$about="A B O U T &nbsp; P R O J E C T";
-$perevod="&copy;translate by:";
-$perevodchik="CNN";
+$about = "A B O U T ¬† P R O J E C T";
+$perevod = "¬©translate by:";
+$perevodchik = "CNN";
 
 // post.shtml
 
-$post="";
-$post_="";
-$postprivet="";
-$post_name="";
-$post_mail="";
-$post_html="";
-$post_ip="";
-$post_button="";
-$post_alert="";
-$post_hidden="";
-
-?>
+$post = "";
+$post_ = "";
+$postprivet = "";
+$post_name = "";
+$post_mail = "";
+$post_html = "";
+$post_ip = "";
+$post_button = "";
+$post_alert = "";
+$post_hidden = "";

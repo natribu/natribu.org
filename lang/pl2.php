@@ -5,7 +5,7 @@ $changed="web";
 
 
 
-$poisk="B&#281;dzie ci nauka, po co szuka&#263; za pomoc&#261; <b>poiskovik</b> r&#243;&#380;ne g&#322;upoty typu <b><u>\"text\"</u></b>.";
+$poisk="Będzie ci nauka, po co szukać za pomocą <b>poiskovik</b> różne głupoty typu <b><u>\"text\"</u></b>.";
 
 $codepage="";
 
@@ -19,78 +19,78 @@ $password="123";
 
 $headpage="WCHUJ TUTAJ";
 
-$epigraph="\"To ma&#322;y krok dla cz&#322;owieka, ale du&#380;y post&#281;p dla ludzko&#347;ci.\" &copy;N.Armstrong<br>\"Let my people go!\" &copy;L.Armstrong";
+$epigraph="\"To mały krok dla człowieka, ale duży postęp dla ludzkości.\" ©N.Armstrong<br>\"Let my people go!\" ©L.Armstrong";
 
 $media="";
 
 $head="WCHUJ";
 
-$official_site="oficjalna strona symbolicznego odsy&#322;ania";
+$official_site="oficjalna strona symbolicznego odsyłania";
 
 $national_office="biuro polskie";
 
 $oi_chto_eto="Cholera jasna, co to jest?!";
 
-$zdes_raspolojeno="To jest oficjalne internetowe przedstawicielstwo WCHUJ. Tu sie odsy&#322;a.";
+$zdes_raspolojeno="To jest oficjalne internetowe przedstawicielstwo WCHUJ. Tu sie odsyła.";
 
 $chto_eto_znachit="Ale co to znaczy?!";
 
-$vas_poslali="Je&#347;li znalaz&#322;e&#347; si&#281; na tej stronie, to znaczy tylko jedno: zosta&#322;e&#347; pos&#322;any wchuj. Brutalnie, ale elegancko - poprzez danie tego linku.";
+$vas_poslali="Jeśli znalazłeś się na tej stronie, to znaczy tylko jedno: zostałeś posłany wchuj. Brutalnie, ale elegancko - poprzez danie tego linku.";
 
-$kak_eto_moglo="Jak co&#347; takiego mog&#322;o si&#281; zdarzy&#263; ze mn&#261;?!";
+$kak_eto_moglo="Jak coś takiego mogło się zdarzyć ze mną?!";
 
-$vot_samye="O to s&#261; najcz&#281;&#347;ciej spotykane przyczyny:";
+$vot_samye="O to są najczęściej spotykane przyczyny:";
 
-$prichiny="Zm&#281;czy&#322;e&#347;  g&#322;upimi pytaniami, pro&#347;bami czy radami.
-Obrazi&#322;e&#347; partnera po konwersacji nieostro&#380;n&#261; wypowiedzi&#261; o jego: religijnych, politycznych, muzycznych pogl&#261;dach czy gustach, czy te&#380; w inny spos&#243;b wkroczy&#322;e&#347; do jego prywatnego &#347;wiatu i podda&#322;e&#347; krytyce to, co ma najdro&#380;sze.
-Dano ci zna&#263;, &#380;e nie zwr&#243;c&#261; d&#322;ugu, nie zap&#322;ac&#261; za wykonan&#261; prac&#281;, odrzuc&#261; propozycj&#281; stosunku p&#322;ciowego.
-Z tob&#261; nie chc&#261; rozmawia&#263;. To te&#380; si&#281; zdarza.";
+$prichiny="Zmęczyłeś  głupimi pytaniami, prośbami czy radami.
+Obraziłeś partnera po konwersacji nieostrożną wypowiedzią o jego: religijnych, politycznych, muzycznych poglądach czy gustach, czy też w inny sposób wkroczyłeś do jego prywatnego światu i poddałeś krytyce to, co ma najdroższe.
+Dano ci znać, że nie zwrócą długu, nie zapłacą za wykonaną pracę, odrzucą propozycję stosunku płciowego.
+Z tobą nie chcą rozmawiać. To też się zdarza.";
 
-$est_variant="Z ca&#322;&#261; pewno&#347;ci&#261; istnieje te&#380; mo&#380;liwo&#347;&#263;, &#380;e trafi&#322;e&#347; na t&#281; stron&#281; przypadkowo, znalaz&#322;e&#347; j&#261; na przyk&#322;ad w wyszukiwarce. =POISK= Zastan&#243;w si&#281;, by&#263; mo&#380;e musisz zmieni&#263; swoje pogl&#261;dy na &#380;ycie, skoro nawet wyszukiwarki proponuj&#261; tobie p&#243;j&#347;&#263; wchuj?";
+$est_variant="Z całą pewnością istnieje też możliwość, że trafiłeś na tę stronę przypadkowo, znalazłeś ją na przykład w wyszukiwarce. =POISK= Zastanów się, być może musisz zmienić swoje poglądy na życie, skoro nawet wyszukiwarki proponują tobie pójść wchuj?";
 
-$chto_delat="Co teraz mam zrobi&#263;?!";
+$chto_delat="Co teraz mam zrobić?!";
 
 $sovetuem="Masz do wyboru kilka opcji:";
 
-$sovety="Zmieni&#263; sw&#243;j pogl&#261;d o tym cz&#322;owieku.
-Powa&#380;nie obrazi&#263; si&#281; na niego.
-Doda&#263; t&#261; stron&#281; do ulubionych i nast&#281;pnym razem wys&#322;a&#263; jego wchuj.";
+$sovety="Zmienić swój pogląd o tym człowieku.
+Poważnie obrazić się na niego.
+Dodać tą stronę do ulubionych i następnym razem wysłać jego wchuj.";
 
-$kak_mne_jit="Jak teraz mam &#380;y&#263;?";
+$kak_mne_jit="Jak teraz mam żyć?";
 
-$zapomnite="Zapami&#281;taj: nie jeste&#347; pierwszym wys&#322;anym wchuj i nie b&#281;dziesz ostatnim. Ta strona zosta&#322;a otwarta 9 stycznia 2004 roku, i wchuj dot&#261;d skierowano ju&#380; $count ludzi.
-Uwaga fa&#322;szerstwa: ta strona jest pierwotna i jedyna. Ci&#261;gle j&#261; doskonalimy.
-Pami&#281;taj: dzi&#281;ki specjalnemu interaktywnemu urz&#261;dzeniu, ka&#380;dy raz po przej&#347;ciu kogo&#347; wchuj, w kwaterze g&#322;&#243;wnej Skierowania oficjalnego z g&#322;o&#347;nik&#243;w mo&#380;na us&#322;ysze&#263; ciche i smutne westchni&#281;cie. Wiemy o twoich w&#281;dr&#243;wkach. Wchuj cie lubi!";
+$zapomnite="Zapamiętaj: nie jesteś pierwszym wysłanym wchuj i nie będziesz ostatnim. Ta strona została otwarta 9 stycznia 2004 roku, i wchuj dotąd skierowano już $count ludzi.
+Uwaga fałszerstwa: ta strona jest pierwotna i jedyna. Ciągle ją doskonalimy.
+Pamiętaj: dzięki specjalnemu interaktywnemu urządzeniu, każdy raz po przejściu kogoś wchuj, w kwaterze głównej Skierowania oficjalnego z głośników można usłyszeć ciche i smutne westchnięcie. Wiemy o twoich wędrówkach. Wchuj cie lubi!";
 
 $bottom_vernutsa="Wstecz";
 
 $bottom_vernut="No to co, jak dziecko prawie!
-St&#261;d jeszcze nikt nie powraca&#322;.
+Stąd jeszcze nikt nie powracał.
 ##
 Przepraszam.";
 
-$bottom_izbrannoe="Doda&#263; do ulubionych";
+$bottom_izbrannoe="Dodać do ulubionych";
 
-$bottom_izbr="Witamy! Jeste&#347; wybrany!";
+$bottom_izbr="Witamy! Jesteś wybrany!";
 
-$bottom_start="Zrobi&#263; startow&#261;";
+$bottom_start="Zrobić startową";
 
-$bottom_strt="Nie boisz si&#281; ryzyka popsu&#263; sobie humor i samoocen&#281;?
+$bottom_strt="Nie boisz się ryzyka popsuć sobie humor i samoocenę?
 ##
-W menu \'Ustawienia przegl&#261;darki\'
-i zr&#243;b stron&#281; startow&#261;.
+W menu \'Ustawienia przeglądarki\'
+i zrób stronę startową.
 Nikt tego nie zrobi za ciebie!";
 
-$bottom_druga="Skierowa&#263; przyjaciela";
+$bottom_druga="Skierować przyjaciela";
 
-$bottom_drug="Aby skierowa&#263; przyjaciela, przeka&#380; mu ten link za pomoc&#261; poczty elektronicznej lub komunikatora (gg, Skype, gtalk...)
-Nie mo&#380;emy zrobi&#263; tego za ciebie - nie ten sam wynik.
+$bottom_drug="Aby skierować przyjaciela, przekaż mu ten link za pomocą poczty elektronicznej lub komunikatora (gg, Skype, gtalk...)
+Nie możemy zrobić tego za ciebie - nie ten sam wynik.
 ##
-Powodzenia w przyja&#378;ni!";
+Powodzenia w przyjaźni!";
 
-$about="o &nbsp; p r o j e k c i e &nbsp; W C H U J";
+$about="o   p r o j e k c i e   W C H U J";
 
-$perevod="&copy; anonymousI from linux.org.ru";
+$perevod="© anonymousI from linux.org.ru";
 
 $perevodchik="<a href=http://www.linux.org.ru/profile/anonymousI/whois.jsp?nick=anonymousI>anonymousI</a>";
 
@@ -102,30 +102,30 @@ $hello_you="wita was,";
 
 $hello_noprichina="Ale w twoim przypadku przyczyna jest prosta:";
 
-$hello_nosovet="Ale g&#322;&#243;wna rada na przysz&#322;o&#347;&#263;:";
+$hello_nosovet="Ale główna rada na przyszłość:";
 
-$otvetstvenno="<p><font size=-2>administracja wchuj nie ponosi odpowiedzialno&#347;ci za tre&#347;ci zawarte w czerwonych podkre&#347;lonych linijkach
-<br>sam mo&#380;esz wymy&#347;li&#263; przy pomocy <a href=editor.php>wchuj-edytora</a></font>";
+$otvetstvenno="<p><font size=-2>administracja wchuj nie ponosi odpowiedzialności za treści zawarte w czerwonych podkreślonych linijkach
+<br>sam możesz wymyślić przy pomocy <a href=editor.php>wchuj-edytora</a></font>";
 
-$post="n a p i s a &#263;    w i a d o m o &#347; &#263;    WCHUJ";
+$post="n a p i s a ć    w i a d o m o ś ć    WCHUJ";
 
-$post_="Napisa&#263; wiadomo&#347;&#263; WCHUJ";
+$post_="Napisać wiadomość WCHUJ";
 
-$postprivet="Witaj, numer count! Napisz swoj&#261; wiadomo&#347;&#263; WCHUJ:";
+$postprivet="Witaj, numer count! Napisz swoją wiadomość WCHUJ:";
 
-$post_name="Imi&#281;:";
+$post_name="Imię:";
 
 $post_mail="Mail (URL):";
 
-$post_html="w&#322;&#261;czy&#263; html i php";
+$post_html="włączyć html i php";
 
-$post_ip="ukry&#263; IP";
+$post_ip="ukryć IP";
 
 $post_button="GOTOWE";
 
-$post_alert="Dzi&#281;kujemy za napisanie wiadomo&#347;ci WCHUJ!";
+$post_alert="Dziękujemy za napisanie wiadomości WCHUJ!";
 
-$post_hidden="tak, to wchujwy&#322;apywacz dla wiadomo&#347;ci debil&#243;w";
+$post_hidden="tak, to wchujwyłapywacz dla wiadomości debilów";
 
 $disclamer="";
 
@@ -140,5 +140,3 @@ $e_text="";
 $e_submit="";
 
 $e_comment="";
-
-?>

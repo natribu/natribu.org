@@ -81,7 +81,7 @@ Uda4i v drujbe!";
 
 $about="";
 
-$perevod="&copy; Ïòûö";
+$perevod="Â© ÐŸÑ‚Ñ‹Ñ†";
 
 $perevodchik="";
 
@@ -130,5 +130,3 @@ $e_text="";
 $e_submit="Gotovo! Teper' nado najat' na etu pimpu i polu4it' kod ssilki.";
 
 $e_comment="";
-
-?>

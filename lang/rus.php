@@ -1,133 +1,129 @@
 <?
 
-$changed="web";
+$changed = "web";
 
 
+$poisk = "Budet vam urokom, nechego iskat' cherez <b>poiskovik</b> vsyakuyu eres' tipa <b><u>\"text\"</u></b>.";
 
+$codepage = "";
 
-$poisk="Budet vam urokom, nechego iskat\' cherez <b>poiskovik</b> vsyakuyu eres\' tipa <b><u>\"text\"</u></b>.";
+$lj_user = "";
 
-$codepage="";
+$other = "";
 
-$lj_user="";
+$email = "cheb@chebq.net";
 
-$other="";
+$password = "82518251";
 
-$email="cheb@chebq.net";
+$headpage = "NAHUY ZDES'";
 
-$password="82518251";
+$epigraph = "\"Malen'kiy shag dlya odnogo cheloveka - bol'shoy shag dlya vsego chelovechestva.\" ©N.Armstrong<br>\"Let my people go!\" ©L.Armstrong";
 
-$headpage="NAHUY ZDES\'";
+$media = "";
 
-$epigraph="\"Malen\'kiy shag dlya odnogo cheloveka - bol\'shoy shag dlya vsego chelovechestva.\" &copy;N.Armstrong<br>\"Let my people go!\" &copy;L.Armstrong";
+$head = "NAHUY";
 
-$media="";
+$official_site = "oficial'nyy sayt simvolicheskogo napravleniya";
 
-$head="NAHUY";
+$national_office = "russkiy ofis";
 
-$official_site="oficial\'nyy sayt simvolicheskogo napravleniya";
+$oi_chto_eto = "Oy, chto eto?!";
 
-$national_office="russkiy ofis";
+$zdes_raspolojeno = "Zdes' raspolojeno oficial'noe predstavitel'stvo NAHUY v internete. Syuda posylayut.";
 
-$oi_chto_eto="Oy, chto eto?!";
+$chto_eto_znachit = "Chto je eto znachit?!";
 
-$zdes_raspolojeno="Zdes\' raspolojeno oficial\'noe predstavitel\'stvo NAHUY v internete. Syuda posylayut.";
+$vas_poslali = "Esli vy okazalis' na etoy stranice, eto oznachaet tol'ko odno: vas poslali nahuy. Grubo, no elegantno: prislav etu ssylku.";
 
-$chto_eto_znachit="Chto je eto znachit?!";
+$kak_eto_moglo = "Kak je takoe moglo sluchit'sya so mnoy?!";
 
-$vas_poslali="Esli vy okazalis\' na etoy stranice, eto oznachaet tol\'ko odno: vas poslali nahuy. Grubo, no elegantno: prislav etu ssylku.";
+$vot_samye = "Vot samye rasprostranennye prichiny:";
 
-$kak_eto_moglo="Kak je takoe moglo sluchit\'sya so mnoy?!";
+$prichiny = "Vy utomili sobesednika glupymi voprosami, pros'bami ili sovetami.
+Vy obideli sobesednika neostorojnym vyskazyvaniem: zadeli ego religioznye, politicheskie, muzykal'nye i prochie vzglyady i vkusy, libo inym obrazom vtorglis' v ego vnutrenniy mir i podvergli kritike to, chem on dorojit.
+Vam namekayut o tom, chto ne vernut dolg, ne zaplatyat za rabotu, otkazyvayut v seksual'noy blizosti.
+S vami prosto ne hotyat obschat'sya. Takoe toje byvaet.";
 
-$vot_samye="Vot samye rasprostranennye prichiny:";
+$est_variant = "Est' konechno variant, chto vy popali na etu stranicu sluchayno, naydya ee, naprimer, v poiskovike. =POISK= Zadumaytes': byt' mojet, vam nado ser'ezno peresmotret' svoi vzglyady na jizn', esli daje poiskoviki stali po svoey iniciative predlagat' vam poyti nahuy?";
 
-$prichiny="Vy utomili sobesednika glupymi voprosami, pros\'bami ili sovetami.
-Vy obideli sobesednika neostorojnym vyskazyvaniem: zadeli ego religioznye, politicheskie, muzykal\'nye i prochie vzglyady i vkusy, libo inym obrazom vtorglis\' v ego vnutrenniy mir i podvergli kritike to, chem on dorojit.
-Vam namekayut o tom, chto ne vernut dolg, ne zaplatyat za rabotu, otkazyvayut v seksual\'noy blizosti.
-S vami prosto ne hotyat obschat\'sya. Takoe toje byvaet.";
+$chto_delat = "Chto je mne teper' delat'?!";
 
-$est_variant="Est\' konechno variant, chto vy popali na etu stranicu sluchayno, naydya ee, naprimer, v poiskovike. =POISK= Zadumaytes\': byt\' mojet, vam nado ser\'ezno peresmotret\' svoi vzglyady na jizn\', esli daje poiskoviki stali po svoey iniciative predlagat\' vam poyti nahuy?";
+$sovetuem = "Sovetuem:";
 
-$chto_delat="Chto je mne teper\' delat\'?!";
+$sovety = "Peresmotret' svoe otnoshenie k etomu cheloveku.
+Vser'ez na nego obidet'sya.
+Postavit' zakladku, i v sleduyuschiy raz poslat' ssylku tomu, kogo hotite poslat' nahuy vy.";
 
-$sovetuem="Sovetuem:";
+$kak_mne_jit = "Kak mne teper' jit'?!";
 
-$sovety="Peresmotret\' svoe otnoshenie k etomu cheloveku.
-Vser\'ez na nego obidet\'sya.
-Postavit\' zakladku, i v sleduyuschiy raz poslat\' ssylku tomu, kogo hotite poslat\' nahuy vy.";
+$zapomnite = "Zapomnite: vy ne pervyy, kogo poslali nahuy, i ne posledniy. Eta stranica byla otkryta 9 yanvarya 2004, i nahuy syuda poslali uje rovno count chelovek.
+Osteregaytes' poddelok: eta stranica iznachal'naya i edinstvennaya. My postoyanno sovershenstvuem ee.
+Znayte: blagodarya osobomu interaktivnomu ustroystvu, vsyakiy raz, kogda kto-nibud' idet nahuy, v shtab-kvartire Oficial'nogo napravleniya razdaetsya iz kolonok tihiy pechal'nyy vzdoh. My v kurse vashih pohojdeniy. Nahuy lyubit vas!";
 
-$kak_mne_jit="Kak mne teper\' jit\'?!";
+$bottom_vernutsa = "";
 
-$zapomnite="Zapomnite: vy ne pervyy, kogo poslali nahuy, i ne posledniy. Eta stranica byla otkryta 9 yanvarya 2004, i nahuy syuda poslali uje rovno count chelovek.
-Osteregaytes\' poddelok: eta stranica iznachal\'naya i edinstvennaya. My postoyanno sovershenstvuem ee.
-Znayte: blagodarya osobomu interaktivnomu ustroystvu, vsyakiy raz, kogda kto-nibud\' idet nahuy, v shtab-kvartire Oficial\'nogo napravleniya razdaetsya iz kolonok tihiy pechal\'nyy vzdoh. My v kurse vashih pohojdeniy. Nahuy lyubit vas!";
+$bottom_vernut = "";
 
-$bottom_vernutsa="";
+$bottom_izbrannoe = "";
 
-$bottom_vernut="";
+$bottom_izbr = "";
 
-$bottom_izbrannoe="";
+$bottom_start = "";
 
-$bottom_izbr="";
+$bottom_strt = "";
 
-$bottom_start="";
+$bottom_druga = "";
 
-$bottom_strt="";
+$bottom_drug = "";
 
-$bottom_druga="";
+$about = "";
 
-$bottom_drug="";
+$perevod = "© cheb";
 
-$about="";
+$perevodchik = "<a href=http://chebq.net>CHEBQ.NET</a>";
 
-$perevod="&copy; cheb";
+$lj_zdra = "";
 
-$perevodchik="<a href=http://chebq.net>CHEBQ.NET</a>";
+$lj_raz = "";
 
-$lj_zdra="";
+$hello_you = "";
 
-$lj_raz="";
+$hello_noprichina = "";
 
-$hello_you="";
+$hello_nosovet = "";
 
-$hello_noprichina="";
+$otvetstvenno = "";
 
-$hello_nosovet="";
+$post = "";
 
-$otvetstvenno="";
+$post_ = "";
 
-$post="";
+$postprivet = "";
 
-$post_="";
+$post_name = "";
 
-$postprivet="";
+$post_mail = "";
 
-$post_name="";
+$post_html = "";
 
-$post_mail="";
+$post_ip = "";
 
-$post_html="";
+$post_button = "";
 
-$post_ip="";
+$post_alert = "";
 
-$post_button="";
+$post_hidden = "";
 
-$post_alert="";
+$disclamer = "";
 
-$post_hidden="";
+$lleo = "";
 
-$disclamer="";
+$lleo_url = "";
 
-$lleo="";
+$e_head = "";
 
-$lleo_url="";
+$e_text = "";
 
-$e_head="";
+$e_submit = "";
 
-$e_text="";
-
-$e_submit="";
-
-$e_comment="";
-
-?>
+$e_comment = "";

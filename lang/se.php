@@ -1,145 +1,141 @@
 <?
 
-$changed="web";
+$changed = "web";
 
 
+$poisk = "";
 
+$codepage = "";
 
-$poisk="";
+$lj_user = "";
 
-$codepage="";
+$other = "ÐŸÑ€ÐµÐ²ÐµÐ´! Ð ÐµÑˆÐ¸Ð» Ð¿Ð¾ÑÐ¿Ð¾ÑÐ¾Ð±ÑÑ‚Ð²Ð¾Ð²Ð°Ñ‚ÑŒ Ñ€Ð°Ð·Ð²Ð¸Ñ‚Ð¸ÑŽ ÐÐÐ¥Ð£Ð™. Ð£ Ð²Ð°Ñ Ð±Ð¾Ð»ÑŒÑˆÐ¾Ðµ Ð±ÑƒÐ´ÑƒÑ‰ÐµÐµ) Ð§ÐµÐ¼ Ð¼Ð¾Ð³Ñƒ. ÐŸÐµÑ€ÐµÐ²Ð¾Ð¶Ñƒ Ð½Ð° ÑˆÐ²ÐµÐ´ÑÐºÐ¸Ð¹!
+ÐšÑÑ‚Ð°Ñ‚Ð¸, Ð¼ÑÐ¸Ð» Ñƒ Ð¼ÐµÐ½Ñ Ð´ÐµÐ¹ÑÑ‚Ð²Ð¸Ñ‚ÐµÐ»ÑŒÐ½Ð¾ Ñ‚Ð°ÐºÐ¾Ð¹, ÑÑ‚Ð¾ Ð½Ðµ Ð¾Ñ‚Ð¼Ð°Ð·ÐºÐ°, Ñ‡Ñ‚Ð¾Ð± Ð²Ñ‹ Ð¼Ð½Ðµ Ñ‚ÑƒÐ´Ð° Ð½Ð¸Ñ‡ÐµÐ³Ð¾ Ð½Ðµ Ð½Ð°Ð¿Ð¸ÑÐ°Ð»Ð¸))
+Ð—Ð°Ð±Ð°Ð²Ð½Ð¾, Ñƒ ÑˆÐ²ÐµÐ´Ð¾Ð² Ð±Ð¾Ð»ÑŒÑˆÐ¸Ð½ÑÑ‚Ð²Ð¾ Ñ€ÑƒÐ³Ð°Ñ‚ÐµÐ»ÑŒÑÑ‚Ð² Ð¾ÑÐ½Ð¾Ð²Ð°Ð½Ð¾ Ð½Ð° Ñ€ÐµÐ»Ð¸Ð³Ð¸Ð¾Ð·Ð½Ð¾Ð¹ Ñ‚ÐµÐ¼Ðµ. ÐÐ°Ñ…ÑƒÐ¹ Ð¾Ð½Ð¸ Ð¿Ð¾ÑÑ‹Ð»Ð°ÑŽÑ‚ Ð²Ñ‹Ñ€Ð°Ð¶ÐµÐ½Ð¸ÐµÐ¼ \"Ð˜Ð´Ð¸ Ð² ÐÐ´!\" Ð¡Ð¾Ð¾Ñ‚Ð²ÐµÑ‚ÑÑ‚Ð²ÐµÐ½Ð½Ð¾, \"Dra Ã¥t helvetÐµ!\" Ð§Ð¸Ñ‚Ð°ÐµÑ‚ÑÑ [Ð´Ñ€Ð° Ð¾Ñ‚ Ñ…ÐµÐ»ÑŒÐ²ÐµÑ‚Ðµ].";
 
-$lj_user="";
+$email = "hujhuj@rambler.ru";
 
-$other="Ïðåâåä! Ðåøèë ïîñïîñîáñòâîâàòü ðàçâèòèþ ÍÀÕÓÉ. Ó âàñ áîëüøîå áóäóùåå) ×åì ìîãó. Ïåðåâîæó íà øâåäñêèé!
-Êñòàòè, ìýèë ó ìåíÿ äåéñòâèòåëüíî òàêîé, ýòî íå îòìàçêà, ÷òîá âû ìíå òóäà íè÷åãî íå íàïèñàëè))
-Çàáàâíî, ó øâåäîâ áîëüøèíñòâî ðóãàòåëüñòâ îñíîâàíî íà ðåëèãèîçíîé òåìå. Íàõóé îíè ïîñûëàþò âûðàæåíèåì \"Èäè â Àä!\" Ñîîòâåòñòâåííî, \"Dra &#229;t helvetå!\" ×èòàåòñÿ [äðà îò õåëüâåòå].";
+$password = "uelsyj";
 
-$email="hujhuj@rambler.ru";
+$headpage = "HELVETE Ã¤r hÃ¤r";
 
-$password="uelsyj";
+$epigraph = "\"En liten steg fÃ¶r en man - en store hoppar fÃ¶r mÃ¤nskligheten.\"
+Â©N.Armstrong<br>\"Let my people go!\" Â©L.Armstrong";
 
-$headpage="HELVETE &#228;r h&#228;r";
+$media = "";
 
-$epigraph="\"En liten steg f&#246;r en man - en store hoppar f&#246;r m&#228;nskligheten.\"
-&copy;N.Armstrong<br>\"Let my people go!\" &copy;L.Armstrong";
+$head = "DRA Ã…T HELVETE";
 
-$media="";
+$official_site = "Den officiella webbplatsen av en symbolisk riktning";
 
-$head="DRA &#197;T HELVETE";
+$national_office = "Svenskt kontor";
 
-$official_site="Den officiella webbplatsen av en symbolisk riktning";
+$oi_chto_eto = "Oh vad Ã¤r den?!";
 
-$national_office="Svenskt kontor";
+$zdes_raspolojeno = "HÃ¤r lokaliseras den officiella framstÃ¤llningen av HELVETET pÃ¥ interneten. HÃ¤r riktas folket.";
 
-$oi_chto_eto="Oh vad &#228;r den?!";
+$chto_eto_znachit = "Vad den betyder?!";
 
-$zdes_raspolojeno="H&#228;r lokaliseras den officiella framst&#228;llningen av HELVETET p&#229; interneten. H&#228;r riktas folket.";
+$vas_poslali = "Om du har synas pÃ¥ denna sida, den hjÃ¤lpmedel endast ett: du riktades till helvetet. Den var ohyfsad, men elegant: efter att ha Ã¶verfÃ¶rt detta lÃ¤nk.";
 
-$chto_eto_znachit="Vad den betyder?!";
+$kak_eto_moglo = "Hur den kunde hÃ¤nda med mig?!";
 
-$vas_poslali="Om du har synas p&#229; denna sida, den hj&#228;lpmedel endast ett: du riktades till helvetet. Den var ohyfsad, men elegant: efter att ha &#246;verf&#246;rt detta l&#228;nk.";
+$vot_samye = "Det finns det mest utbredd resonerar:";
 
-$kak_eto_moglo="Hur den kunde h&#228;nda med mig?!";
+$prichiny = "Du har trÃ¶ttat din interlokutÃ¶r med dumbom ifrÃ¥gasÃ¤tter, fÃ¶rfrÃ¥gan eller rÃ¥dgivningen.
+Du har krÃ¤nkt din interlokutÃ¶r det ofÃ¶rsiktiga meddelandet: ha berÃ¶rt hans klosterbroder, politiskt, musikaliskt och annat siktar och smakar, eller har annars inkrÃ¤ktat i hans privata vÃ¤rld och har kritiserat vad han vÃ¤rderar.
+Till dig antyda, som skar inte lÃ¶nbaksida, skar inte lÃ¶nen fÃ¶r arbete, till dig vÃ¤grar, i att knulla.
+RÃ¤ttvist Ã¶nskar inget att meddela med dig. Det hÃ¤nder ocksÃ¥.";
 
-$vot_samye="Det finns det mest utbredd resonerar:";
+$est_variant = "Naturligtvis finns det en mÃ¶jlighet att du har synas pÃ¥ denna sida, som till exempel har funnit oavsiktligt den med en sÃ¶kandemotor. Reflektera: kanske bÃ¶r du omprÃ¶va allvarligt dina Ã¥sikterpÃ¥ livet, om Ã¤ven sÃ¶kandemotorer bÃ¶rjade sig fÃ¶r att erbjuda att du ska dra Ã¥t helvetet?";
 
-$prichiny="Du har tr&#246;ttat din interlokut&#246;r med dumbom ifr&#229;gas&#228;tter, f&#246;rfr&#229;gan eller r&#229;dgivningen.
-Du har kr&#228;nkt din interlokut&#246;r det of&#246;rsiktiga meddelandet: ha ber&#246;rt hans klosterbroder, politiskt, musikaliskt och annat siktar och smakar, eller har annars inkr&#228;ktat i hans privata v&#228;rld och har kritiserat vad han v&#228;rderar.
-Till dig antyda, som skar inte l&#246;nbaksida, skar inte l&#246;nen f&#246;r arbete, till dig v&#228;grar, i att knulla.
-R&#228;ttvist &#246;nskar inget att meddela med dig. Det h&#228;nder ocks&#229;.";
+$chto_delat = "Vad bÃ¶r mig gÃ¶r nu?!";
 
-$est_variant="Naturligtvis finns det en m&#246;jlighet att du har synas p&#229; denna sida, som till exempel har funnit oavsiktligt den med en s&#246;kandemotor. Reflektera: kanske b&#246;r du ompr&#246;va allvarligt dina &#229;sikterp&#229; livet, om &#228;ven s&#246;kandemotorer b&#246;rjade sig f&#246;r att erbjuda att du ska dra &#229;t helvetet?";
+$sovetuem = "Vi rÃ¥der:";
 
-$chto_delat="Vad b&#246;r mig g&#246;r nu?!";
+$sovety = "Att omprÃ¶va instÃ¤llningen till denna person.
+Att ta allvarlig fÃ¶rseelse pÃ¥ honom.
+Att gÃ¶ra en bokmÃ¤rke och nÃ¤sta tid fÃ¶r att Ã¶verfÃ¶ra lÃ¤nk till personen som du Ã¶nskar att ska rikta till helvetet.";
 
-$sovetuem="Vi r&#229;der:";
+$kak_mne_jit = "Hur bÃ¶r jag bo nu?!";
 
-$sovety="Att ompr&#246;va inst&#228;llningen till denna person.
-Att ta allvarlig f&#246;rseelse p&#229; honom.
-Att g&#246;ra en bokm&#228;rke och n&#228;sta tid f&#246;r att &#246;verf&#246;ra l&#228;nk till personen som du &#246;nskar att ska rikta till helvetet.";
+$zapomnite = "Minns: du Ã¤r inte fÃ¶rsta, vem har riktat till helvetet, och du Ã¤r inte jumbon. Denna sida har Ã¶ppnats pÃ¥ 4th Oktober, 2006, och till helvetet hÃ¤r exakt har 1405 personer redan riktats.
+Var fÃ¶rsiktig av fejkar: denna sida Ã¤r primÃ¤r och unik. Vi fÃ¶rbÃ¤ttrar jÃ¤mt den.
+Vet: vara skyldig till den speciala vÃ¤xelverkande apparaten, hÃ¶rs varje tid, nÃ¤r nÃ¥n drar Ã¥t helvetet, i huvudkontor av den officiella riktningen som ett tyst ledset suckar, frÃ¥n kolonner. Vi Ã¤r i veta av dina affÃ¤rsfÃ¶retag. Helvetet Ã¤lskar dig!";
 
-$kak_mne_jit="Hur b&#246;r jag bo nu?!";
+$bottom_vernutsa = "GÃ¥ tillbaka";
 
-$zapomnite="Minns: du &#228;r inte f&#246;rsta, vem har riktat till helvetet, och du &#228;r inte jumbon. Denna sida har &#246;ppnats p&#229; 4th Oktober, 2006, och till helvetet h&#228;r exakt har 1405 personer redan riktats.
-Var f&#246;rsiktig av fejkar: denna sida &#228;r prim&#228;r och unik. Vi f&#246;rb&#228;ttrar j&#228;mt den.
-Vet: vara skyldig till den speciala v&#228;xelverkande apparaten, h&#246;rs varje tid, n&#228;r n&#229;n drar &#229;t helvetet, i huvudkontor av den officiella riktningen som ett tyst ledset suckar, fr&#229;n kolonner. Vi &#228;r i veta av dina aff&#228;rsf&#246;retag. Helvetet &#228;lskar dig!";
-
-$bottom_vernutsa="G&#229; tillbaka";
-
-$bottom_vernut="Du &#228;r som ett barn!
-Inget kom tillbaka h&#228;rifr&#229;n &#228;nnu.
+$bottom_vernut = "Du Ã¤r som ett barn!
+Inget kom tillbaka hÃ¤rifrÃ¥n Ã¤nnu.
 ##
-F&#246;rl&#229;t.";
+FÃ¶rlÃ¥t.";
 
-$bottom_izbrannoe="Tillfoga till Urval";
+$bottom_izbrannoe = "Tillfoga till Urval";
 
-$bottom_izbr="Vi gratulerar! Du &#228;r utvald!";
+$bottom_izbr = "Vi gratulerar! Du Ã¤r utvald!";
 
-$bottom_start="G&#246;r denna sida starta";
+$bottom_start = "GÃ¶r denna sida starta";
 
-$bottom_strt="Skr&#228;mmas du inte med riskerar f&#246;r att f&#246;rs&#228;mra mooden och anseende f&#246;r dig?
+$bottom_strt = "SkrÃ¤mmas du inte med riskerar fÃ¶r att fÃ¶rsÃ¤mra mooden och anseende fÃ¶r dig?
 ##
-Skriv in menyn ”alternativ av observat&#246;ren” och g&#246;r sidan starta. 
-Inget skar g&#246;r den i st&#228;llet f&#246;r dig!";
+Skriv in menyn â€alternativ av observatÃ¶renâ€ och gÃ¶r sidan starta.
+Inget skar gÃ¶r den i stÃ¤llet fÃ¶r dig!";
 
-$bottom_druga="Rikta &#229;t helvetet din v&#228;n";
+$bottom_druga = "Rikta Ã¥t helvetet din vÃ¤n";
 
-$bottom_drug="&#214;verf&#246;r honom som detta l&#228;nk med e-post eller ICQ f&#246;r att rikta din v&#228;n.
-Vi kan inte g&#246;ra den i st&#228;llet f&#246;r dig - verkst&#228;lla skar &#228;r borta.
+$bottom_drug = "Ã–verfÃ¶r honom som detta lÃ¤nk med e-post eller ICQ fÃ¶r att rikta din vÃ¤n.
+Vi kan inte gÃ¶ra den i stÃ¤llet fÃ¶r dig - verkstÃ¤lla skar Ã¤r borta.
 ##
 Lycka till i kamratskap!";
 
-$about="om &nbsp; projektera &nbsp; DRA &#197;T HELVETE";
+$about = "om Â  projektera Â  DRA Ã…T HELVETE";
 
-$perevod="&copy;Jeretik";
+$perevod = "Â©Jeretik";
 
-$perevodchik="";
+$perevodchik = "";
 
-$lj_zdra="";
+$lj_zdra = "";
 
-$lj_raz="";
+$lj_raz = "";
 
-$hello_you="";
+$hello_you = "";
 
-$hello_noprichina="";
+$hello_noprichina = "";
 
-$hello_nosovet="";
+$hello_nosovet = "";
 
-$otvetstvenno="";
+$otvetstvenno = "";
 
-$post="";
+$post = "";
 
-$post_="";
+$post_ = "";
 
-$postprivet="";
+$postprivet = "";
 
-$post_name="";
+$post_name = "";
 
-$post_mail="";
+$post_mail = "";
 
-$post_html="";
+$post_html = "";
 
-$post_ip="";
+$post_ip = "";
 
-$post_button="";
+$post_button = "";
 
-$post_alert="";
+$post_alert = "";
 
-$post_hidden="";
+$post_hidden = "";
 
-$disclamer="";
+$disclamer = "";
 
-$lleo="";
+$lleo = "";
 
-$lleo_url="";
+$lleo_url = "";
 
-$e_head="";
+$e_head = "";
 
-$e_text="";
+$e_text = "";
 
-$e_submit="";
+$e_submit = "";
 
-$e_comment="";
-
-?>
+$e_comment = "";

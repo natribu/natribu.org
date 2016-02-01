@@ -11,91 +11,91 @@ $codepage="shift_jis";
 
 $lj_user="";
 
-$other="�����������{�p ���u���u�r���t�p �~�p �������~���{�y�z
-�M�󎎂�
+$other="попытка перевода на японский
+邦訳試み
 japanese translation attempt";
 
 $email="oldgoodavdeev@rambler.ru";
 
 $password="[thm-cj,fxmz";
 
-$headpage="���͂����ɂ��܂�";
+$headpage="糞はここにいます";
 
-$epigraph="�u��l �ׂɈ���͖����̗쒷�ׂɑ�҂ł���B�v &copy;N�E�A�����X�g�����S<br>\"Let my people go!\" &copy;L�E�A�����X�g�����S";
+$epigraph="「一人 為に一歩は万物の霊長為に大股である。」 © N・アルムストロンゴ<br>\"Let my people go!\" © L・アルムストロンゴ";
 
 $media="jp.swf";
 
-$head="�����H�炦";
+$head="くそ食らえ";
 
-$official_site="�ے��I�����̌����̃T�C�g";
+$official_site="象徴的見当の公式のサイト";
 
-$national_office="���{��̋ǎɁ@nihongo no kyokusha";
+$national_office="日本語の局舎　nihongo no kyokusha";
 
-$oi_chto_eto="����!!����͉��ł���!?";
+$oi_chto_eto="くそ!!これは何ですか!?";
 
-$zdes_raspolojeno="�����Ɂk���������鎖�l�̃C���^�[�l�b�g�̌����㕕���ł��B�����͂����ő�R�~����ꂽ�B";
+$zdes_raspolojeno="ここに〔消え失せる事〕のインターネットの公式代封狽です。くそはここで沢山蓄えられた。";
 
-$chto_eto_znachit="����͈�̂ǂ��䂤�Ӗ��ł���!?";
+$chto_eto_znachit="これは一体どうゆう意味ですか!?";
 
-$vas_poslali="����̈Ӗ��͂��̃y�[�W��ǂ񂾂爽��l�����Ȃ��ɏ��������������B";
+$vas_poslali="無二の意味はこのページを読んだら或る人があなたに消え失せさせた。";
 
-$kak_eto_moglo="���ɂ��̎��̂��ǂ̂悤�ɂ��ċN�������̂��B";
+$kak_eto_moglo="私にその事故がどのようにして起こったのか。";
 
-$vot_samye="���̎�ȗ��R�́A";
+$vot_samye="その主な理由は、";
 
-$prichiny="���Ȃ����n���Ȏ��₩�肢�������ɘb��������ꂳ�������Ƃł���܂����B
-���Ȃ����s���ӂȔ����ɘb�������������Q�������Ƃł���܂����B
-���Ȃ����؋���Ԃ��Ȃ����͘J�����x����Ȃ����͖[����f��邱�Ƃ��Î�����邱�Ƃł���܂����B
-���Ȃ��Ɩ{���Ɍ��ۂ��邱�Ƃ��������Ȃ����Ƃł���܂����B���̂悤�Ȃ��Ƃ͎��X�N���邱�Ƃ�����B";
+$prichiny="あなたが馬鹿な質問か願いか勧告に話し相手を疲れさせたことでありました。
+あなたが不注意な発言に話し相手を感情を害したことでありました。
+あなたが借金を返さない又は労働を支払わない又は房事を断わることを暗示されることでありました。
+あなたと本当に交際することがしたくないことでありました。このようなことは時々起こることがある。";
 
 $est_variant="";
 
-$chto_delat="���ꂩ��扽�����ׂ���������Ȃ��B";
+$chto_delat="これから先何をすべきか分からない。";
 
-$sovetuem="���Ȃ��ɂЂƂ������Ă������ł����B";
+$sovetuem="あなたにひとつ忠告してもいいですか。";
 
-$sovety="�b������ɑҋ����ĐR�����ĉ������B
-���ɔނɕ��J�������ĉ������B
-�x��}��ł܂����̂��ɂ����H�炦������l�Ƀ����N��ݒ肵�ĉ������B";
+$sovety="話し相手に待遇を再審査して下さい。
+非常に彼に侮辱を感じて下さい。
+栞を挿んでまたこのつぎにくそ食らえさせる人にリンクを設定して下さい。";
 
-$kak_mne_jit="��������ȏ�䖝�ł��Ȃ��B";
+$kak_mne_jit="もうこれ以上我慢できない。";
 
-$zapomnite="���ӁF���Ȃ��͍Ō�ɂ����H�炦���l�ł͂Ȃ��B���̃y�[�W�͕����P�W�N�V���Q�W���ɂ����������ĂV�V�l�������ɂ����H�炦���B
-�U���ɂ����ӁF���̃y�[�W�͍ŏ��△��ł��B��X�͂������ɂ����P���܂��B
-���L�F���ʂ̃C���^���N�e�B�u���u�̂��߂ɂ��ꂩ�������H�炦�邱�Ƃ̖��x�Ɍ����㕕���{���ŐÂ��Ȕ߂������ߑ����X�s�[�J�[ ����Ђт��킽��܂��B�����������Ȃ��̐H���̂����i���܂��I";
+$zapomnite="注意：あなたは最後にくそ食らえた人ではない。このページは平成１８年７月２８日につくったそして７７人がここにくそ食らえた。
+偽物にご注意：このページは最初や無二です。我々はこれを常にご改善します。
+銘記：特別のインタラクティブ装置のためにだれかがくそ食らえることの毎度に公式代封狽本部で静かな悲しい溜め息がスピーカー からひびきわたります。私たちがあなたの食事のご並進します！";
 
-$bottom_vernutsa="���A";
+$bottom_vernutsa="復帰";
 
-$bottom_vernut="�������ɐH��������ȁB
+$bottom_vernut="嫌そうに食事をするな。
 ##
-�ς݂܂���B";
+済みません。";
 
-$bottom_izbrannoe="�x��}��";
+$bottom_izbrannoe="栞を挿む";
 
-$bottom_izbr="�N����闿���قǂ����������̂͂Ȃ��B";
+$bottom_izbr="君が作る料理ほどおいしいものはない。";
 
-$bottom_start="�z�[���y�[�W �ɂȂ点��";
+$bottom_start="ホームページ にならせる";
 
-$bottom_strt="�C���ƈӋC�n �̑r������܂��񂩁B
+$bottom_strt="気分と意気地 の喪失恐れませんか。
 ##
-���������̂͌N�̐ӔC���B";
+それをするのは君の責任だ。";
 
-$bottom_druga="�F�l�����҂���";
+$bottom_druga="友人を招待する";
 
-$bottom_drug="�F�l�����҂��邱�ƈׂɂ��̃����N��d�q���[���ł�ICQ�ő���Ȃ����B
-���Ȃ��̂����ɂ��̂��Ƃ��ł��܂���F�e�����Ȃ��B
+$bottom_drug="友人を招待すること為にこのリンクを電子メールでかICQで送りなさい。
+あなたのかわりにそのことができません：影響がない。
 ##
-�F�D�֌W�ɍK����I";
+友好関係に幸あれ！";
 
-$about="�k���������鎖�l�� �A����";
+$about="〔消え失せる事〕の 就いて";
 
-$perevod="&copy; D�E�A���f�G�t (D.Avdeev)";
+$perevod="© D・アヴデエフ (D.Avdeev)";
 
 $perevodchik="<a href=mailto:oldgoodavdeev@rambler.ru>oldgoodavdeev@rambler.ru</a>";
 
-$lj_zdra="���Ȃ������o�}���܂��A";
+$lj_zdra="あなたをご出迎えます、";
 
-$lj_raz="��";
+$lj_raz="回";
 
 $hello_you="";
 
@@ -125,7 +125,7 @@ $post_alert="";
 
 $post_hidden="";
 
-$disclamer="�����B";
+$disclamer="何も。";
 
 $lleo="";
 
@@ -138,5 +138,3 @@ $e_text="";
 $e_submit="";
 
 $e_comment="";
-
-?>

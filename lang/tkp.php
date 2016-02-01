@@ -1,129 +1,125 @@
 <?
 
-$changed="web";
+$changed = "web";
 
 
+$poisk = "";
 
+$codepage = "";
 
-$poisk="";
+$lj_user = "";
 
-$codepage="";
+$other = "";
 
-$lj_user="";
+$email = "diemaster@mail.ru";
 
-$other="";
+$password = "3419";
 
-$email="diemaster@mail.ru";
+$headpage = "ma palisa mije";
 
-$password="3419";
+$epigraph = "\"tawa lili pu jan li tawa suli e jan mute\" ©N.Amuson<br>\"Let my people go!\"©L.Amuson";
 
-$headpage="ma palisa mije";
+$media = "";
 
-$epigraph="\"tawa lili pu jan li tawa suli e jan mute\" &copy;N.Amuson<br>\"Let my people go!\"&copy;L.Amuson";
+$head = "O TAWA E PALISA MIJE";
 
-$media="";
+$official_site = "ma lawa pi taa ni";
 
-$head="O TAWA E PALISA MIJE";
+$national_office = "ma toki pona";
 
-$official_site="ma lawa pi taa ni";
+$oi_chto_eto = "a! ijo seme ni?!";
 
-$national_office="ma toki pona";
+$zdes_raspolojeno = "ijo ni li ma lawa pi tawa Itene. tenpo ni la jan seme li tawa e sina pi palisa mije anu lupa jaki";
 
-$oi_chto_eto="a! ijo seme ni?!";
+$chto_eto_znachit = "";
 
-$zdes_raspolojeno="ijo ni li ma lawa pi tawa Itene. tenpo ni la jan seme li tawa e sina pi palisa mije anu lupa jaki";
+$vas_poslali = "";
 
-$chto_eto_znachit="";
+$kak_eto_moglo = "seme mi? seme li ala seme jan?";
 
-$vas_poslali="";
+$vot_samye = "ijo suli ni:";
 
-$kak_eto_moglo="seme mi? seme li ala seme jan?";
-
-$vot_samye="ijo suli ni:";
-
-$prichiny="tenpomonsi la sina li toki utala tawa anu toki ike e sitelen e jan seme
+$prichiny = "tenpomonsi la sina li toki utala tawa anu toki ike e sitelen e jan seme
 sina pali e ike tawa e jan seme
 tenpo kama la sina jo ala unpa
 seme jan wile ala toki e sina";
 
-$est_variant="";
+$est_variant = "";
 
-$chto_delat="ijo seme mina jo?";
+$chto_delat = "ijo seme mina jo?";
 
-$sovetuem="";
+$sovetuem = "";
 
-$sovety="";
+$sovety = "";
 
-$kak_mne_jit="";
+$kak_mne_jit = "";
 
-$zapomnite="";
+$zapomnite = "";
 
-$bottom_vernutsa="";
+$bottom_vernutsa = "";
 
-$bottom_vernut="";
+$bottom_vernut = "";
 
-$bottom_izbrannoe="";
+$bottom_izbrannoe = "";
 
-$bottom_izbr="";
+$bottom_izbr = "";
 
-$bottom_start="";
+$bottom_start = "";
 
-$bottom_strt="";
+$bottom_strt = "";
 
-$bottom_druga="";
+$bottom_druga = "";
 
-$bottom_drug="";
+$bottom_drug = "";
 
-$about="";
+$about = "";
 
-$perevod="";
+$perevod = "";
 
-$perevodchik="<a href=\"http://vkontakte.ru/id9038660\">aleksandr ch</a>";
+$perevodchik = "<a href=\"http://vkontakte.ru/id9038660\">aleksandr ch</a>";
 
-$lj_zdra="";
+$lj_zdra = "";
 
-$lj_raz="";
+$lj_raz = "";
 
-$hello_you="";
+$hello_you = "";
 
-$hello_noprichina="";
+$hello_noprichina = "";
 
-$hello_nosovet="";
+$hello_nosovet = "";
 
-$otvetstvenno="";
+$otvetstvenno = "";
 
-$post="";
+$post = "";
 
-$post_="";
+$post_ = "";
 
-$postprivet="";
+$postprivet = "";
 
-$post_name="";
+$post_name = "";
 
-$post_mail="";
+$post_mail = "";
 
-$post_html="";
+$post_html = "";
 
-$post_ip="";
+$post_ip = "";
 
-$post_button="";
+$post_button = "";
 
-$post_alert="";
+$post_alert = "";
 
-$post_hidden="";
+$post_hidden = "";
 
-$disclamer="";
+$disclamer = "";
 
-$lleo="";
+$lleo = "";
 
-$lleo_url="";
+$lleo_url = "";
 
-$e_head="";
+$e_head = "";
 
-$e_text="";
+$e_text = "";
 
-$e_submit="";
+$e_submit = "";
 
-$e_comment="";
-
-?>
+$e_comment = "";

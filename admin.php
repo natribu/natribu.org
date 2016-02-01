@@ -1,4 +1,5 @@
 <?
+parse_ini_file('');
 $adminpass = 'sdddddddddddddddderfececece3lfkelrkcjlkerjckl4cjkl23io4frhj';
 
 // Определение ЖЖ-истов

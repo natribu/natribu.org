@@ -5,13 +5,13 @@ $changed="web";
 
 
 
-$poisk="C Âamu npocTo He xoT9IT o6LL|aTbc9I. Takoe To&gt|&lt;e 6bIÂaeT.";
+$poisk="C Ð’amu npocTo He xoT9IT o6LL|aTbc9I. Takoe To>|<e 6bIÐ’aeT.";
 
 $codepage="";
 
 $lj_user="";
 
-$other="ñèìâîëüíàÿ òðàíñëèòåðàöèÿ";
+$other="ÑÐ¸Ð¼Ð²Ð¾Ð»ÑŒÐ½Ð°Ñ Ñ‚Ñ€Ð°Ð½ÑÐ»Ð¸Ñ‚ÐµÑ€Ð°Ñ†Ð¸Ñ";
 
 $email="nezabudu@pochta.ru";
 
@@ -19,97 +19,97 @@ $password="223370668";
 
 $headpage="HAXYU' 3DECb";
 
-$epigraph="\"Ma/\\eHbkuu' war D/\\9I oDHoro 4e/\\oÂeka - 6o/\\bwou' war D/\\9I Âcero 4e/\\oÂe4ecTÂa.\" &copy;H.ApmcTpoHr<br>\"Let my people go!\" &copy;JI.ApmcTpoHr";
+$epigraph="\"Ma/\\eHbkuu' war D/\\9I oDHoro 4e/\\oÐ’eka - 6o/\\bwou' war D/\\9I Ð’cero 4e/\\oÐ’e4ecTÐ’a.\" Â©H.ApmcTpoHr<br>\"Let my people go!\" Â©JI.ApmcTpoHr";
 
 $media="";
 
 $head="HAXYU'";
 
-$official_site="ofuL|ua/\\bHbIu' cau'T cumÂo/\\u4eckoro HanpaÂ/\\eHu9I";
+$official_site="ofuL|ua/\\bHbIu' cau'T cumÐ’o/\\u4eckoro HanpaÐ’/\\eHu9I";
 
 $national_office="pycckuu' ofuc";
 
 $oi_chto_eto="Ou', 4To eTo?!";
 
-$zdes_raspolojeno="3Decb pacno/\\o&gt|&lt;eHo ofuL|ua/\\bHoe npeDcTaÂuTe/\\bcTÂo HAXYU' Â uHTepHeTe. CIODa nocbI/\\aIOT.";
+$zdes_raspolojeno="3Decb pacno/\\o>|<eHo ofuL|ua/\\bHoe npeDcTaÐ’uTe/\\bcTÐ’o HAXYU' Ð’ uHTepHeTe. CIODa nocbI/\\aIOT.";
 
-$chto_eto_znachit="4To &gt|&lt;e eTo 3Ha4uT?!";
+$chto_eto_znachit="4To >|<e eTo 3Ha4uT?!";
 
-$vas_poslali="Ec/\\u ÂbI oka3a/\\ucb Ha eTou' cTpaHuL|e, eTo o3Ha4aeT To/\\bko oDHo: Âac noc/\\a/\\u Haxyu'. rpy6o, Ho e/\\eraHTHo: npuc/\\aÂ eTy ccbI/\\ky.";
+$vas_poslali="Ec/\\u Ð’bI oka3a/\\ucb Ha eTou' cTpaHuL|e, eTo o3Ha4aeT To/\\bko oDHo: Ð’ac noc/\\a/\\u Haxyu'. rpy6o, Ho e/\\eraHTHo: npuc/\\aÐ’ eTy ccbI/\\ky.";
 
-$kak_eto_moglo="Kak &gt|&lt;e Takoe mor/\\o c/\\y4uTbc9I co mHou'?!";
+$kak_eto_moglo="Kak >|<e Takoe mor/\\o c/\\y4uTbc9I co mHou'?!";
 
 $vot_samye="BoT cambIe pacnpocTpaHeHHbIe npu4uHbI:";
 
-$prichiny="BbI o6uDe/\\u co6eceDHuka HeocTopo&gt|&lt;HbIm ÂbIcka3bIÂaHuem: 3aDe/\\u ero pe/\\uruo3HbIe, no/\\uTu4eckue, my3bIka/\\bHbIe u npo4ue Â3r/\\9IDbI u ÂkycbI, /\\u6o uHbIm o6pa3om ÂTopr/\\ucb Â ero ÂHyTpeHHuu' mup u noDÂepr/\\u kpuTuke To, 4em oH Dopo&gt|&lt;uT.
-Bam HamekaIOT o Tom, 4To He ÂepHyT Do/\\r, He 3an/\\aT9IT 3a pa6oTy, oTka3bIÂaIOT Â cekcya/\\bHou' 6/\\u3ocTu.";
+$prichiny="BbI o6uDe/\\u co6eceDHuka HeocTopo>|<HbIm Ð’bIcka3bIÐ’aHuem: 3aDe/\\u ero pe/\\uruo3HbIe, no/\\uTu4eckue, my3bIka/\\bHbIe u npo4ue Ð’3r/\\9IDbI u Ð’kycbI, /\\u6o uHbIm o6pa3om Ð’Topr/\\ucb Ð’ ero Ð’HyTpeHHuu' mup u noDÐ’epr/\\u kpuTuke To, 4em oH Dopo>|<uT.
+Bam HamekaIOT o Tom, 4To He Ð’epHyT Do/\\r, He 3an/\\aT9IT 3a pa6oTy, oTka3bIÐ’aIOT Ð’ cekcya/\\bHou' 6/\\u3ocTu.";
 
-$est_variant="EcTb koHe4Ho ÂapuaHT, 4To ÂbI nona/\\u Ha eTy cTpaHuL|y c/\\y4au'Ho, Hau'D9I ee, Hanpumep, Â nouckoÂuke. =POISK= 3aDymau'Tecb: 6bITb mo&gt|&lt;eT, Âam HaDo cepbe3Ho nepecmoTpeTb cÂou Â3r/\\9IDbI Ha &gt|&lt;u3Hb, ec/\\u Da&gt|&lt;e nouckoÂuku cTa/\\u no cÂoeu' uHuL|uaTuÂe npeD/\\araTb Âam nou'Tu Haxyu'?";
+$est_variant="EcTb koHe4Ho Ð’apuaHT, 4To Ð’bI nona/\\u Ha eTy cTpaHuL|y c/\\y4au'Ho, Hau'D9I ee, Hanpumep, Ð’ nouckoÐ’uke. =POISK= 3aDymau'Tecb: 6bITb mo>|<eT, Ð’am HaDo cepbe3Ho nepecmoTpeTb cÐ’ou Ð’3r/\\9IDbI Ha >|<u3Hb, ec/\\u Da>|<e nouckoÐ’uku cTa/\\u no cÐ’oeu' uHuL|uaTuÐ’e npeD/\\araTb Ð’am nou'Tu Haxyu'?";
 
-$chto_delat="4To &gt|&lt;e mHe Tenepb De/\\aTb?!";
+$chto_delat="4To >|<e mHe Tenepb De/\\aTb?!";
 
-$sovetuem="CoÂeTyem:";
+$sovetuem="CoÐ’eTyem:";
 
-$sovety="nepecmoTpeTb cÂoe oTHoweHue k eTomy 4e/\\oÂeky.:
+$sovety="nepecmoTpeTb cÐ’oe oTHoweHue k eTomy 4e/\\oÐ’eky.:
 Bcepbe3 Ha Hero o6uDeTbc9I.
-nocTaÂuTb 3ak/\\aDky, u Â c/\\eDyIOLL|uu' pa3 noc/\\aTb ccbI/\\ky Tomy, koro xoTuTe noc/\\aTb Haxyu' ÂbI.";
+nocTaÐ’uTb 3ak/\\aDky, u Ð’ c/\\eDyIOLL|uu' pa3 noc/\\aTb ccbI/\\ky Tomy, koro xoTuTe noc/\\aTb Haxyu' Ð’bI.";
 
-$kak_mne_jit="Kak mHe Tenepb &gt|&lt;uTb?!";
+$kak_mne_jit="Kak mHe Tenepb >|<uTb?!";
 
-$zapomnite="3anomHuTe: ÂbI He nepÂbIu', koro noc/\\a/\\u Haxyu', u He noc/\\eDHuu'. ETa cTpaHuL|a 6bI/\\a oTkpbITa 9 9IHÂap9I 2004, u Haxyu' cIODa noc/\\a/\\u y&gt|&lt;e poÂHo $count 4e/\\oÂek.
-OcTeperau'Tecb noDDe/\\ok: eTa cTpaHuL|a u3Ha4a/\\bHa9I u eDuHcTÂeHHa9I. MbI nocTo9IHHo coÂepweHcTÂyem ee.
-3Hau'Te: 6/\\aroDap9I oco6omy uHTepakTuÂHomy ycTpou'cTÂy, Âc9Ikuu' pa3, korDa kTo-Hu6yDb uDeT Haxyu', Â wTa6-kÂapTupe OfuL|ua/\\bHoro HanpaÂ/\\eHu9I pa3DaeTc9I u3 ko/\\oHok Tuxuu' ne4a/\\bHbIu' Â3Dox. MbI Â kypce Âawux noxo&gt|&lt;DeHuu'. Haxyu' /\\IO6uT Âac!";
+$zapomnite="3anomHuTe: Ð’bI He nepÐ’bIu', koro noc/\\a/\\u Haxyu', u He noc/\\eDHuu'. ETa cTpaHuL|a 6bI/\\a oTkpbITa 9 9IHÐ’ap9I 2004, u Haxyu' cIODa noc/\\a/\\u y>|<e poÐ’Ho $count 4e/\\oÐ’ek.
+OcTeperau'Tecb noDDe/\\ok: eTa cTpaHuL|a u3Ha4a/\\bHa9I u eDuHcTÐ’eHHa9I. MbI nocTo9IHHo coÐ’epweHcTÐ’yem ee.
+3Hau'Te: 6/\\aroDap9I oco6omy uHTepakTuÐ’Homy ycTpou'cTÐ’y, Ð’c9Ikuu' pa3, korDa kTo-Hu6yDb uDeT Haxyu', Ð’ wTa6-kÐ’apTupe OfuL|ua/\\bHoro HanpaÐ’/\\eHu9I pa3DaeTc9I u3 ko/\\oHok Tuxuu' ne4a/\\bHbIu' Ð’3Dox. MbI Ð’ kypce Ð’awux noxo>|<DeHuu'. Haxyu' /\\IO6uT Ð’ac!";
 
 $bottom_vernutsa="BepHyTbc9I Ha3aD";
 
-$bottom_vernut="4To ÂbI, kak ma/\\eHbkuu\'?
-OTcIODa eLL|e HukTo He Âo3ÂpaLL|a/\\c9I.
+$bottom_vernut="4To Ð’bI, kak ma/\\eHbkuu\'?
+OTcIODa eLL|e HukTo He Ð’o3Ð’paLL|a/\\c9I.
 ##
-U3ÂuHuTe.";
+U3Ð’uHuTe.";
 
-$bottom_izbrannoe="Do6aÂuTb Â U36paHHoe.";
+$bottom_izbrannoe="Do6aÐ’uTb Ð’ U36paHHoe.";
 
-$bottom_izbr="no3DpaÂ/\\\9Iem! BbI - u36paHHbIu\'!";
+$bottom_izbr="no3DpaÐ’/\\\9Iem! BbI - u36paHHbIu\'!";
 
-$bottom_start="CDe/\\aTb cTpaHuL|y cTapToÂou'";
+$bottom_start="CDe/\\aTb cTpaHuL|y cTapToÐ’ou'";
 
-$bottom_strt="Bac He nyraeT puck yxyDwuTb cÂoe HacTpoeHue u camooL|eHky?
+$bottom_strt="Bac He nyraeT puck yxyDwuTb cÐ’oe HacTpoeHue u camooL|eHky?
 ##
-3axoDuTe Â meHIO \'HacTpou\'ku o6o3peÂaTe/\\9I\'
-u De/\\au\'Te cTpaHuL|y cTapToÂou\'.
-HukTo 3a Âac eTo He cDe/\\aeT!";
+3axoDuTe Ð’ meHIO \'HacTpou\'ku o6o3peÐ’aTe/\\9I\'
+u De/\\au\'Te cTpaHuL|y cTapToÐ’ou\'.
+HukTo 3a Ð’ac eTo He cDe/\\aeT!";
 
 $bottom_druga="noc/\\aTb Dpyra";
 
-$bottom_drug="4To6bI noc/\\aTb Dpyra, oTnpaÂbTe emy eTy ccbI/\\ky emau\'/\\om u/\\u no ICQ.
-MbI 3a Âac eTo cDe/\\aTb He mo&gt|&lt;em - nponaDeT effekT.
+$bottom_drug="4To6bI noc/\\aTb Dpyra, oTnpaÐ’bTe emy eTy ccbI/\\ky emau\'/\\om u/\\u no ICQ.
+MbI 3a Ð’ac eTo cDe/\\aTb He mo>|<em - nponaDeT effekT.
 ##
-YDa4u Â Dpy&gt|&lt;6e!";
+YDa4u Ð’ Dpy>|<6e!";
 
-$about="o &nbsp; n p o e k T e &nbsp; H A X Y U'";
+$about="o Â  n p o e k T e Â  H A X Y U'";
 
 $perevod="-=BoDrYi=-";
 
 $perevodchik="http://vkontakte.ru/profile.php?id=1428346";
 
-$lj_zdra="npuÂeTcTÂyeT Te69I,";
+$lj_zdra="npuÐ’eTcTÐ’yeT Te69I,";
 
 $lj_raz="-u' pa3";
 
-$hello_you="npuÂeTcTÂyeT Âac,";
+$hello_you="npuÐ’eTcTÐ’yeT Ð’ac,";
 
-$hello_noprichina="Ho Â Âawem c/\\y4ae npu4uHa npocTa:";
+$hello_noprichina="Ho Ð’ Ð’awem c/\\y4ae npu4uHa npocTa:";
 
-$hello_nosovet="Ho r/\\aÂHbIu' Âam coÂeT Ha 6yDyLL|ee:";
+$hello_nosovet="Ho r/\\aÐ’HbIu' Ð’am coÐ’eT Ha 6yDyLL|ee:";
 
-$otvetstvenno="<p><font size=-2>aDmuHucTpaL|u9I Haxyu' He HeceT oTÂeTcTÂeHHocTu 3a coDep&gt|&lt;umoe kpacHbIx noD4epkHyTbIx cTpok
-<br>ÂbI To&gt|&lt;e mo&gt|&lt;eTe co4uHuTb Takue c nomoLL|bIO <a href=editor.php>Haxyu'-peDakTopa</a></font>";
+$otvetstvenno="<p><font size=-2>aDmuHucTpaL|u9I Haxyu' He HeceT oTÐ’eTcTÐ’eHHocTu 3a coDep>|<umoe kpacHbIx noD4epkHyTbIx cTpok
+<br>Ð’bI To>|<e mo>|<eTe co4uHuTb Takue c nomoLL|bIO <a href=editor.php>Haxyu'-peDakTopa</a></font>";
 
 $post="H a n u c a T b    c o o 6 LL| e H u e    H A X Y U'";
 
 $post_="HanucaTb coo6LL|eHue HAXYU'";
 
-$postprivet="npuÂeT, Homep $count ! Hanuwu cÂoe coo6LL|eHue HAXYU':";
+$postprivet="npuÐ’eT, Homep $count ! Hanuwu cÐ’oe coo6LL|eHue HAXYU':";
 
 $post_name="Um9I";
 
@@ -117,32 +117,30 @@ $post_mail="Mail (URL):";
 
 $post_html="pa3pewaTb komaHDbI html u php";
 
-$post_ip="ckpbIÂaTb ip";
+$post_ip="ckpbIÐ’aTb ip";
 
 $post_button="rOTOBO";
 
 $post_alert="Cnacu6o, 4To Hanuca/\\u coo6LL|eHue HAXYU'!";
 
-$post_hidden="Da, eTo xyu'Hey/\\oÂuTe/\\b D/\\9I meccar De6u/\\oÂ";
+$post_hidden="Da, eTo xyu'Hey/\\oÐ’uTe/\\b D/\\9I meccar De6u/\\oÐ’";
 
-$disclamer="npoekT HAXYU' ÂnepÂbIe Âo3Huk Ha pycckom 9I3bIke 9 9IHÂap9I 2004 roDa. Camu mbI Hukoro HukyDa He nocbI/\\aem, nocbI/\\aIOT k Ham. Heo6xoDumo noHumaTb, 4To ccbI/\\ky Ha Hawe npeDcTaÂuTe/\\bcTÂo mo&gt|&lt;eT ucno/\\b3oÂaTb /\\IO6ou' 4e/\\oÂek mupa, D/\\9I eToro oHa u cDe/\\aHa. Ho mbI He Hecem oTÂeTcTÂeHHocTu 3a ero Deu'cTÂu9I u Te ockop6/\\eHu9I, koTopbIe oH nbITa/\\c9I cDe/\\aTb. MbI Da&gt|&lt;e He Â kypce, kTo u koro nocbI/\\a/\\ c nomoLL|bIO Haweu' ccbI/\\ku. MbI npocTo paDbI ka&gt|&lt;Domy noceTuTe/\\IO kak Doporomy rocTIO.
+$disclamer="npoekT HAXYU' Ð’nepÐ’bIe Ð’o3Huk Ha pycckom 9I3bIke 9 9IHÐ’ap9I 2004 roDa. Camu mbI Hukoro HukyDa He nocbI/\\aem, nocbI/\\aIOT k Ham. Heo6xoDumo noHumaTb, 4To ccbI/\\ky Ha Hawe npeDcTaÐ’uTe/\\bcTÐ’o mo>|<eT ucno/\\b3oÐ’aTb /\\IO6ou' 4e/\\oÐ’ek mupa, D/\\9I eToro oHa u cDe/\\aHa. Ho mbI He Hecem oTÐ’eTcTÐ’eHHocTu 3a ero Deu'cTÐ’u9I u Te ockop6/\\eHu9I, koTopbIe oH nbITa/\\c9I cDe/\\aTb. MbI Da>|<e He Ð’ kypce, kTo u koro nocbI/\\a/\\ c nomoLL|bIO Haweu' ccbI/\\ku. MbI npocTo paDbI ka>|<Domy noceTuTe/\\IO kak Doporomy rocTIO.
 ##
-Ec/\\u ÂbI roToÂbI nomo4b c nepeÂoDom npoekTa eLL|e Ha kakou'-To uHocTpaHHbIu' 9I3bIk - 4e/\\oÂe4ecTÂo 6yDeT Âam 6/\\aroDapHo. CDe/\\aTb eTo o4eHb npocTo! 3au'DuTe Ha http://lleo.aha.ru/na/admin.php, ÂÂeDuTe DÂyx6ykÂeHHbIu' koD HecyLL|ecTÂyIOLL|eu' noka cTpaHuL|bI u npuDymau'Te napo/\\b. Da/\\bwe - no noDcka3kam.";
+Ec/\\u Ð’bI roToÐ’bI nomo4b c nepeÐ’oDom npoekTa eLL|e Ha kakou'-To uHocTpaHHbIu' 9I3bIk - 4e/\\oÐ’e4ecTÐ’o 6yDeT Ð’am 6/\\aroDapHo. CDe/\\aTb eTo o4eHb npocTo! 3au'DuTe Ha http://lleo.aha.ru/na/admin.php, Ð’Ð’eDuTe DÐ’yx6ykÐ’eHHbIu' koD HecyLL|ecTÐ’yIOLL|eu' noka cTpaHuL|bI u npuDymau'Te napo/\\b. Da/\\bwe - no noDcka3kam.";
 
 $lleo="
 ##
-Ero 3oÂyT JIeoHuD KaraHoÂ, oH u3 MockÂbI, u ero cau'T Ha pycckom 9I3bIke.
+Ero 3oÐ’yT JIeoHuD KaraHoÐ’, oH u3 MockÐ’bI, u ero cau'T Ha pycckom 9I3bIke.
 ##
-CÂ9I&gt|&lt;ucb /\\y4we c nepeÂoD4ukom.";
+CÐ’9I>|<ucb /\\y4we c nepeÐ’oD4ukom.";
 
 $lleo_url="";
 
 $e_head="HAXYU'-PEDAKTOP";
 
-$e_text="bI mo&gt|&lt;eTe noc/\\aTb /\\u4Ho Dpyra, Ha4a/\\bHuka, xy/\\uraHoÂ u3 fopyma, a Tak&gt|&lt;e HacTpouTb peDupekT D/\\9I kopnopaTuÂHbIx L|e/\\eu'. B TekcT \"HAXYU'\" ÂbI mo&gt|&lt;eTe ÂÂecTu Tpu cÂou cTpoku: um9I aDpecaTa, npu4uHy, no koTopou' oH TyT oka3a/\\c9I, u coÂeT emy Ha 6yDyLL|ee. BÂeDuTe cTpoku (He o69I3aTe/\\bHo Âce Tpu) Â no/\\9I fopmbI u no/\\y4uTe ccbI/\\ky. no eTou' ccbI/\\ke cTpaHuL|a 6yDeT oTo6pa&gt|&lt;aTbc9I c Âawum TekcTom. MbI o6paLL|aemc9I c npocb6ou': He Tep9ITb IOmopa u He ckaTbIÂaTbc9I Â rpy6ocTb u now/\\ocTb. Y&gt|&lt;e $count 4e/\\oÂek Âocno/\\b3oÂa/\\ucb HoÂbIm cepÂucom.";
+$e_text="bI mo>|<eTe noc/\\aTb /\\u4Ho Dpyra, Ha4a/\\bHuka, xy/\\uraHoÐ’ u3 fopyma, a Tak>|<e HacTpouTb peDupekT D/\\9I kopnopaTuÐ’HbIx L|e/\\eu'. B TekcT \"HAXYU'\" Ð’bI mo>|<eTe Ð’Ð’ecTu Tpu cÐ’ou cTpoku: um9I aDpecaTa, npu4uHy, no koTopou' oH TyT oka3a/\\c9I, u coÐ’eT emy Ha 6yDyLL|ee. BÐ’eDuTe cTpoku (He o69I3aTe/\\bHo Ð’ce Tpu) Ð’ no/\\9I fopmbI u no/\\y4uTe ccbI/\\ky. no eTou' ccbI/\\ke cTpaHuL|a 6yDeT oTo6pa>|<aTbc9I c Ð’awum TekcTom. MbI o6paLL|aemc9I c npocb6ou': He Tep9ITb IOmopa u He ckaTbIÐ’aTbc9I Ð’ rpy6ocTb u now/\\ocTb. Y>|<e $count 4e/\\oÐ’ek Ð’ocno/\\b3oÐ’a/\\ucb HoÐ’bIm cepÐ’ucom.";
 
-$e_submit="roToÂo! Tenepb HaDo Ha&gt|&lt;aTb eTy kHonky u no/\\y4uTb koD ccbI/\\ku.";
+$e_submit="roToÐ’o! Tenepb HaDo Ha>|<aTb eTy kHonky u no/\\y4uTb koD ccbI/\\ku.";
 
 $e_comment="";
-
-?>

@@ -15,56 +15,56 @@ $email="artem.belitsky@gmail.com";
 
 $password="rhtgrbqfyutk";
 
-$headpage="&#206;N PUL&#258; AICI";
+$headpage="ÎN PULĂ AICI";
 
-$epigraph="\"Un mic pas unui om - um mare pas pentru �ntreag&#259; omenire.\"
-&copy;N.Armstrong<br>\"Let my people go!\" &copy;L.Armstrong";
+$epigraph="\"Un mic pas unui om - um mare pas pentru оntreagă omenire.\"
+©N.Armstrong<br>\"Let my people go!\" ©L.Armstrong";
 
 $media="";
 
-$head="&#206;N PUL&#258;";
+$head="ÎN PULĂ";
 
-$official_site="o pagin&#259; web oficial&#259; de orientare simbolic&#259;";
+$official_site="o pagină web oficială de orientare simbolică";
 
 $national_office="Oficiul moldovenesc";
 
 $oi_chto_eto="Vai, ce e?";
 
-$zdes_raspolojeno="Aici se afl&#259; reprezentan&#355;a oficial&#259; &#206;N PUL&#258; &#238;n Internet. Aici trimit.";
+$zdes_raspolojeno="Aici se află reprezentanţa oficială ÎN PULĂ în Internet. Aici trimit.";
 
-$chto_eto_znachit="Ce aceasta &#238;nseamn&#259;?";
+$chto_eto_znachit="Ce aceasta înseamnă?";
 
-$vas_poslali="Dac&#259; a&#355;i nimerit pe aceast&#259; pagin&#259;, &#238;nseamn&#259; c&#259; a&#355;i fost trimi&#351;i �n pul&#259;. Brutal, dar elegant: trimitindu-v&#259; acest link.";
+$vas_poslali="Dacă aţi nimerit pe această pagină, înseamnă că aţi fost trimişi оn pulă. Brutal, dar elegant: trimitindu-vă acest link.";
 
-$kak_eto_moglo="Cum putea aceasta s&#259; se &#238;nt&#238;mple cu mine?";
+$kak_eto_moglo="Cum putea aceasta să se întîmple cu mine?";
 
-$vot_samye="Iat&#259; motivele cele mai lansate:";
+$vot_samye="Iată motivele cele mai lansate:";
 
-$prichiny="Dumneavoastr&#259; l-a&#355;i obos&#238;t pe interlocutorul cu intreb&#259;ri, cereri sau sfaturi proaste.
-Dumneavoastr&#259; l-a&#355;i jignit pe interlocutorul cu o fraz&#259; imprudent&#259;, a&#355;i lezat vederea lui �n religie, politic&#259;, muzic&#259; &#351;.a. sau cumva altfel a&#355;i atins universul lui intern &#351;i a&#355;i criticat acea ce apreciaz&#259;.
-Dumneavoastr&#259; v&#259; fac aluzia c&#259; nu vor �ntoarce datoria, nu vor pl&#259;ti pentru lucru, v&#259; refuz&#259; �n contact sexual.
-Cu Dumneavoastr&#259; nu vor sa comunice. A&#351;a tot se �nt�mpl&#259;.";
+$prichiny="Dumneavoastră l-aţi obosît pe interlocutorul cu intrebări, cereri sau sfaturi proaste.
+Dumneavoastră l-aţi jignit pe interlocutorul cu o frază imprudentă, aţi lezat vederea lui оn religie, politică, muzică ş.a. sau cumva altfel aţi atins universul lui intern şi aţi criticat acea ce apreciază.
+Dumneavoastră vă fac aluzia că nu vor оntoarce datoria, nu vor plăti pentru lucru, vă refuză оn contact sexual.
+Cu Dumneavoastră nu vor sa comunice. Aşa tot se оntоmplă.";
 
-$est_variant="Desigur este o posibilitate c&#259; a&#355;i nimerit pe pagina aceasta &#238;nt&#238;mpl&#259;tor, g&#259;sindu-o, de exemplu, �n sistem de cautare. G�ndi&#355;i-v&#259;, poate ave&#355;i nevoie de schimb&#259;ri in via&#355;&#259;, dac&#259; chiar si sisteme de cautare au inceput s&#259; v&#259; propuie s&#259; v&#259; duce&#355;i �n pul&#259;?";
+$est_variant="Desigur este o posibilitate că aţi nimerit pe pagina aceasta întîmplător, găsindu-o, de exemplu, оn sistem de cautare. Gоndiţi-vă, poate aveţi nevoie de schimbări in viaţă, dacă chiar si sisteme de cautare au inceput să vă propuie să vă duceţi оn pulă?";
 
-$chto_delat="&#350;i ce s&#259; fac acum?";
+$chto_delat="Şi ce să fac acum?";
 
-$sovetuem="V&#259; sfatuim:";
+$sovetuem="Vă sfatuim:";
 
-$sovety="Reviziona&#355;i atitudinea sa fa&#355;&#259; de acest om.
-Obijdui&#355;i-v&#259; pe el.
-Pune&#355;i-v&#259; un semn de carte &#351;i �n data viitoare trimite&#355;i linkul aceluia, pe cine dori&#355;i s&#259;-l trimite&#355;i.";
+$sovety="Revizionaţi atitudinea sa faţă de acest om.
+Obijduiţi-vă pe el.
+Puneţi-vă un semn de carte şi оn data viitoare trimiteţi linkul aceluia, pe cine doriţi să-l trimiteţi.";
 
-$kak_mne_jit="Cum s&#259; tr&#259;iesc mai departe?";
+$kak_mne_jit="Cum să trăiesc mai departe?";
 
-$zapomnite="&#354;ine&#355;i minte: Dumneavoastr&#259; nu s&#238;nte&#355;i nici primul, nici ultimul, care a fost trimis &#238;n pul&#259;. Aceasta pagin&#259; web a fost deschis&#259; pe data de 9 ianuarie 2004 &#351;i �n pul&#259; aici au fost trimi&#351;i exact $count oameni.
-P&#259;zi&#355;i-v&#259; de falsific&#259;ri: aceasta pagin&#259; e prima &#351;i unic&#259;. Noi permanent o perfec&#355;ion&#259;m.
-&#350;ti&#355;i: mul&#355;umind dispozitivului special interactiv, fiecare dat&#259; c�nd cineva se duce &#238;n pul&#259;, &#238;n cartierul general Cursei oficiale resun&#259; o oftare molatic&#259; &#351;i duioas&#259;. Noi &#351;tim despre aventurile Dumneavoastr&#259;. &#206;N PUL&#258; va iube&#351;te!";
+$zapomnite="Ţineţi minte: Dumneavoastră nu sînteţi nici primul, nici ultimul, care a fost trimis în pulă. Aceasta pagină web a fost deschisă pe data de 9 ianuarie 2004 şi оn pulă aici au fost trimişi exact $count oameni.
+Păziţi-vă de falsificări: aceasta pagină e prima şi unică. Noi permanent o perfecţionăm.
+Ştiţi: mulţumind dispozitivului special interactiv, fiecare dată cоnd cineva se duce în pulă, în cartierul general Cursei oficiale resună o oftare molatică şi duioasă. Noi ştim despre aventurile Dumneavoastră. ÎN PULĂ va iubeşte!";
 
-$bottom_vernutsa="&#206;napoi";
+$bottom_vernutsa="Înapoi";
 
-$bottom_vernut="Ce, parc&#259; s&#238;nteti mic?
-De-aici �nc&#259; nimeni nu s-a &#238;ntors.
+$bottom_vernut="Ce, parcă sînteti mic?
+De-aici оncă nimeni nu s-a întors.
 ##
 Scuzati.";
 
@@ -131,5 +131,3 @@ $e_text="";
 $e_submit="";
 
 $e_comment="";
-
-?>

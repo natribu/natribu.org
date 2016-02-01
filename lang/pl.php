@@ -19,7 +19,7 @@ $password="vbhbvj";
 
 $headpage="";
 
-$epigraph="\"Maly krok dla jednego czlowieka - duzy postep dla calej ludskosci.\" &copy;N.Armstrong<br>\"Let my people go!\" &copy;L.Armstrong";
+$epigraph="\"Maly krok dla jednego czlowieka - duzy postep dla calej ludskosci.\" ©N.Armstrong<br>\"Let my people go!\" ©L.Armstrong";
 
 $media="";
 
@@ -88,9 +88,9 @@ Nie mozemy tego zrobic za ciebie - nie ten efekt.
 ##
 Powodzenia w przyjazni!";
 
-$about="o &nbsp; p r o e k c i e &nbsp; W P I Z D E";
+$about="o   p r o e k c i e   W P I Z D E";
 
-$perevod="&copy;Lanso (TS-Labs inc.)";
+$perevod="©Lanso (TS-Labs inc.)";
 
 $perevodchik="";
 
@@ -140,5 +140,3 @@ $e_text="";
 $e_submit="";
 
 $e_comment="";
-
-?>
