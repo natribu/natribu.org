@@ -6,17 +6,13 @@ if (!preg_match('/[a-z0-9]{1,3}/i', $lang)) {
     $lang = 'ru';
 }
 
-if (!file_exists('lang/' . $lang . '.php')) {
+if (!file_exists('lang/' . $lang . '.json')) {
     header('Location: /');
     exit();
 }
 
 //--- поехали
-$u = poiskovik();
-if ($u) {
-    $poiskovik = $u[1];
-    $text = $u[0];
-}
+list($poiskovik, $text) = poiskovik();
 
 include('counter.php');
 $count = counter($lang);
@@ -38,11 +34,13 @@ eregi('([^%]*)%([^%]*)%([^%]*)', base64_decode(str_replace('-', '/', $_SERVER['Q
 //--------------------
 $codepage = "UTF-8";
 /** @noinspection PhpIncludeInspection */
-include('lang/' . $lang . '.php');
-if ($codepage === '') {
-    $codepage = 'UTF-8';
+
+foreach (json_decode(file_get_contents(__DIR__ . '/lang/' . $lang .'.json'), true) as $var => $val) {
+    $val = str_replace(['%COUNT%', '%POISKOVIK%', '%TEXT%'], [$count, $poiskovik, $text], $val);
+    $GLOBALS[$var] = $val;
 }
-header('Content-Type: text/html; charset=' . $codepage);
+
+header('Content-Type: text/html; charset=utf-8');
 
 if ($_GET)
 
@@ -50,10 +48,9 @@ if ($_GET)
     <html>
     <head>
     <title><?=$headpage ?></title>
-    <meta http-equiv="Content-Type"
-          content="text/html; charset=<?=$codepage?>"/>
-</head>
-    <body bgcolor=white text=black background=http://natribu.org/fon1.jpg>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    </head>
+    <body bgcolor=white text=black background=/fon1.jpg>
     <?
     if ($media) {
         echo "<table width=100%><tr><td><i><font size=-2>$epigraph<img src=http://home.lleo.me/cgi-bin/na?lang=$lang width=1 height=1></font></i></td><td align=right>";
@@ -151,11 +148,16 @@ if ($_GET)
     <table width=100%>
         <tr>
             <td>
-                <!--LiveInternet counter-->
-                <script type="text/javascript"><!--
-                document.write("<a href='http://www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?t44.1;r" + escape(document.referrer) + ((typeof(screen) == "undefined") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
-                // --></script>
-                <!--/LiveInternet-->
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t44.1;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' title='LiveInternet' "+
+"border='0' width='31' height='31'><\/a>")
+//--></script><!--/LiveInternet-->
             </td>
             <td align=right><font size=-1><?=$perevod?>&nbsp;<?=$perevodchik?></font>
             </td>
