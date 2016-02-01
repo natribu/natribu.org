@@ -31,7 +31,7 @@
     "hello_you": "sveikinasi su Jumis",
     "hello_noprichina": "Bet mūsų atveju priežastis paprasta:",
     "hello_nosovet": "Bet pats svarbiausias patarimas ateičiai:",
-    "otvetstvenno": "<p><font size=-2>NAHUJ administracija neatsako už raudonai pabrauktų eilučių turinio\n<br>Jūs irgi galite tokias padaryti su <ahref=editor.php>NAHUJ-redaktoriaus</a></font> pagalba",
+    "otvetstvenno": "<p><font size=-2>NAHUJ administracija neatsako už raudonai pabrauktų eilučių turinio\n<br>Jūs irgi galite tokias padaryti su <ahref=%EDITOR_LINK%>NAHUJ-redaktoriaus</a></font> pagalba",
     "post": "parašyti NAHUJ pranešimą",
     "post_": "parašyti NAHUJ pranešimą",
     "postprivet": "Sveikas numerį $count ! Parašyk savo NAHUJ pranešimą:",

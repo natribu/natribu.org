@@ -32,7 +32,7 @@
     "hello_you": "saluda a",
     "hello_noprichina": "pero en el caso de Usted el motivo es muy simple",
     "hello_nosovet": "Pero el consejo más importante es",
-    "otvetstvenno": "<p><font size=-2>Administración de A TOMAR POR CULO no es responsable del contenido de las líneas rojas subrayadas.\n<br>Usted  puede crear algo parecido utilizando <a href=editor.php>el editor de A TOMAR POR CULO.</a></font>",
+    "otvetstvenno": "<p><font size=-2>Administración de A TOMAR POR CULO no es responsable del contenido de las líneas rojas subrayadas.\n<br>Usted  puede crear algo parecido utilizando <a href=%EDITOR_LINK%>el editor de A TOMAR POR CULO.</a></font>",
     "post": "Mandar un mensaje A TOMAR POR CULO",
     "post_": "Mandar un mensaje A TOMAR POR CULO",
     "postprivet": "Hola, número %COUNT%! Aquí puedes dejar tu mensaje A TOMAR POR CULO:",

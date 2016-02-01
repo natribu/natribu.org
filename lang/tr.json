@@ -34,7 +34,7 @@
     "hello_you": "sizi selamlar,",
     "hello_noprichina": "Sizin durumunuzda sebeb çok basit:",
     "hello_nosovet": "Size ilerisi için en önemli tavsiyemiz:",
-    "otvetstvenno": "<p><font size=-2>SİKTİR GİT LAN yönetimi altı çizilmiş kırmızı satırlardan sorumlu değildir\n<br>siz de aynısını <a href=editor.php>editöre siktir git çek</a></font> ile yapabilirsiniz",
+    "otvetstvenno": "<p><font size=-2>SİKTİR GİT LAN yönetimi altı çizilmiş kırmızı satırlardan sorumlu değildir\n<br>siz de aynısını <a href=%EDITOR_LINK%>editöre siktir git çek</a></font> ile yapabilirsiniz",
     "post": "S İ K T İ R  G İ T  L A N  m e s a j ı  y a z ı n",
     "post_": "SİKTİR GİT LAN mesajı yazın",
     "postprivet": "Merhaba, %COUNT% no'lu! Kendi SİKTİR GİT LAN mesajını yaz:",

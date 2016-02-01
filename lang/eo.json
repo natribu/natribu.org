@@ -34,7 +34,7 @@
     "hello_you": "salutas vin,",
     "hello_noprichina": "Sed viakaze la kaŭzo estas simpla:",
     "hello_nosovet": "Sed jen al vi bona konsilo por estonto:",
-    "otvetstvenno": "<p><font size=-2>la administrantoj de kacen-direktilo ne respondecas pri la enhavo de la ruĝaj substrekitaj linioj\n<br>ankaŭ vi mem povas verki tiajn helpe de <a href=editor.php>kacen-redaktilo</a></font>",
+    "otvetstvenno": "<p><font size=-2>la administrantoj de kacen-direktilo ne respondecas pri la enhavo de la ruĝaj substrekitaj linioj\n<br>ankaŭ vi mem povas verki tiajn helpe de <a href=%EDITOR_LINK%>kacen-redaktilo</a></font>",
     "post": "S e n d i   m e s a ĝ o n   K a c e n",
     "post_": "Skribi mesaĝon KACEN",
     "postprivet": "Saluton, numero %COUNT%! Skribu vian mesaĝon KACEN:",

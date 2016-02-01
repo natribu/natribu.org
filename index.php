@@ -28,15 +28,15 @@ $count = '<span id=counter>' . $count . '</span>';
 $kolnah = $_COOKIE['nah'] + 1;
 setcookie('nah', $kolnah, time() + 86400 * 365, '/', '.natribu.org', 0);
 
-// --- декодировать строку параметров:
-eregi('([^%]*)%([^%]*)%([^%]*)', base64_decode(str_replace('-', '/', $_SERVER['QUERY_STRING'])) . '%', $userdata);
-
 //--------------------
 $codepage = "UTF-8";
 /** @noinspection PhpIncludeInspection */
 
 foreach (json_decode(file_get_contents(__DIR__ . '/lang/' . $lang .'.json'), true) as $var => $val) {
-    $val = str_replace(['%COUNT%', '%POISKOVIK%', '%TEXT%'], [$count, $poiskovik, $text], $val);
+    $val = str_replace(
+        ['%COUNT%', '%POISKOVIK%', '%TEXT%', '%EDITOR_LINK%'],
+        [$count, $poiskovik, $text, '/editor/' . $lang . '/'],
+        $val);
     $GLOBALS[$var] = $val;
 }
 
@@ -62,7 +62,7 @@ if ($_GET)
     }
     echo '</td></tr></table>
 <center><table width=70%><td valign=center><div align=justify>
-<h1><center><p>' . $head . '<br><small>' . $official_site . ($userdata[1] ? '<br><font size=+1 color=red><u>' . $hello_you . $userdata[1] . '</u></font>' : '');
+<h1><center><p>' . $head . '<br><small>' . $official_site . '<span id="custom_name_block" style="display: none;"><br><font size=+1 color=red><u>' . $hello_you . ' <span id="custom_name"></span></u></font></span>';
 
     echo '<FORM><select name=lo onChange=" {for (var i=0; i < this.length; i++){if (this.options[i].selected){top.window.location=this.options[i].value;break;} } }">';
 
@@ -75,9 +75,7 @@ if ($_GET)
 <p><font color=red><b>' . $chto_eto_znachit . '</b></font><p>' . $vas_poslali . '
 
 <p><font color=red><b>' . $kak_eto_moglo . '</b></font><p>' . $vot_samye . '
-<ul><li>' . str_replace("\n", '</li><li>',
-            $prichiny . ($userdata[2] ? '
-<font color=red><u>' . $hello_noprichina . $userdata[2] . '</u></font>' : '')) . '</li></ul>
+<ul><li>' . str_replace("\n", '</li><li>',$prichiny) , '</li><li><span id="custom_how_block" style="display: none;"><font color=red><u>' . $hello_noprichina . ' <span id="custom_how"></span></u></font></span></li></ul>
 
 <p>';
 
@@ -87,9 +85,8 @@ if ($_GET)
     echo str_replace('=POISK=', $poisk, $est_variant);
 
     echo '<p><font color=red><b>' . $chto_delat . '</b></font><p>' . $sovetuem . '
-<ul><li>' . str_replace("\n", '</li><li>',
-            $sovety . ($userdata[3] ? '
-<font color=red><u>' . $hello_nosovet . $userdata[3] . '</u></font>' : '')) . '</li></ul>';
+<ul><li>' . str_replace("\n", '</li><li>', $sovety . '
+<span id="custom_what_block" style="display: none;"><font color=red><u>' . $hello_nosovet . ' <span id="custom_what"></span></u></font></span>') . '</li></ul>';
 
 
     if ($bottom_vernutsa . $bottom_izbrannoe . $bottom_start . $bottom_druga) {
@@ -163,14 +160,11 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
     </td>
     </table>
 
-    <?
-    if ($userdata[1] . $userdata[2] . $userdata[3]) {
-        print "$otvetstvenno";
-    }
-    ?>
+    <div id="custom_disclaimer" style="display: none;"><?=$otvetstvenno?></div>
 
     </center>
 
+    <script>if (window.location.search || window.location.hash) {document.write('<scri'+'pt src="/base64.js"></scri'+'pt>')}</script>
     <script>
         function inject(src) {
             var s = document.createElement('script');
@@ -194,7 +188,16 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
         }
 
         setTimeout("inject('/poshli.php?lang=<?=$lang?>&ask=0&old=0')", 60000);
-
+        try {
+            var custom = base64_decode((window.location.hash.slice(1) || window.location.search.slice(1)).replace(/-/g, "/")).replace(/^\s+|\s+$/gm,'').split(/\s*%\s*/);
+            document.getElementById('custom_name_block').style.display = 'inline';
+            document.getElementById('custom_name').textContent = custom[0];
+            document.getElementById('custom_how_block').style.display = 'inline';
+            document.getElementById('custom_how').textContent = custom[1];
+            document.getElementById('custom_what_block').style.display = 'inline';
+            document.getElementById('custom_what').textContent = custom[2];
+            document.getElementById('custom_disclaimer').style.display = 'block';
+        } catch (e) {}
     </script>
 
     </body>

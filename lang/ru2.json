@@ -33,7 +33,7 @@
     "hello_you": "privetstvuet vas,",
     "hello_noprichina": "No v vashem sluchae prichina prosta:",
     "hello_nosovet": "No glavnyi vam sovet na buduschee:",
-    "otvetstvenno": "<p><font size=-2>administraciya nahui ne neset otvetstvennosti za soderjimoe krasnyh podcherknutyh strok\n<br>vy toje mojete sochinit\\' takie s pomosch\\'yu <a href=editor.php>nahui-redaktora</a></font>",
+    "otvetstvenno": "<p><font size=-2>administraciya nahui ne neset otvetstvennosti za soderjimoe krasnyh podcherknutyh strok\n<br>vy toje mojete sochinit\\' takie s pomosch\\'yu <a href=%EDITOR_LINK%>nahui-redaktora</a></font>",
     "post": "n a p i s a t \\'    s o o b sch e n i e    N A H U I",
     "post_": "Napisat\\' soobschenie NAHUI",
     "postprivet": "Privet, nomer $count ! Napishi svoe soobschenie NAHUI:",

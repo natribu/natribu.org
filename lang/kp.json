@@ -31,7 +31,7 @@
     "hello_you": "당신이 그것에 의하여 인사한다,",
     "hello_noprichina": "그러나 당신의 케이스에서 이유는 간단하다:",
     "hello_nosovet": "그러나 당신에게 주요 것 미래에 회의:",
-    "otvetstvenno": "<p><font size=-2> [administratsiya]의 [nakhuy 또한] [vy] <br>의 빨간 강조한 선의\n 내용을 위한 책임을 수 있다 [nakhuy] <a href=editor.php> - [redaktora] </a></font>의 원조에 유사한 구성할 지지 않는다",
+    "otvetstvenno": "<p><font size=-2> [administratsiya]의 [nakhuy 또한] [vy] <br>의 빨간 강조한 선의\n 내용을 위한 책임을 수 있다 [nakhuy] <a href=%EDITOR_LINK%> - [redaktora] </a></font>의 원조에 유사한 구성할 지지 않는다",
     "post": "쓰기 위하여 커뮤니케이션 [NAKHUY]",
     "post_": "쓰기 위하여 커뮤니케이션 [NAKHUY]",
     "postprivet": "관계, count 의 수! 당신의 커뮤니케이션 [NAKHUY] 쓰십시오:",

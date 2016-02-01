@@ -33,7 +33,7 @@
     "hello_you": "Va saluta,  ",
     "hello_noprichina": "Dar in cazul Dumneavoastra cauza e simpla",
     "hello_nosovet": "Iata un sfat important pentru Dumenavaostra pe viitor",
-    "otvetstvenno": "<p><font size=-2>administratia INPULA nu duce responsabilitate de continutul propozitiilor subliniate cu rosu\n<br>puteti compune la fel cu ajutorul <a href=editor.php>Redactor INPULA</a></font>",
+    "otvetstvenno": "<p><font size=-2>administratia INPULA nu duce responsabilitate de continutul propozitiilor subliniate cu rosu\n<br>puteti compune la fel cu ajutorul <a href=%EDITOR_LINK%>Redactor INPULA</a></font>",
     "post": "s c r i e   m e s a j   I N P U L A",
     "post_": "scrie mesaj INPULA",
     "postprivet": "salut, nr. $count ! Scrie mesajul tau INPULA:",

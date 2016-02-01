@@ -34,7 +34,7 @@
     "hello_you": "npuВeTcTВyeT Вac,",
     "hello_noprichina": "Ho В Вawem c/\\y4ae npu4uHa npocTa:",
     "hello_nosovet": "Ho r/\\aВHbIu' Вam coВeT Ha 6yDyLL|ee:",
-    "otvetstvenno": "<p><font size=-2>aDmuHucTpaL|u9I Haxyu' He HeceT oTВeTcTВeHHocTu 3a coDep>|<umoe kpacHbIx noD4epkHyTbIx cTpok\n<br>ВbI To>|<e mo>|<eTe co4uHuTb Takue c nomoLL|bIO <a href=editor.php>Haxyu'-peDakTopa</a></font>",
+    "otvetstvenno": "<p><font size=-2>aDmuHucTpaL|u9I Haxyu' He HeceT oTВeTcTВeHHocTu 3a coDep>|<umoe kpacHbIx noD4epkHyTbIx cTpok\n<br>ВbI To>|<e mo>|<eTe co4uHuTb Takue c nomoLL|bIO <a href=%EDITOR_LINK%>Haxyu'-peDakTopa</a></font>",
     "post": "H a n u c a T b    c o o 6 LL| e H u e    H A X Y U'",
     "post_": "HanucaTb coo6LL|eHue HAXYU'",
     "postprivet": "npuВeT, Homep %COUNT% ! Hanuwu cВoe coo6LL|eHue HAXYU':",

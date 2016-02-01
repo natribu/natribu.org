@@ -33,7 +33,7 @@
     "hello_you": "le saluda,",
     "hello_noprichina": "Pero en su caso la razón es simple:",
     "hello_nosovet": "Principal consejo para el futuro:",
-    "otvetstvenno": "<p><font size=-2>la administración de 'a tomar por culo' no se responsabiliza del contenido de las lineas rojas subrayadas.\n<br>puede inventarse unas parecidas con la ayuda de<a href=editor.php>redactor - a tomar por culo</a></font>",
+    "otvetstvenno": "<p><font size=-2>la administración de 'a tomar por culo' no se responsabiliza del contenido de las lineas rojas subrayadas.\n<br>puede inventarse unas parecidas con la ayuda de<a href=%EDITOR_LINK%>redactor - a tomar por culo</a></font>",
     "post": "e s c r i b i r    c o m u n i c a d o    'A  T O M A R  P O R  C U L O'",
     "post_": "escribir comunicado A TOMAR POR CULO",
     "postprivet": "Helo, numero count ! Escriba su comunicado  A TOMAR POR CULO",

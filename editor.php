@@ -11,31 +11,6 @@ if (!file_exists(__DIR__ . '/lang/' . $lang . '.json')) {
     exit();
 }
 
-//--- поехали
-$name = str_replace('&amp;', '&', htmlspecialchars(trim($_POST['name'], ENT_QUOTES)));
-$prichina = str_replace('&amp;', '&', htmlspecialchars(trim($_POST['prichina'], ENT_QUOTES)));
-$delat = str_replace('&amp;', '&', htmlspecialchars(trim($_POST['delat'], ENT_QUOTES)));
-
-
-if ($name . $prichina . $delat) {
-    $stroka = $name . '%' . $prichina . '%' . $delat;
-    $stroka = base64_encode($stroka);
-    $stroka = str_replace(['=', '/'], ['', '-'], $stroka);
-
-    $ssylka = 'http://natribu.org/' . $lang . '/?' . $stroka;
-
-    print '<p>ссылка готова: <a href=' . $ssylka . '>нажми</a>';
-
-    echo '<SCRIPT language=JavaScript>
-function highlight(x){
-    document.forms[x].elements[0].focus()
-    document.forms[x].elements[0].select()
-}
-</SCRIPT>';
-    echo '<form><center><textarea cols=120 rows=2 style="border: 1px solid #330000; font-size: 14px;">' . $ssylka . "</textarea>";
-    echo '<font size=-1><br>херассе какая длинная! <a href="javascript:highlight(0)">выделить всю</a><p>хочется видеть эту ссылку короткой и загадочной? <a href=http://tinyurl.com/create.php?url=' . $ssylka . '>жми сюда</a></font></center></form>';
-}
-
 include('counter.php');
 $count = counter('.count.editor');
 
@@ -48,10 +23,41 @@ foreach (json_decode(file_get_contents(__DIR__ . '/lang/' . $lang .'.json'), tru
 
 header('Content-Type: text/html; charset=utf-8');
 
+//--- поехали
+print '<div id="custom_link_block" style="display: none;">';
+print '<p>ссылка готова: <a href=# id="custom_link_example">нажми</a>';
+
+echo '<SCRIPT language=JavaScript>
+function highlight(x){
+    document.forms[x].elements[0].focus()
+    document.forms[x].elements[0].select()
+}
+</SCRIPT>';
+echo '<form><center><textarea cols=120 rows=2 style="border: 1px solid #330000; font-size: 14px;" id="custom_link_text"></textarea>';
+echo '<font size=-1><br>херассе какая длинная! <a href="javascript:highlight(0)">выделить всю</a><p>хочется видеть эту ссылку короткой и загадочной? <a href=# id="custom_link_tiny">жми сюда</a></font></center></form>';
+print "</div>";
 ?>
 <html>
 <head>
     <title><?=$e_head?></title>
+    <script src="/base64.js"></script>
+    <script>
+        function generateLink() {
+            var custom_name = document.getElementById("custom_name").value;
+            var custom_how = document.getElementById("custom_how").value;
+            var custom_what = document.getElementById("custom_what").value;
+            if (!custom_name || !custom_how || !custom_what) {
+                return false;
+            }
+            var link = "http://natribu.org/<?=$lang?>/#" + base64_encode(custom_name + " % " + custom_how + " % " + custom_what).replace(/=/g, "").replace(/\//g, "-");
+            document.getElementById('custom_link_example').href = link;
+            document.getElementById('custom_link_text').value = link;
+            document.getElementById('custom_link_tiny').href = "http://tinyurl.com/create.php?url=" + encodeURIComponent(link);
+            document.getElementById('custom_link_block').style.display = "block";
+            (document.body || document.documentElement).scrollTop = 0;
+            return false;
+        }
+    </script>
 </head>
 <body bgcolor=white text=black background=http://natribu.org/fon1.jpg>
 
@@ -78,7 +84,7 @@ header('Content-Type: text/html; charset=utf-8');
             <div align=justify>
                 <p><?=$e_text?>
 
-                    <form action="/editor/<?=$lang?>/" method="POST">
+                    <form action="/editor/<?=$lang?>/" method="POST" onsubmit="return generateLink()">
                         <center>
                             <table width=80% border=1 cellspacing=0 cellpadding=20>
                                 <td valign=center>
@@ -92,6 +98,7 @@ header('Content-Type: text/html; charset=utf-8');
                         <font size=+1 color=red><u><?=$hello_you?> <input type=text name=name
                                                                           size=40
                                                                           style="border: 1px solid #330000; font-size: 16px;"
+                                                                          id="custom_name"
                                                                           value="<?=$name?> "></u></font></small>
 
 </center>
@@ -102,7 +109,7 @@ header('Content-Type: text/html; charset=utf-8');
 <p><?=$vot_samye?>
 <ul>
     <li><?=str_replace("\n", "</li><li>", $prichiny . "\n<font color=red><u>" . $hello_noprichina)?>
-        <input type=text name=prichina size=50
+        <input type=text name=prichina id="custom_how" size=50
                style="border: 1px solid #330000; font-size: 16px;"
                value="<?=$prichina?> "></u></font></li>
 </ul>
@@ -111,7 +118,7 @@ header('Content-Type: text/html; charset=utf-8');
 <p><?=$sovetuem?>
 <ul>
     <li><?=str_replace("\n", "</li><li>", $sovety . "\n<font color=red><u>" . $hello_nosovet)?>
-        <input type=text name=delat size=50
+        <input type=text name=delat id="custom_what" size=50
                style="border: 1px solid #330000; font-size: 16px;"
                value="<?=$delat?> "></u></font></li>
 </ul>

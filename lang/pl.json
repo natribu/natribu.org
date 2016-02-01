@@ -30,7 +30,7 @@
     "hello_you": "wita was,",
     "hello_noprichina": "Ale w twoim przypadku przyczyna prosta:",
     "hello_nosovet": "Ale glowna rada na przyszlosc:",
-    "otvetstvenno": "<p><font size=-2>administracja wpizde nie ponosi odpowiedzialnosci za tresc czerwonych podkreslonych linii\n<br>sam mozesz wymyslic takie przy pomocy <a href=editor.php>wpizde-edytora</a></font>",
+    "otvetstvenno": "<p><font size=-2>administracja wpizde nie ponosi odpowiedzialnosci za tresc czerwonych podkreslonych linii\n<br>sam mozesz wymyslic takie przy pomocy <a href=%EDITOR_LINK%>wpizde-edytora</a></font>",
     "post": "n a p i s a c   w i a d o m o s c   W P I Z D E",
     "post_": "Napisac wiadomosc WPIZDE",
     "postprivet": "Witaj, numer %COUNT%! Napisz swoja wiadomosc WPIZDE:",

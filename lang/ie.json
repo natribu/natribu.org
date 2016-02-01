@@ -34,7 +34,7 @@
     "hello_you": "Fáiltíonn tú",
     "hello_noprichina": "Ach tá i do chás ar an gcúis simplí:",
     "hello_nosovet": "Ach an príomh comhairle duit don todhchaí:",
-    "otvetstvenno": "<p><font size=-2>Riarachán nahuy ní bheidh freagrach as ábhar na línte dearga béim\n<br>Is féidir leat freisin den sórt sin a chumadh <a href=editor.php>eagarthóir nahuy</a></font>",
+    "otvetstvenno": "<p><font size=-2>Riarachán nahuy ní bheidh freagrach as ábhar na línte dearga béim\n<br>Is féidir leat freisin den sórt sin a chumadh <a href=%EDITOR_LINK%>eagarthóir nahuy</a></font>",
     "post": "t e a c h t a i r e a c h t    a    s c r í o b h    N A H U Y",
     "post_": "Fág teachtaireacht NAHUY",
     "postprivet": "Dia duit, seomra count! Scríobh do theachtaireacht NAHUY:",
