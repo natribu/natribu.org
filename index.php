@@ -127,11 +127,7 @@ if ($_GET)
             echo "\n<input TYPE=\"BUTTON\" VALUE=\"" . $bottom_druga . "\" onClick=\"window.alert('";
             echo str_replace("\\n##\\n", "'); window.alert('",
                 str_replace("\n", "\\n", str_replace("я", "\\я", $bottom_drug)));
-            echo "'); javascript:window.location.href='/";
-            if ($lang !== "ru") {
-                echo $lang . '/';
-            }
-            echo "editor' \">";
+            echo "'); window.location.href='/editor/" . $lang ."/' \">";
         }
         echo '</center>';
     }

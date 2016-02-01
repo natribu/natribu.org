@@ -1,11 +1,12 @@
 <?
-list($script, $lang, $human) = explode('/', $_SERVER['REQUEST_URI']);
+list($script, $lang, $human) = explode('/', ltrim($_SERVER['REQUEST_URI'], '/'));
 
 if (!preg_match('/[a-z0-9]{1,3}/i', $lang)) {
     $human = $lang;
     $lang = 'ru';
 }
-if (!file_exists('lang/' . $lang . '.php')) {
+
+if (!file_exists(__DIR__ . '/lang/' . $lang . '.json')) {
     header('Location: /');
     exit();
 }
@@ -21,11 +22,7 @@ if ($name . $prichina . $delat) {
     $stroka = base64_encode($stroka);
     $stroka = str_replace(['=', '/'], ['', '-'], $stroka);
 
-    if ($lang === 'ru') {
-        $ssylka = 'http://natribu.org/?' . $stroka;
-    } else {
-        $ssylka = 'http://natribu.org/' . $lang . '/?' . $stroka;
-    }
+    $ssylka = 'http://natribu.org/' . $lang . '/?' . $stroka;
 
     print '<p>ссылка готова: <a href=' . $ssylka . '>нажми</a>';
 
@@ -42,11 +39,14 @@ function highlight(x){
 include('counter.php');
 $count = counter('.count.editor');
 
-$codepage = "UTF-8";
 /** @noinspection PhpIncludeInspection */
-include('lang/' . $lang . '.php');
 
-header('Content-Type: text/html; charset=' . $codepage);
+foreach (json_decode(file_get_contents(__DIR__ . '/lang/' . $lang .'.json'), true) as $var => $val) {
+    $val = str_replace(['%COUNT%', '%POISKOVIK%', '%TEXT%'], [$count, $poiskovik, $text], $val);
+    $GLOBALS[$var] = $val;
+}
+
+header('Content-Type: text/html; charset=utf-8');
 
 ?>
 <html>
@@ -78,7 +78,7 @@ header('Content-Type: text/html; charset=' . $codepage);
             <div align=justify>
                 <p><?=$e_text?>
 
-                    <form action="editor" method="POST">
+                    <form action="/editor/<?=$lang?>/" method="POST">
                         <center>
                             <table width=80% border=1 cellspacing=0 cellpadding=20>
                                 <td valign=center>

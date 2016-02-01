@@ -3,7 +3,7 @@
 
 <center><table width=70%><td valign=center><div align=justify>
 
-<h1><center>БОЛЬШОЕ СПАСИБО<br>ЗА ИНФОРМАЦИЮ<object type="application/x-shockwave-flash" data="http://musicplayer.sourceforge.net/button/musicplayer_f6.swf?&autoplay=true&song_url=http://lleo.aha.ru/na/media/chasto.mp3" width="1" height="1"><param name="movie" value="http://musicplayer.sourceforge.net/button/musicplayer_f6.swf?&autoplay=true&song_url=http://lleo.aha.ru/na/media/chasto.mp3"></object></center></h1>
+<h1><center>БОЛЬШОЕ СПАСИБО<br>ЗА ИНФОРМАЦИЮ<object type="application/x-shockwave-flash" data="http://musicplayer.sourceforge.net/button/musicplayer_f6.swf?&autoplay=true&song_url=/media/chasto.mp3" width="1" height="1"><param name="movie" value="http://musicplayer.sourceforge.net/button/musicplayer_f6.swf?&autoplay=true&song_url=http://lleo.aha.ru/na/media/chasto.mp3"></object></center></h1>
 
 <p><br><font color=red><b>Ой, что это за страница?</b></font>
 
