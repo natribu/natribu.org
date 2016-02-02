@@ -1,12 +1,6 @@
 <?
-list($script, $lang, $human) = explode('/', ltrim($_SERVER['REQUEST_URI'], '/'));
-
-if (!preg_match('/[a-z0-9]{1,3}/i', $lang)) {
-    $human = $lang;
-    $lang = 'ru';
-}
-
-if (!file_exists(__DIR__ . '/lang/' . $lang . '.json')) {
+$lang = explode('/', explode('?', ltrim($_SERVER['REQUEST_URI'], '/'))[0])[0] ?: 'ru';
+if (!preg_match('/^[a-z0-9_]+$/i', $lang) || !file_exists('lang/' . $lang . '.json')) {
     header('Location: /');
     exit();
 }
@@ -14,14 +8,10 @@ if (!file_exists(__DIR__ . '/lang/' . $lang . '.json')) {
 include('counter.php');
 $count = counter('.count.editor');
 
-/** @noinspection PhpIncludeInspection */
-
 foreach (json_decode(file_get_contents(__DIR__ . '/lang/' . $lang .'.json'), true) as $var => $val) {
     $val = str_replace(['%COUNT%'], [$count], $val);
     $GLOBALS[$var] = $val;
 }
-
-header('Content-Type: text/html; charset=utf-8');
 
 //--- поехали
 print '<div id="custom_link_block" style="display: none;">';
@@ -67,11 +57,11 @@ print "</div>";
             classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
             codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0"
             WIDTH=1 HEIGHT=1>
-            <PARAM NAME=movie VALUE="/na/swf/chasto.swf">
+            <PARAM NAME=movie VALUE="/swf/chasto.swf">
             <PARAM NAME=quality VALUE=high>
             <PARAM NAME=bgcolor VALUE=#FFFFFF>
             <PARAM NAME=loop VALUE=false>
-            <EMBED src="/na/swf/chasto.swf" quality=high loop=false bgcolor=#FFFFFF
+            <EMBED src="/swf/chasto.swf" quality=high loop=false bgcolor=#FFFFFF
                    WIDTH=1 HEIGHT=1 TYPE="application/x-shockwave-flash"
                    PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED>
         </OBJECT>
