@@ -113,7 +113,7 @@ if ($bottom_vernutsa . $bottom_izbrannoe . $bottom_start . $bottom_druga) {
 <p>
 <table width=100%>
     <tr>
-        <td>
+        <td width="33%">
 <!--LiveInternet counter--><script type="text/javascript"><!--
 document.write("<a href='http://www.liveinternet.ru/click' "+
 "target=_blank><img src='//counter.yadro.ru/hit?t44.1;r"+
@@ -125,7 +125,8 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 "border='0' width='31' height='31'><\/a>")
 //--></script><!--/LiveInternet-->
         </td>
-        <td align=right><font size=-1><?=$perevod?>&nbsp;<?=$perevodchik?></font>
+        <td width="33%" align="center"><iframe src="https://ghbtns.com/github-btn.html?user=natribu&repo=natribu.org&type=star" frameborder="0" scrolling="0" width="50" height="20"></iframe></td>
+        <td width="33%" align=right><font size=-1><?=$perevod?>&nbsp;<?=$perevodchik?></font>
         </td>
     </tr>
 </table>
