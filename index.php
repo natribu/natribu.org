@@ -1,5 +1,5 @@
 <?php
-list($script, $lang, $human) = explode('/', $_SERVER['REQUEST_URI']);
+list($lang, $human) = explode('/', ltrim($_SERVER['REQUEST_URI'], '/'));
 
 if (!preg_match('/[a-z0-9]{1,3}/i', $lang)) {
     $human = $lang;
@@ -58,7 +58,7 @@ if ($_GET)
         echo '<PARAM NAME=movie VALUE="/swf/' . $media . '"><PARAM NAME=quality VALUE=high><PARAM NAME=bgcolor VALUE=#FFFFFF><PARAM NAME=loop VALUE=false>';
         echo '<EMBED src="/swf/' . $media . '" quality=high loop=false bgcolor=#FFFFFF WIDTH=130 HEIGHT=70 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED></OBJECT>';
     } else {
-        echo "<p><i><font size=-2>" . $epigraph . "<img src=http://home.lleo.me/cgi-bin/na_" . $lang . " width=1 height=1></font></i>";
+        echo "<p><i><font size=-2>" . $epigraph . "<img src=http://home.lleo.me/cgi-bin/na?" . $lang . " width=1 height=1></font></i>";
     }
     echo '</td></tr></table>
 <center><table width=70%><td valign=center><div align=justify>
