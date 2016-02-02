@@ -12,8 +12,6 @@ if (!file_exists('lang/' . $lang . '.json')) {
 }
 
 //--- поехали
-list($poiskovik, $text) = poiskovik();
-
 include('counter.php');
 $count = counter($lang);
 
@@ -34,8 +32,8 @@ $codepage = "UTF-8";
 
 foreach (json_decode(file_get_contents(__DIR__ . '/lang/' . $lang .'.json'), true) as $var => $val) {
     $val = str_replace(
-        ['%COUNT%', '%POISKOVIK%', '%TEXT%', '%EDITOR_LINK%'],
-        [$count, $poiskovik, $text, '/editor/' . $lang . '/'],
+        ['%COUNT%', '%EDITOR_LINK%'],
+        [$count, '/editor/' . $lang . '/'],
         $val);
     $GLOBALS[$var] = $val;
 }
@@ -79,10 +77,7 @@ if ($_GET)
 
 <p>';
 
-    if (!$u) {
-        $poisk = '';
-    }
-    echo str_replace('=POISK=', $poisk, $est_variant);
+    echo $est_variant;
 
     echo '<p><font color=red><b>' . $chto_delat . '</b></font><p>' . $sovetuem . '
 <ul><li>' . str_replace("\n", '</li><li>', $sovety) . '</li><li id="custom_what_block" style="display: none;"><font color=red><u>' . $hello_nosovet . ' <span id="custom_what"></span></u></font></span></li></ul>';
@@ -201,47 +196,3 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 
     </body>
     </html>
-
-
-<?
-function poiskovik()
-{
-    $s = [];
-    $u = parse_url($_SERVER['HTTP_REFERER']);
-    parse_str($u['query'], $outr);
-    // GOOGLE
-    if (ereg('google.', $u['host'])) {
-        $s[0] = urldecode($outr['q']);
-        $s[1] = 'Google';
-    }
-    // YANDEX-search
-    if (ereg('yandex.ru/yandsearch', $u['host'] . $u['path'])) {
-        $s[0] = urldecode($outr['text']);
-        $s[1] = 'Yandex';
-    }
-    // YANDEX-yandpage
-    if (ereg('yandex.ru/yandpage', $u['host'] . $u['path'])) {
-        parse_str(urldecode($outr['qs']), $outr2);
-        $s[0] = iconv('koi8-r', 'UTF-8', urldecode($outr2['text']));
-        $s[1] = 'Yandex';
-    }
-    // RAMBLER
-    if (ereg('rambler.ru', $u['host'])) {
-        $s[0] = trim(urldecode($outr['words'] . " " . $outr['old_q']));
-        $k_koi = strlen(str_replace("-", "",
-            strtr($s[0], "КГХЛЕОЗЫЭЪИЯЖЩЧБРТПМДЦЬСЮУНЙФШВА", "--------------------------------")));
-        $k_win = strlen(str_replace("-", "",
-            strtr($s[0], "кгхлеозыэъияжщчбртпмдцьсюунйфшва", "--------------------------------")));
-        if ($k_koi < $k_win) {
-            $s[0] = iconv('cp1251', 'koi8-r', $s[0]);
-        }
-        $s[1] = 'Rambler';
-    }
-    // GO.MAIL.RU
-    if (ereg('go.mail.ru/search', $u['host'] . $u['path'])) {
-        $s[0] = trim(urldecode($outr['q'] . ' ' . $outr['old_q']));
-        $s[1] = 'Go.mail.ru';
-    }
-
-    return $s;
-}

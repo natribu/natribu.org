@@ -17,7 +17,7 @@ $count = counter('.count.editor');
 /** @noinspection PhpIncludeInspection */
 
 foreach (json_decode(file_get_contents(__DIR__ . '/lang/' . $lang .'.json'), true) as $var => $val) {
-    $val = str_replace(['%COUNT%', '%POISKOVIK%', '%TEXT%'], [$count, $poiskovik, $text], $val);
+    $val = str_replace(['%COUNT%'], [$count], $val);
     $GLOBALS[$var] = $val;
 }
 
