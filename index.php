@@ -75,7 +75,7 @@ if ($_GET)
 <p><font color=red><b>' . $chto_eto_znachit . '</b></font><p>' . $vas_poslali . '
 
 <p><font color=red><b>' . $kak_eto_moglo . '</b></font><p>' . $vot_samye . '
-<ul><li>' . str_replace("\n", '</li><li>',$prichiny) , '</li><li><span id="custom_how_block" style="display: none;"><font color=red><u>' . $hello_noprichina . ' <span id="custom_how"></span></u></font></span></li></ul>
+<ul><li>' . str_replace("\n", '</li><li>',$prichiny) , '</li><li id="custom_how_block" style="display: none;"><font color=red><u>' . $hello_noprichina . ' <span id="custom_how"></span></u></font></li></ul>
 
 <p>';
 
@@ -85,8 +85,7 @@ if ($_GET)
     echo str_replace('=POISK=', $poisk, $est_variant);
 
     echo '<p><font color=red><b>' . $chto_delat . '</b></font><p>' . $sovetuem . '
-<ul><li>' . str_replace("\n", '</li><li>', $sovety . '
-<span id="custom_what_block" style="display: none;"><font color=red><u>' . $hello_nosovet . ' <span id="custom_what"></span></u></font></span>') . '</li></ul>';
+<ul><li>' . str_replace("\n", '</li><li>', $sovety) . '</li><li id="custom_what_block" style="display: none;"><font color=red><u>' . $hello_nosovet . ' <span id="custom_what"></span></u></font></span></li></ul>';
 
 
     if ($bottom_vernutsa . $bottom_izbrannoe . $bottom_start . $bottom_druga) {
@@ -192,9 +191,9 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
             var custom = base64_decode((window.location.hash.slice(1) || window.location.search.slice(1)).replace(/-/g, "/")).replace(/^\s+|\s+$/gm,'').split(/\s*%\s*/);
             document.getElementById('custom_name_block').style.display = 'inline';
             document.getElementById('custom_name').textContent = custom[0];
-            document.getElementById('custom_how_block').style.display = 'inline';
+            document.getElementById('custom_how_block').style.display = 'list-item';
             document.getElementById('custom_how').textContent = custom[1];
-            document.getElementById('custom_what_block').style.display = 'inline';
+            document.getElementById('custom_what_block').style.display = 'list-item';
             document.getElementById('custom_what').textContent = custom[2];
             document.getElementById('custom_disclaimer').style.display = 'block';
         } catch (e) {}
