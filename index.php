@@ -1,5 +1,5 @@
 <?php
-list($lang, $human) = explode('/', ltrim($_SERVER['REQUEST_URI'], '/'));
+list($lang, $human) = explode('/', ltrim(explode('?', $_SERVER['REQUEST_URI'])[0]), '/');
 
 if (!preg_match('/[a-z0-9]{1,3}/i', $lang)) {
     $human = $lang;
