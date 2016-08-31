@@ -1,5 +1,5 @@
 <?
-$lang = explode('/', explode('?', ltrim($_SERVER['REQUEST_URI'], '/'))[0])[0] ?: 'ru';
+$lang = explode('/', explode('?', ltrim($_SERVER['REQUEST_URI'], '/'))[0])[1] ?: 'ru';
 if (!preg_match('/^[a-z0-9_]+$/i', $lang) || !file_exists('lang/' . $lang . '.json')) {
     header('Location: /');
     exit();
