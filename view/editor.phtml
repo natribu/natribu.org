@@ -1,0 +1,27 @@
+<?php $this->layout('__layout__', [
+	'title' => $title,
+	'subtitle' => $subtitle,
+	'__meta__' => $__meta__
+]) ?>
+
+<noscript>
+	<p><?=$enableJS?></p>
+</noscript>
+
+<div id="result" style="display: hidden;">
+	
+</div>
+
+<?=$mainContent?>
+
+<form target="?" method="GET">
+	<?php foreach($fields as $id => $label): ?>
+		<label for="<?=$this->e($id)?>"><?=$this->e($label)?>: </label>
+    	<input type="text" id="<?=$this->e($id)?>" name="<?=$this->e($id)?>"/>
+	<?php endforeach; ?>
+	<input type="submit"/>
+</form>
+
+<?php $this->start('footer') ?>
+	<a class="btn" href="/"><?=$index['title']?></a>
+<?php $this->end() ?>

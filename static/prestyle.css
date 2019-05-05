@@ -1,0 +1,43 @@
+body {
+	display: grid;
+	background: #FFF;
+	color: #000;
+	grid-template-areas: "a a a a" ". h h ." ". m m ." ". f f .";
+	grid-template-columns: 14vw 35vw 35vw 14vw;
+}
+aside {
+	grid-area: a;
+	display: grid;
+}
+aside > p {grid-column: 1 / 4}
+aside > video {grid-column: 4 / 5}
+header {grid-area: h}
+main {grid-area: m}
+footer {grid-area: f}
+header, footer, .center {text-align: center}
+main > p:first-line, .natribu-counter {
+	color: red;
+	font-weight: bold;
+}
+h1 > span {
+	font-size: smaller;
+}
+.btn {
+	padding: .5em;
+	-webkit-appearance: button;
+	text-decoration: none;
+	color: #000;
+}
+.github {
+	overflow: hidden;
+	width: 50px;
+	height: 20px;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+	aside > video {
+		display: none!important;
+	}
+	.btn {
+		width: 10em;
+	}
+}

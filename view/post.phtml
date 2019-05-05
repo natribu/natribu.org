@@ -1,0 +1,19 @@
+<?php $this->layout('__layout__', [
+	'title' => $title,
+	'subtitle' => $subtitle,
+	'__meta__' => $__meta__
+]) ?>
+
+<form action="/" method="GET" onsubmit='alert("<?=$this->e($submit)?>"); return !0'>
+    <p><?=$fields["name"]?>: <input type="text"/></p>
+    <p><?=$fields["email"]?>: <input type="email"/></p>
+    <textarea></textarea>
+    <p><input type="checkbox"/> <?=$fields["csrf"]?></p>
+    <p><input type="checkbox"/> <?=$fields["hideIp"]?></p>
+	<p class="center"><input type="submit"/></p>
+	<!-- <?=$this->e($message)?> -->
+</form>
+
+<?php $this->start('footer') ?>
+	<a class="btn" href="/about"><?=$this->e($about['title'])?></a>
+<?php $this->end() ?>

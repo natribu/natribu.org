@@ -1,0 +1,30 @@
+body {
+	background: url("background.png") repeat;
+}
+p.aside {
+	font-style: italic;
+	font-size: small;
+	text-align: left;
+}
+video.aside {
+	display: inline-block;
+	height: 100%;
+	text-align: right;
+}
+.btn {
+	display: inline-block;
+	-webkit-appearance: none;
+	transition: background .3s ease-out;
+	padding: .5em 1em;
+	margin: .5em;
+	color: #FFF;
+	background: #263238;
+	border-radius: 3px;
+		letter-spacing: .5px;
+		box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14),
+		0 1px 10px 0 rgba(0,0,0,0.12),
+		0 2px 4px -1px rgba(0,0,0,0.3);
+}
+.btn:hover {background: #37474F;}
+.btn:active {background: #546e7a;}
+iframe {border: none;}

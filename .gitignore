@@ -1,4 +1,3 @@
-.idea/
-*.ipr
-*.iws
-.idea_modules/
+vendor/
+build/
+old/

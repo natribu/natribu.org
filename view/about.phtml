@@ -1,0 +1,11 @@
+<?php $this->layout('__layout__', [
+	'title' => $title,
+	'subtitle' => $subtitle,
+	'__meta__' => $__meta__
+]) ?>
+
+<?=$mainContent?>
+
+<?php $this->start('footer') ?>
+	<a class="btn" href="/"><?=$index['title']?></a>
+<?php $this->end() ?>

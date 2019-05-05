@@ -1,0 +1,27 @@
+{
+	"name": "НАХУЙ",
+	"short_name": "НАХУЙ",
+	"description": "Официальный сайт символического направления.",
+	"lang": "ru",
+	"start_url": "../",
+	"display": "standalone",
+	"background_color": "#fff",
+	"theme_color": "#000",
+	"icons": [{
+		"src": "./icon-small.png",
+		"sizes": "32x32",
+		"type": "image/png"
+	}, {
+		"src": "./icon-medium.png",
+		"sizes": "96x96",
+		"type": "image/png"
+	}, {
+		"src": "./icon-large.png",
+		"sizes": "192x192",
+		"type": "image/png"
+	}, {
+		"src": "./splash.png",
+		"sizes": "512x512",
+		"type": "image/png"
+	}]
+}

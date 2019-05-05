@@ -1,0 +1,35 @@
+<?php $this->layout('__layout__', [
+	'title' => $title,
+	'subtitle' => $subtitle,
+	'page' => 'index',
+	'__meta__' => $__meta__
+]) ?>
+
+<?php $this->start('scripts') ?>
+	<script async defer src="static/counter.js"></script>
+	<script async defer src="static/main.js"></script>
+	<script id="js-locale" type="application/json"><?=json_encode($scriptLocale, JSON_UNESCAPED_UNICODE)?></script>
+<?php $this->end() ?>
+
+<?php $this->start('aside') ?>
+	<p class="aside">
+		<?=implode("<br/>", $asideQuotes)?>
+	</p>
+	<video class="aside" src="static/aside_<?=$__meta__['locale'];?>.mp4"></video>
+<?php $this->end() ?>
+
+<?php $this->start('header') ?>
+	
+<?php $this->end() ?>
+
+<?=$mainContent?>
+
+<?php $this->start('footer') ?>
+	<p class="center">
+		<?php foreach($footerButtons as $id => $label): ?>
+		<a class="btn" href="#" data-id="<?=$this->e($id)?>"><?=$this->e($label)?></a>
+		<?php endforeach ?>
+	</p>
+	<a class="btn" href="/about"><?=$this->e($about['title'])?></a>
+	<iframe class="github" aria-hidden="true" src="https://ghbtns.com/github-btn.html?user=natribu&repo=natribu.org&type=star"></iframe>
+<?php $this->end() ?>

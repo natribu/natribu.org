@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="<?=$this->e($__meta__['locale'], 'strtolower')?>">
+<head>
+	<meta charset="utf-8"/>
+	<title><?=$this->e($title, 'mb_strtoupper')?></title>
+	<?=$this->m2MinifyCSS('static/prestyle.css')?>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+	<meta name="description" content="<?=$this->e($subtitle)?>"/>
+	<meta name="google" content="notranslate"/>
+	<meta name="theme-color" content="#000"/>
+	<link rel="manifest" href="static/manifest.json"/>
+	<!-- Icons -->
+	<link rel="icon" type="image/png" href="static/icon-small.png" sizes="32x32"/>
+	<link rel="icon" type="image/png" href="static/icon-medium.png" sizes="96x96"/>
+	<link rel="icon" type="image/png" href="static/icon-large.png" sizes="192x192"/>
+	<!-- Async components & Fallback -->
+	<?=$this->section('scripts')?>
+	<link rel="preload" href="static/restof.css" as="style" onload="this.rel='stylesheet'"/>
+	<noscript>
+        <?=$this->section('noscript')?>
+		<link rel="stylesheet" href="static/restof.css"/>
+		<style>a[data-id],iframe{display:none}</style>
+	</noscript>
+</head>
+<body>
+	<aside>
+		<?=$this->section('aside')?>
+	</aside>
+	<header>
+		<h1><?=$this->e($title)?><br><sub><?=$this->e($subtitle)?></sub></h1>
+		<?=$this->section('header')?>
+		<form method="GET" action="/setlang">
+			<input type="hidden" name="page" value="<?=$page?>"/>
+			<select name="locale" aria-label="">
+				<?php foreach($this->localeSelectList() as $group=>$locales): ?>
+					<optgroup label="<?=$group?>">
+						<?php foreach($locales as $id=>$lang): ?>
+							<option value="<?=$id?>"><?="$id: $lang"?></option>
+						<?php endforeach ?>
+					</optgroup>
+				<?php endforeach ?>
+			</select>
+			<input type="submit"/>
+		</form>
+	</header>
+	<main>
+		<?=$this->section('content')?>
+	</main>
+	<footer>
+		<?=$this->section('footer')?>
+	</footer>
+</body>
+</html>
