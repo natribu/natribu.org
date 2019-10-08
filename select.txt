@@ -13,7 +13,7 @@
 <option value="http://natribu.org/az/">az: Azərbaycan nümayindəliyi
 <option value="http://natribu.org/kg/">kg: кыргызча офис
 <option value="http://natribu.org/kaz/">kaz: қазақ офисі
-<option value="http://natribu.org/">ru: Русский офис
+<option value="http://natribu.org/ru">ru: Русский офис
 
 <OPTGROUP label="Europe:">
 <option value="http://natribu.org/de/">de: Deutsches Büro
