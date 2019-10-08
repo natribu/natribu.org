@@ -1,5 +1,5 @@
 <OPTGROUP label="xUSSR:">
-<option value="http://natribu.org/">rupu: Российский офис
+<option value="http://natribu.org/rupu/">rupu: Российский офис
 <option value="http://natribu.org/ua/">ua: Український офіс
 <option value="http://natribu.org/by/">by: Беларускі офіс
 <option value="http://natribu.org/md/">md: Oficiul moldovenesc
@@ -13,7 +13,7 @@
 <option value="http://natribu.org/az/">az: Azərbaycan nümayindəliyi
 <option value="http://natribu.org/kg/">kg: кыргызча офис
 <option value="http://natribu.org/kaz/">kaz: қазақ офисі
-<option value="http://natribu.org/ru">ru: Русский офис
+<option value="http://natribu.org/ru/">ru: Русский офис
 
 <OPTGROUP label="Europe:">
 <option value="http://natribu.org/de/">de: Deutsches Büro
