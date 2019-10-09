@@ -1,7 +1,7 @@
 <?php
 $lang = explode('/', explode('?', ltrim($_SERVER['REQUEST_URI'], '/'), 2)[0], 2)[0];
 if (!$lang) {
-    $lang = 'rupu'; // TODO: replace only for Russian IPs.
+    $lang = 'ru'; // TODO: Check client language preferences
 }
 if (!preg_match('/^[a-z0-9_]+$/i', $lang) || !file_exists('lang/' . $lang . '.json')) {
     header('Location: /');
@@ -18,11 +18,34 @@ $memcache->set('count_na_' . $lang, $count, 600); // записать в memcach
 
 $count = '<span id=counter>' . $count . '</span>';
 
-foreach (json_decode(file_get_contents(__DIR__ . '/lang/' . $lang .'.json'), true) as $var => $val) {
+// TODO: enable only for Russian IPs.
+$censorship_mode =
+    $lang === 'ru'
+    && $_GET['censorship_mode'] !== 'off'
+    && $_SERVER['QUERY_STRING'] !== '420'
+    && $_SERVER['QUERY_STRING'] !== 'fuck_rkn'
+    && !$_GET['fuck_rkn']
+;
+$censorship = function ($text) {
+    return preg_replace('/х(\s*)у(\s*)(й)\b/mui', '✱$1✱$2$3', $text);
+};
+
+$lang_data = json_decode(file_get_contents(__DIR__ . '/lang/' . $lang .'.json'), true);
+foreach ($lang_data as $var => $val) {
     $val = str_replace(
-        ['%COUNT%', '%EDITOR_LINK%'],
-        [$count, '/editor/' . $lang . '/'],
-        $val);
+        [
+            '%EDITOR_LINK%',
+            '%COUNT%',
+        ],
+        [
+            '/editor/' . $lang . '/',
+            $count,
+        ],
+        $val
+    );
+    if ($censorship_mode) {
+        $val = $censorship($val);
+    }
     $GLOBALS[$var] = $val;
 }
 
@@ -34,7 +57,7 @@ header('Content-Type: text/html; charset=utf-8');
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 </head>
 <body bgcolor=white text=black background=/fon1.jpg>
-<?
+<?php
 if ($media) {
     echo "<table width=100%><tr><td><i><font size=-2>$epigraph<img src=//home.lleo.me/cgi-bin/na?lang=$lang width=1 height=1></font></i></td><td align=right>";
     echo '<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" WIDTH=130 HEIGHT=70>';

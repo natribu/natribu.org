@@ -1,7 +1,7 @@
-<?
+<?php
 $lang = explode('/', explode('?', ltrim($_SERVER['REQUEST_URI'], '/'), 2)[0], 2)[1];
 if (!$lang) {
-    $lang = 'rupu'; // TODO: replace only for Russian IPs.
+    $lang = 'ru'; // TODO: Check client language preferences
 }
 if (!preg_match('/^[a-z0-9_]+$/i', $lang) || !file_exists('lang/' . $lang . '.json')) {
     header('Location: /');
