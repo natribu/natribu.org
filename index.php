@@ -36,12 +36,12 @@ header('Content-Type: text/html; charset=utf-8');
 <body bgcolor=white text=black background=/fon1.jpg>
 <?
 if ($media) {
-    echo "<table width=100%><tr><td><i><font size=-2>$epigraph<img src=http://home.lleo.me/cgi-bin/na?lang=$lang width=1 height=1></font></i></td><td align=right>";
+    echo "<table width=100%><tr><td><i><font size=-2>$epigraph<img src=//home.lleo.me/cgi-bin/na?lang=$lang width=1 height=1></font></i></td><td align=right>";
     echo '<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" WIDTH=130 HEIGHT=70>';
     echo '<PARAM NAME=movie VALUE="/swf/' . $media . '"><PARAM NAME=quality VALUE=high><PARAM NAME=bgcolor VALUE=#FFFFFF><PARAM NAME=loop VALUE=false>';
     echo '<EMBED src="/swf/' . $media . '" quality=high loop=false bgcolor=#FFFFFF WIDTH=130 HEIGHT=70 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED></OBJECT>';
 } else {
-    echo "<p><i><font size=-2>" . $epigraph . "<img src=http://home.lleo.me/cgi-bin/na?" . $lang . " width=1 height=1></font></i>";
+    echo "<p><i><font size=-2>" . $epigraph . "<img src=//home.lleo.me/cgi-bin/na?" . $lang . " width=1 height=1></font></i>";
 }
 echo '</td></tr></table>
 <center><table width=70%><td valign=center><div align=justify>
