@@ -18,9 +18,9 @@ $memcache->set('count_na_' . $lang, $count, 600); // записать в memcach
 
 $count = '<span id=counter>' . $count . '</span>';
 
-// TODO: enable only for Russian IPs.
 $censorship_mode =
     $lang === 'ru'
+    && ($_SERVER['GEOIP_COUNTRY_CODE'] === 'RU' && $_GET['censorship_mode'] !== 'on')
     && $_GET['censorship_mode'] !== 'off'
     && $_SERVER['QUERY_STRING'] !== '420'
     && $_SERVER['QUERY_STRING'] !== 'fuck_rkn'
