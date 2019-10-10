@@ -60,8 +60,8 @@ header('Content-Type: text/html; charset=utf-8');
 <?php
 if ($gif) {
     echo '<table width=100%><tr>';
-    echo '<td><i><font size=-2>$epigraph<img src=//home.lleo.me/cgi-bin/na?lang=$lang width=1 height=1></font></i></td>';
-    echo '<td align=right><IMG src="/media/' . $media . '.gif" WIDTH=130 HEIGHT=7></td>';
+    echo '<td><i><font size=-2>'.$epigraph.'<img src=//home.lleo.me/cgi-bin/na?lang=$lang width=1 height=1></font></i></td>';
+    echo '<td align=right><IMG src="/media/' . $gif . '" WIDTH=130 HEIGHT=7></td>';
     echo '</tr></table>';
 } else {
     echo "<p><i><font size=-2>" . $epigraph . "<img src=//home.lleo.me/cgi-bin/na?" . $lang . " width=1 height=1></font></i>";
