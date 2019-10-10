@@ -683,7 +683,7 @@ function getlang($file)
 
         'headpage' => $headpage,
         'epigraph' => $epigraph,
-        'media' => $media,
+        'gif' => $gif,
         'head' => $head,
         'official_site' => $official_site,
         'national_office' => $national_office,

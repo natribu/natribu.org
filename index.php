@@ -58,15 +58,19 @@ header('Content-Type: text/html; charset=utf-8');
 </head>
 <body bgcolor=white text=black background=/fon1.jpg>
 <?php
-if ($media) {
-    echo "<table width=100%><tr><td><i><font size=-2>$epigraph<img src=//home.lleo.me/cgi-bin/na?lang=$lang width=1 height=1></font></i></td><td align=right>";
-    echo '<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" WIDTH=130 HEIGHT=70>';
-    echo '<PARAM NAME=movie VALUE="/swf/' . $media . '"><PARAM NAME=quality VALUE=high><PARAM NAME=bgcolor VALUE=#FFFFFF><PARAM NAME=loop VALUE=false>';
-    echo '<EMBED src="/swf/' . $media . '" quality=high loop=false bgcolor=#FFFFFF WIDTH=130 HEIGHT=70 TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED></OBJECT>';
+if ($gif) {
+    echo '<table width=100%><tr>';
+    echo '<td><i><font size=-2>'.$epigraph.'<img src=//home.lleo.me/cgi-bin/na?lang=$lang width=1 height=1></font></i></td>';
+    echo '<td align=right><IMG src="/media/' . $gif . '" WIDTH=130 HEIGHT=70></td>';
+    echo '</tr></table>';
 } else {
     echo "<p><i><font size=-2>" . $epigraph . "<img src=//home.lleo.me/cgi-bin/na?" . $lang . " width=1 height=1></font></i>";
 }
-echo '</td></tr></table>
+if ($mp3) {
+    echo '<iframe src="/media/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>';
+    echo '<audio src="/media/' . $mp3 . '" autoplay></audio>';
+}
+echo '
 <center><table width=70%><td valign=center><div align=justify>
 <h1><center><p>' . $head . '<br><small>' . $official_site . '<span id="custom_name_block" style="display: none;"><br><font size=+1 color=red><u>' . $hello_you . ' <span id="custom_name"></span></u></font></span>';
 
