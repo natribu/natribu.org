@@ -67,6 +67,7 @@ if ($gif) {
     echo "<p><i><font size=-2>" . $epigraph . "<img src=//home.lleo.me/cgi-bin/na?" . $lang . " width=1 height=1></font></i>";
 }
 if ($mp3) {
+    echo '<iframe src="/media/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>';
     echo '<audio src="/media/' . $mp3 . '" autoplay></audio>';
 }
 echo '
