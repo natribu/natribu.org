@@ -20,7 +20,7 @@ $count = '<span id=counter>' . $count . '</span>';
 
 $censorship_mode = $_GET['censorship_mode'] === 'on' || (
     $lang === 'ru'
-    && $_SERVER['GEOIP_COUNTRY_CODE'] === 'RU'
+//    && $_SERVER['GEOIP_COUNTRY_CODE'] === 'RU'
     && !$_SERVER['QUERY_STRING']
 );
 $censorship = function ($text) {
