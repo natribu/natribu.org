@@ -18,11 +18,7 @@ $memcache->set('count_na_' . $lang, $count, 600); // записать в memcach
 
 $count = '<span id=counter>' . $count . '</span>';
 
-$censorship_mode = $_GET['censorship_mode'] === 'on' || (
-    $lang === 'ru'
-//    && $_SERVER['GEOIP_COUNTRY_CODE'] === 'RU'
-    && !$_SERVER['QUERY_STRING']
-);
+$censorship_mode = $_GET['censorship_mode'] === 'on';
 $censorship = function ($text) {
     return preg_replace('/х(\s*)у(\s*)(й)\b/mui', '✱$1✱$2$3', $text);
 };
