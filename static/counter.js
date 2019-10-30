@@ -1,11 +1,10 @@
 (function(fn){
-	// On DOM ready
 	if(document.readyState === "complete") return fn();
 	document.addEventListener('DOMContentLoaded', fn)
 })(function(){
     function update() {
         var request = new XMLHttpRequest();
-        request.open('GET', 'counter.php', true);
+        request.open('GET', 'counter', true);
         request.onload = function() {
             if (this.status >= 200 && this.status < 400) {
                 var counter = +this.response;
@@ -17,6 +16,6 @@
         };
         request.send();
     }
-    setInterval(update, 1e4);
+    setInterval(update, 3e4);
     update();
 });

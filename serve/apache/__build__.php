@@ -1,3 +1,6 @@
+<?php
+copy("./index.php", "$buildDir/index.php");
+file_put_contents("$buildDir/.htaccess", "
 ## .htaccess for natribu-next
 Options -Indexes -MultiViews +FollowSymLinks
 AddDefaultCharset UTF-8
@@ -11,3 +14,6 @@ FileETag none
 </IfModule>
 
 Header add Service-Worker-Allowed /
+");
+
+?>

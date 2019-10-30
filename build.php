@@ -3,29 +3,29 @@ error_reporting(E_ALL & ~E_NOTICE);
 require 'vendor/autoload.php';
 require 'natribu.php';
 
-$buildDir = "build/";
 $options = [];
 foreach(array_slice($argv, 1) as $opt){
 	if(substr($opt, 0, 2) === "--"){
-		$options[substr($opt, 2)] = true;
-	}else{
-		$buildDir = $opt;
+		list($k, $v) = explode("=", substr($opt, 2));
+		$options[$k] = $v ?? true;
 	}
 }
+$n = PHP_EOL;
 if($argc === 1 || $options["help"]){
-	echo "Usage: php ./build.php [buildDir] [--serveDst]". PHP_EOL;
-	echo "   php ./build.php --node buildNode/". PHP_EOL;
-	echo "   php ./build.php build/ --default". PHP_EOL;
-	echo "   php ./build.php build/". PHP_EOL;
-	echo "   php ./build.php --help". PHP_EOL;
-	echo PHP_EOL;
-	echo "   --help    Show this help". PHP_EOL;
-	echo PHP_EOL;
-	echo "   Build destinations:". PHP_EOL;
-	echo "   --apache  Apache / PHP 5+ setup [default]". PHP_EOL;
-	echo "   --node    An Node.js server". PHP_EOL;
-	//echo "   --ngnix Ngnix / PHP 5+ setup". PHP_EOL;
-	//echo "   --gae Google App Engine / PHP 5". PHP_EOL;
+	echo "Usage: php ./build.php [--build=<dir>] [--serve=<dest>] [--prod]$n";
+	echo "   php ./build.php --build=buildNode/ --serve=node$n";
+	echo "   php ./build.php --build=build/ --prod$n";
+	echo "   php ./build.php --help$n$n";
+	echo "   --help          Show this help$n";
+	echo "   --prod          Enable production mode$n";
+	echo "   --build=<dir>   Build at specified directory$n";
+	echo "   --serve=<dest>  Serve files for destination$n$n";
+	echo "   Build destinations:$n";
+	echo "   * apache  Apache / PHP 5+ setup [default]$n";
+	echo "   * node    An Node.js server$n";
+	echo "   * static  Static HTML pages$n";
+	//echo "   * ngnix   Ngnix / PHP 5+ setup$n";
+	//echo "   * gae     Google App Engine / PHP 5$n";
 	return;
 }
 
@@ -57,14 +57,20 @@ function rmdir_recursive($dir) {
 }
 
 function color($string, $colorCode = "0;30") {
-	return "\033[${colorCode}m$string\033[0m". PHP_EOL;
+	return "\033[${colorCode}m$string\033[0m$n";
 }
 
 try {
+	$buildDir = $options["build"] ?? "build/";
+	$serveDest = $options["serve"] ?? "default";
+	$production = $options["prod"] ?? false;
+	if($production) {
+		echo "! Production mode enabled$n";
+	}
 	$timer = microtime(true);
-	echo "Building in $buildDir...". PHP_EOL;
+	echo "Building in $buildDir...$n";
 	if(is_dir($buildDir)){
-		echo "Clearing $buildDir...". PHP_EOL;
+		echo "Clearing $buildDir...$n";
 		rmdir_recursive($buildDir);
 	}
 	if(!is_dir($buildDir) && !mkdir($buildDir, null, true)){
@@ -72,14 +78,14 @@ try {
 	}
 	$buildDir = realpath($buildDir);
 	
-	echo "Building pages...". PHP_EOL;
+	echo "Building pages...$n";
 	$nahui = new NatribuNext\Engine();
 	foreach($nahui->locales as $localeId => $localeData) {
 		mkdir($buildDir. DIRECTORY_SEPARATOR .$localeId, null, true);
 		
 		foreach($localeData as $pageId => $_) {
 			if($pageId === "__meta__") continue;
-			echo "* Building ${localeId}/${pageId}.html". PHP_EOL;
+			echo "* Building ${localeId}/${pageId}.html$n";
 
 			if(!file_put_contents(
 				implode(DIRECTORY_SEPARATOR, [$buildDir, $localeId, "$pageId.html"]),
@@ -88,25 +94,21 @@ try {
 		}
 	}
 
-	echo "Copying static files...". PHP_EOL;
+	echo "Copying static files...$n";
 	rcopy("static/", "$buildDir/static");
 
-	echo "Preparing app for serve destination...". PHP_EOL;
-	if($options["node"]) {
-		file_put_contents("$buildDir/package.json", json_encode([
-			"name" => "natribu-next-build",
-			"version" => "1.0.0-rc".time(),
-			"private" => true,
-			"main" => "app.js",
-			"scripts" => ["test" => "exit 0"]
-		], JSON_PRETTY_PRINT));
-		rcopy("serve/node", $buildDir);
-	} else {
-		if(!$options["apache"]){
-			echo color("Serve destination not specified, using default", "0;33");
+	echo "Preparing for serve destination...$n";
+	if(!is_dir("serve/$serveDest")){
+		if($production) {
+			throw new Exception("Serve destination not supported");
 		}
-		rcopy("serve/apache", $buildDir);
+		$serveDest = "default";
+		echo color("Serve destination not supported, using default", "0;33");
 	}
+
+	$GLOBALS["production"] = $production;
+	$GLOBALS["buildDir"] = $buildDir;
+	require "serve/$serveDest/__build__.php";
 
 	printf(color("Build success! Time passed: %dms", "1;32"), (microtime(true) - $timer)*1000);
 } catch(Exception $e) {

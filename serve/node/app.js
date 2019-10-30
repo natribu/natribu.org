@@ -16,20 +16,30 @@ const map = {
 	'.mp3': 'audio/mpeg',
 	'.ogg': 'audio/ogg'
 };
-createServer((req, res) => res.writeHead(301, {'Location': `https://${req.headers.host}${req.url}`}) || res.end()).listen(port);
-const server = createSecureServer(
-	{
-		cert: fs.readFileSync('./localhost.crt'),
-		key: fs.readFileSync('./localhost.key')
-	},
-	onRequest
-).listen(port_ssl);
-console.log(`Servers listening on ports ${port}(HTTP) / ${port_ssl}(HTTPS)`);
+if(fs.existSync("./key.pem")){
+	createServer((req, res) => res.writeHead(301, {'Location': `https://${req.headers.host}${req.url}`}) || res.end()).listen(port);
+	createSecureServer(
+		{
+			cert: fs.readFileSync('./cert.pem'),
+			key: fs.readFileSync('./key.pem')
+		},
+		onRequest
+	).listen(port_ssl);
+	console.log(`Server listening on port ${port_ssl} (development HTTPS)`);
+} else {
+	createServer(onRequest).listen(port);
+	console.log(`Server listening on port ${port}`);
+}
 
+let counter = 12345678; // TODO
 function onRequest({url, headers}, res) {
 	url = url.substr(1).replace("..", "");
 	if(!url) url = "index";
 	if(!url.startsWith("static/")) {
+		if(url === "counter") {
+			res.end(counter++);
+			return;
+		}
 		
 		const lang = headers["accept-language"]
 			.split(/\s*,\s*/)

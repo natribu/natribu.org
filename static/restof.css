@@ -1,3 +1,4 @@
+/* Весь остальной CSS что подгрузится асинхронно */
 body {
 	background: url("background.png") repeat;
 }
@@ -10,6 +11,7 @@ video.aside {
 	display: inline-block;
 	height: 100%;
 	text-align: right;
+	background: transparent;
 }
 .btn {
 	display: inline-block;
