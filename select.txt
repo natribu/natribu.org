@@ -48,7 +48,7 @@
 <option value="//natribu.org/lat/">lat: Ofis Latina
 <option value="//natribu.org/gr/">gr: Σε Ελλινικα
 <option value="//natribu.org/eo/">eo: Esperanto-oficejo
-<option value="//natribu.org/nr/">nr: Русская непереключенная <!-- Русская непереключенная -->
+<option value="//natribu.org/ru2/">ru2: Трансантлантический офис <!-- Транслит -->
 <option value="//natribu.org/pd/">pd: Падонкаффский офеззз <!-- падонкаффский -->
 <option value="//natribu.org/le/">le: fukk0f eng1ish
 
