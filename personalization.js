@@ -18,6 +18,13 @@ function personalization_payload(fields) {
   return personalization_fields(fields).join(' % ');
 }
 
+function personalization_link(current_location, page_path, fields) {
+  var origin = current_location.origin || (current_location.protocol + '//' + current_location.host);
+  var encoded = base64_encode(personalization_payload(fields)).replace(/=/g, '').replace(/\//g, '-');
+
+  return origin + page_path + '#' + encoded;
+}
+
 function personalization_fields_from_payload(payload) {
   var values = String(payload || '').split(/\s*%\s*/);
 

@@ -38,6 +38,20 @@ function createDocument() {
 
 assert(base64_decode('4pyTIMOgIGxhIG1vZGU=') === '✓ à la mode', 'UTF-8 Base64 decoding must remain compatible');
 
+const russianLink = personalization_link(
+  {origin: 'https://natribu.org', protocol: 'https:', host: 'natribu.org'},
+  '/',
+  ['Имя', '', '']
+);
+assert(russianLink.indexOf('https://natribu.org/#') === 0, 'Russian links must use the current HTTPS origin and root path');
+
+const localLink = personalization_link(
+  {protocol: 'http:', host: 'localhost:8080'},
+  '/en/',
+  ['', 'Reason', '']
+);
+assert(localLink.indexOf('http://localhost:8080/en/#') === 0, 'Links must preserve the current local origin and locale path');
+
 const combinations = [
   ['', '', ''],
   ['Имя', '', ''],

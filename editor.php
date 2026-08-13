@@ -8,6 +8,7 @@ if (!$lang || !preg_match('/^[a-z0-9_]+$/i', $lang) || !file_exists(__DIR__ . '/
 }
 
 $editor_path = editor_url($lang);
+$personalized_page_path = $lang === 'ru' ? '/' : '/' . $lang . '/';
 $redirect_url = editor_canonical_redirect_url($_SERVER['REQUEST_URI'], $lang);
 if ($redirect_url) {
     header('Location: ' . $redirect_url);
@@ -52,7 +53,7 @@ print "</div>";
                 document.getElementById('custom_link_block').style.display = "none";
                 return false;
             }
-            var link = "http://natribu.org/<?=$lang?>/#" + base64_encode(personalization_payload(custom)).replace(/=/g, "").replace(/\//g, "-");
+            var link = personalization_link(window.location, <?=json_encode($personalized_page_path)?>, custom);
             document.getElementById('custom_link_example').href = link;
             document.getElementById('custom_link_text').value = link;
             document.getElementById('custom_link_tiny').href = "http://tinyurl.com/create.php?url=" + encodeURIComponent(link);
