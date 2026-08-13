@@ -3,18 +3,22 @@ function base64_decode(data) {
   // original by: Tyler Akins (http://rumkin.com)
   // improved by: Thunder.m
   // improved by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
-  // improved by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
   //    input by: Aman Gupta
   //    input by: Brett Zamir (http://brett-zamir.me)
   // bugfixed by: Onno Marsman
   // bugfixed by: Pellentesque Malesuada
   // bugfixed by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
-  //   example 1: base64_decode('S2V2aW4gdmFuIFpvbm5ldmVsZA==');
-  //   returns 1: 'Kevin van Zonneveld'
-  //   example 2: base64_decode('YQ===');
-  //   returns 2: 'a'
-  //   example 3: base64_decode('4pyTIMOgIGxhIG1vZGU=');
-  //   returns 3: '✓ à la mode'
+
+  var decoded = base64_decode_binary(data);
+
+  if (!decoded) {
+    return decoded;
+  }
+
+  return decodeURIComponent(escape(decoded));
+}
+function base64_decode_binary(data) {
+  // Decode to a raw byte string so callers can choose UTF-8 or a legacy charset.
 
   var b64 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
   var o1, o2, o3, h1, h2, h3, h4, bits, i = 0,
@@ -52,7 +56,7 @@ function base64_decode(data) {
 
   dec = tmp_arr.join('');
 
-  return decodeURIComponent(escape(dec.replace(/\0+$/, '')));
+  return dec.replace(/\0+$/, '');
 }
 function base64_encode(data) {
   //  discuss at: http://phpjs.org/functions/base64_encode/

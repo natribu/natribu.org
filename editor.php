@@ -40,15 +40,19 @@ print "</div>";
 <head>
     <title><?=$e_head?></title>
     <script src="/base64.js"></script>
+    <script src="/personalization.js"></script>
     <script>
         function generateLink() {
-            var custom_name = document.getElementById("custom_name").value;
-            var custom_how = document.getElementById("custom_how").value;
-            var custom_what = document.getElementById("custom_what").value;
-            if (!custom_name || !custom_how || !custom_what) {
+            var custom = personalization_fields([
+                document.getElementById("custom_name").value,
+                document.getElementById("custom_how").value,
+                document.getElementById("custom_what").value
+            ]);
+            if (!personalization_has_content(custom)) {
+                document.getElementById('custom_link_block').style.display = "none";
                 return false;
             }
-            var link = "http://natribu.org/<?=$lang?>/#" + base64_encode(custom_name + " % " + custom_how + " % " + custom_what).replace(/=/g, "").replace(/\//g, "-");
+            var link = "http://natribu.org/<?=$lang?>/#" + base64_encode(personalization_payload(custom)).replace(/=/g, "").replace(/\//g, "-");
             document.getElementById('custom_link_example').href = link;
             document.getElementById('custom_link_text').value = link;
             document.getElementById('custom_link_tiny').href = "http://tinyurl.com/create.php?url=" + encodeURIComponent(link);
@@ -97,8 +101,7 @@ print "</div>";
                         <font size=+1 color=red><u><?=$hello_you?> <input type=text name=name
                                                                           size=40
                                                                           style="border: 1px solid #330000; font-size: 16px;"
-                                                                          id="custom_name"
-                                                                          value="<?=$name?> "></u></font></small>
+                                                                          id="custom_name"></u></font></small>
 
 </center>
 </small></h1>
@@ -109,8 +112,7 @@ print "</div>";
 <ul>
     <li><?=str_replace("\n", "</li><li>", $prichiny . "\n<font color=red><u>" . $hello_noprichina)?>
         <input type=text name=prichina id="custom_how" size=50
-               style="border: 1px solid #330000; font-size: 16px;"
-               value="<?=$prichina?> "></u></font></li>
+               style="border: 1px solid #330000; font-size: 16px;"></u></font></li>
 </ul>
 
 <p><font color=red><b><?=$chto_delat?></b></font>
@@ -118,8 +120,7 @@ print "</div>";
 <ul>
     <li><?=str_replace("\n", "</li><li>", $sovety . "\n<font color=red><u>" . $hello_nosovet)?>
         <input type=text name=delat id="custom_what" size=50
-               style="border: 1px solid #330000; font-size: 16px;"
-               value="<?=$delat?> "></u></font></li>
+               style="border: 1px solid #330000; font-size: 16px;"></u></font></li>
 </ul>
 
 </td>

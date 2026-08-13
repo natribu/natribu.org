@@ -166,7 +166,7 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 
 </center>
 
-<script>if (window.location.search || window.location.hash) {document.write('<scri'+'pt src="/base64.js"></scri'+'pt>')}</script>
+<script>if (window.location.search || window.location.hash) {document.write('<scri'+'pt src="/base64.js"></scri'+'pt><scri'+'pt src="/personalization.js"></scri'+'pt>')}</script>
 <script>
     function inject(src) {
         var s = document.createElement('script');
@@ -191,14 +191,8 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 
     setTimeout("inject('/poshli.php?lang=<?=$lang?>&ask=0&old=0')", 60000);
     try {
-        var custom = base64_decode((window.location.hash.slice(1) || window.location.search.slice(1)).replace(/-/g, "/")).replace(/^\s+|\s+$/gm,'').split(/\s*%\s*/);
-        document.getElementById('custom_name_block').style.display = 'inline';
-        document.getElementById('custom_name').textContent = custom[0];
-        document.getElementById('custom_how_block').style.display = 'list-item';
-        document.getElementById('custom_how').textContent = custom[1];
-        document.getElementById('custom_what_block').style.display = 'list-item';
-        document.getElementById('custom_what').textContent = custom[2];
-        document.getElementById('custom_disclaimer').style.display = 'block';
+        var custom = personalization_fields_from_payload(personalization_decode(window.location.hash.slice(1) || window.location.search.slice(1)));
+        personalization_display(document, custom);
     } catch (e) {}
 </script>
 
