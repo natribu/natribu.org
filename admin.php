@@ -1,4 +1,4 @@
-<?
+<?php
 
 die('UNDER CONSTRUCTION');
 

@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ERROR | E_PARSE);
+
 $lang = explode('/', explode('?', ltrim($_SERVER['REQUEST_URI'], '/'), 2)[0], 2)[0];
 if (!$lang) {
     $lang = 'ru'; // TODO: Check client language preferences
@@ -18,7 +20,7 @@ $memcache->set('count_na_' . $lang, $count, 600); // записать в memcach
 
 $count = '<span id=counter>' . $count . '</span>';
 
-$censorship_mode = $_GET['censorship_mode'] === 'on';
+$censorship_mode = ($_GET['censorship_mode'] ?? null) === 'on';
 $censorship = function ($text) {
     return preg_replace('/х(\s*)у(\s*)(й)\b/mui', '✱$1✱$2$3', $text);
 };
