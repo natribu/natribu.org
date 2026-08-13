@@ -74,20 +74,7 @@ foreach (json_decode(file_get_contents(__DIR__ . '/lang/' . $lang .'.json'), tru
 </div>
 
 <div style="text-align: center;">
-    <h1><?=$e_head?>
-        <OBJECT
-            classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
-            codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0"
-            WIDTH=1 HEIGHT=1>
-            <PARAM NAME=movie VALUE="/swf/chasto.swf">
-            <PARAM NAME=quality VALUE=high>
-            <PARAM NAME=bgcolor VALUE=#FFFFFF>
-            <PARAM NAME=loop VALUE=false>
-            <EMBED src="/swf/chasto.swf" quality=high loop=false bgcolor=#FFFFFF
-                   WIDTH=1 HEIGHT=1 TYPE="application/x-shockwave-flash"
-                   PLUGINSPAGE="https://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">
-        </OBJECT>
-    </h1>
+    <h1><?=$e_head?></h1>
 </div>
 
 <table style="width: 95%; margin: 0 auto;">

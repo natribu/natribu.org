@@ -17,9 +17,11 @@ $editor_path = editor_url($lang);
 include('counter.php');
 $count = counter($lang);
 
-$memcache = new Memcached;
-$memcache->addServer('localhost', ini_get('memcache.default_port'));
-$memcache->set('count_na_' . $lang, $count, 600); // записать в memcache
+if (class_exists('Memcached')) {
+    $memcache = new Memcached;
+    $memcache->addServer('127.0.0.1', 11211);
+    $memcache->set('count_na_' . $lang, $count, 600); // записать в memcached
+}
 
 $count = '<span id=counter>' . $count . '</span>';
 
@@ -48,6 +50,8 @@ foreach ($lang_data as $var => $val) {
 }
 
 header('Content-Type: text/html; charset=utf-8');
+
+$page_mp3 = !empty($mp3) && file_exists(__DIR__ . '/media/' . $mp3) ? $mp3 : 'na.mp3';
 ?>
 <html>
 <head>
@@ -56,18 +60,12 @@ header('Content-Type: text/html; charset=utf-8');
 </head>
 <body bgcolor=white text=black background=/fon1.jpg>
 <?php
-if ($gif) {
-    echo '<table width=100%><tr>';
-    echo '<td><i><font size=-2>'.$epigraph.'<img src=//home.lleo.me/cgi-bin/na?lang=$lang width=1 height=1></font></i></td>';
-    echo '<td align=right><IMG src="/media/' . $gif . '" WIDTH=130 HEIGHT=70></td>';
-    echo '</tr></table>';
-} else {
-    echo "<p><i><font size=-2>" . $epigraph . "<img src=//home.lleo.me/cgi-bin/na?" . $lang . " width=1 height=1></font></i>";
-}
-if ($mp3) {
-    echo '<iframe src="/media/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>';
-    echo '<audio src="/media/' . $mp3 . '" autoplay></audio>';
-}
+echo '<table width=100%><tr>';
+echo '<td><i><font size=-2>'.$epigraph.'<img src=//home.lleo.me/cgi-bin/na?lang=$lang width=1 height=1></font></i></td>';
+echo '<td align=right><button type="button" id="page_audio_button" aria-label="Play sound" title="Play sound" style="padding:0;border:0;background:transparent;cursor:pointer">';
+echo '<img src="/media/nah.gif" width=130 height=70 alt="" style="display:block"></button></td>';
+echo '</tr></table>';
+echo '<audio id="page_audio" src="/media/' . htmlspecialchars($page_mp3, ENT_QUOTES, 'UTF-8') . '" preload="auto"></audio>';
 echo '
 <center><table width=70%><td valign=center><div align=justify>
 <h1><center><p>' . $head . '<br><small>' . $official_site . '<span id="custom_name_block" style="display: none;"><br><font size=+1 color=red><u>' . $hello_you . ' <span id="custom_name"></span></u></font></span>';
@@ -166,6 +164,7 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 
 </center>
 
+<script src="/audio_player.js"></script>
 <script>if (window.location.search || window.location.hash) {document.write('<scri'+'pt src="/personalization.js"></scri'+'pt>')}</script>
 <script>
     function inject(src) {
@@ -176,12 +175,6 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
         head.insertBefore(s, head.firstChild);
     }
 
-    function mkdiv(s) {
-        var div = document.createElement('DIV');
-        div.innerHTML = s;
-        var p = document.body;
-        p.insertBefore(div, p.lastChild);
-    }
     function idd(id) {
         return document.getElementById(id);
     }
