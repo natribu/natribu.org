@@ -55,20 +55,20 @@ print "</div>";
             var link = personalization_link(window.location, <?=json_encode($personalized_page_path)?>, custom);
             document.getElementById('custom_link_example').href = link;
             document.getElementById('custom_link_text').value = link;
-            document.getElementById('custom_link_tiny').href = "http://tinyurl.com/create.php?url=" + encodeURIComponent(link);
+            document.getElementById('custom_link_tiny').href = "https://tinyurl.com/create.php?url=" + encodeURIComponent(link);
             document.getElementById('custom_link_block').style.display = "block";
             (document.body || document.documentElement).scrollTop = 0;
             return false;
         }
     </script>
 </head>
-<body bgcolor=white text=black background=http://natribu.org/fon1.jpg>
+<body bgcolor=white text=black background=/fon1.jpg>
 
 <h1>
     <center><?=$e_head?>
         <OBJECT
             classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
-            codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0"
+            codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0"
             WIDTH=1 HEIGHT=1>
             <PARAM NAME=movie VALUE="/swf/chasto.swf">
             <PARAM NAME=quality VALUE=high>
@@ -76,7 +76,7 @@ print "</div>";
             <PARAM NAME=loop VALUE=false>
             <EMBED src="/swf/chasto.swf" quality=high loop=false bgcolor=#FFFFFF
                    WIDTH=1 HEIGHT=1 TYPE="application/x-shockwave-flash"
-                   PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED>
+                   PLUGINSPAGE="https://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED>
         </OBJECT>
     </center>
 </h1>

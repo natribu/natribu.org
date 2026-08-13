@@ -103,7 +103,7 @@ if ($bottom_vernutsa . $bottom_izbrannoe . $bottom_start . $bottom_druga) {
         echo "\n<input TYPE=\"BUTTON\" VALUE=\"" . $bottom_izbrannoe . "\" onClick=\"window.alert('";
         echo str_replace("\\n##\\n", "'); window.alert('",
             str_replace("\n", "\\n", str_replace("я", "\\я", $bottom_izbr)));
-        echo "'); window.external.AddFavorite('http://natribu.org";
+        echo "'); window.external.AddFavorite('https://natribu.org";
         if ($lang !== "ru") {
             echo '/' . $lang;
         }
@@ -114,7 +114,7 @@ if ($bottom_vernutsa . $bottom_izbrannoe . $bottom_start . $bottom_druga) {
         echo "\n<input TYPE=\"BUTTON\" VALUE=\"" . $bottom_start . "\" onClick=\"window.alert('";
         echo str_replace("\\n##\\n", "'); window.alert('",
             str_replace("\n", "\\n", str_replace("я", "\\я", $bottom_strt)));
-        echo "'); window.external.AddFavorite('http://natribu.org";
+        echo "'); window.external.AddFavorite('https://natribu.org";
         if ($lang !== "ru") {
             echo '/' . $lang;
         }
@@ -143,7 +143,7 @@ if ($bottom_vernutsa . $bottom_izbrannoe . $bottom_start . $bottom_druga) {
     <tr>
         <td width="33%">
 <!--LiveInternet counter--><script type="text/javascript"><!--
-document.write("<a href='http://www.liveinternet.ru/click' "+
+document.write("<a href='https://www.liveinternet.ru/click' "+
 "target=_blank><img src='//counter.yadro.ru/hit?t44.1;r"+
 escape(document.referrer)+((typeof(screen)=="undefined")?"":
 ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
