@@ -44,6 +44,10 @@ const russianLink = personalization_link(
   ['Имя', '', '']
 );
 assert(russianLink.indexOf('https://natribu.org/#') === 0, 'Russian links must use the current HTTPS origin and root path');
+assert(
+  personalization_decode(russianLink.split('#')[1]).indexOf(PERSONALIZATION_V2_PREFIX) === 0,
+  'New links must contain the version 2 prefix'
+);
 
 const localLink = personalization_link(
   {protocol: 'http:', host: 'localhost:8080'},
@@ -78,6 +82,23 @@ combinations.forEach(function (fields) {
   assert(documentMock.elements.custom_what_block.style.display === (fields[2] ? 'list-item' : 'none'), 'Advice visibility must match its value');
   assert(documentMock.elements.custom_disclaimer.style.display === (displayed ? 'block' : 'none'), 'Disclaimer visibility must match displayed fields');
 });
+
+const specialCharacterFields = [
+  '100% готово',
+  'сам разделитель ' + PERSONALIZATION_V2_SEPARATOR + ' внутри',
+  'обратный \\ слэш и \\' + PERSONALIZATION_V2_SEPARATOR + ' вместе'
+];
+const specialCharacterPayload = personalization_payload(specialCharacterFields);
+const specialCharacterEncoded = base64_encode(specialCharacterPayload).replace(/=/g, '').replace(/\//g, '-');
+assertFields(
+  personalization_fields_from_payload(personalization_decode(specialCharacterEncoded)),
+  specialCharacterFields,
+  'Version 2 Base64 round-trip must preserve percent signs, separators and escape characters'
+);
+
+const legacyUtf8Encoded = base64_encode('Имя % Причина % Совет').replace(/=/g, '').replace(/\//g, '-');
+const legacyUtf8Fields = personalization_fields_from_payload(personalization_decode(legacyUtf8Encoded));
+assertFields(legacyUtf8Fields, ['Имя', 'Причина', 'Совет'], 'Legacy UTF-8 payloads must remain readable');
 
 assertFields(
   personalization_fields(['  Имя  ', '\tПричина\n', '   ']),
@@ -116,5 +137,21 @@ try {
   incompleteFieldsRejected = true;
 }
 assert(incompleteFieldsRejected, 'Base64 without three personalization fields must not be displayed');
+
+let futureVersionRejected = false;
+try {
+  personalization_fields_from_payload('NATRIBU:3' + PERSONALIZATION_V2_SEPARATOR + 'Имя' + PERSONALIZATION_V2_SEPARATOR + 'Причина' + PERSONALIZATION_V2_SEPARATOR + 'Совет');
+} catch (error) {
+  futureVersionRejected = true;
+}
+assert(futureVersionRejected, 'Unknown versioned payloads must not fall back to the legacy parser');
+
+let invalidEscapeRejected = false;
+try {
+  personalization_fields_from_payload(PERSONALIZATION_V2_PREFIX + 'Имя\\x' + PERSONALIZATION_V2_SEPARATOR + 'Причина' + PERSONALIZATION_V2_SEPARATOR + 'Совет');
+} catch (error) {
+  invalidEscapeRejected = true;
+}
+assert(invalidEscapeRejected, 'Unknown version 2 escape sequences must be rejected');
 
 console.log('Editor personalization tests passed.');

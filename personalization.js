@@ -1,3 +1,6 @@
+var PERSONALIZATION_V2_SEPARATOR = '\u241E';
+var PERSONALIZATION_V2_PREFIX = 'NATRIBU:2' + PERSONALIZATION_V2_SEPARATOR;
+
 function personalization_fields(values) {
   var fields = [];
   var i;
@@ -15,7 +18,16 @@ function personalization_has_content(fields) {
 }
 
 function personalization_payload(fields) {
-  return personalization_fields(fields).join(' % ');
+  var escaped_fields = [];
+  var i;
+
+  fields = personalization_fields(fields);
+
+  for (i = 0; i < fields.length; i++) {
+    escaped_fields[i] = fields[i].replace(/\\/g, '\\\\').replace(/\u241E/g, '\\\u241E');
+  }
+
+  return PERSONALIZATION_V2_PREFIX + escaped_fields.join(PERSONALIZATION_V2_SEPARATOR);
 }
 
 function personalization_link(current_location, page_path, fields) {
@@ -26,10 +38,54 @@ function personalization_link(current_location, page_path, fields) {
 }
 
 function personalization_fields_from_payload(payload) {
-  var values = String(payload || '').split(/\s*%\s*/);
+  payload = String(payload || '');
+
+  if (payload.indexOf(PERSONALIZATION_V2_PREFIX) === 0) {
+    return personalization_v2_fields(payload.slice(PERSONALIZATION_V2_PREFIX.length));
+  }
+
+  if (payload.indexOf('NATRIBU:') === 0) {
+    throw new Error('Unsupported personalization version');
+  }
+
+  return personalization_v1_fields(payload);
+}
+
+function personalization_v2_fields(payload) {
+  var values = [''];
+  var escaped = false;
+  var character;
+  var i;
+
+  for (i = 0; i < payload.length; i++) {
+    character = payload.charAt(i);
+    if (escaped) {
+      if (character !== '\\' && character !== PERSONALIZATION_V2_SEPARATOR) {
+        throw new Error('Invalid version 2 escape sequence');
+      }
+      values[values.length - 1] += character;
+      escaped = false;
+    } else if (character === '\\') {
+      escaped = true;
+    } else if (character === PERSONALIZATION_V2_SEPARATOR) {
+      values.push('');
+    } else {
+      values[values.length - 1] += character;
+    }
+  }
+
+  if (escaped || values.length !== 3) {
+    throw new Error('Invalid version 2 personalization fields');
+  }
+
+  return personalization_fields(values);
+}
+
+function personalization_v1_fields(payload) {
+  var values = payload.split(/\s*%\s*/);
 
   if (values.length < 3) {
-    throw new Error('Invalid personalization fields');
+    throw new Error('Invalid legacy personalization fields');
   }
 
   return personalization_fields(values);
