@@ -1,10 +1,16 @@
 <?php
-$lang = explode('/', explode('?', ltrim($_SERVER['REQUEST_URI'], '/'), 2)[0], 2)[1];
-if (!$lang) {
-    $lang = 'ru'; // TODO: Check client language preferences
-}
-if (!preg_match('/^[a-z0-9_]+$/i', $lang) || !file_exists('lang/' . $lang . '.json')) {
+require_once __DIR__ . '/editor_routes.php';
+
+$lang = editor_language_from_request_uri($_SERVER['REQUEST_URI']);
+if (!$lang || !preg_match('/^[a-z0-9_]+$/i', $lang) || !file_exists(__DIR__ . '/lang/' . $lang . '.json')) {
     header('Location: /');
+    exit();
+}
+
+$editor_path = editor_url($lang);
+$redirect_url = editor_canonical_redirect_url($_SERVER['REQUEST_URI'], $lang);
+if ($redirect_url) {
+    header('Location: ' . $redirect_url);
     exit();
 }
 
@@ -77,7 +83,7 @@ print "</div>";
             <div align=justify>
                 <p><?=$e_text?>
 
-                    <form action="/editor/<?=$lang?>/" method="POST" onsubmit="return generateLink()">
+                    <form action="<?=$editor_path?>" method="POST" onsubmit="return generateLink()">
                         <center>
                             <table width=80% border=1 cellspacing=0 cellpadding=20>
                                 <td valign=center>

@@ -1,5 +1,6 @@
 <?php
 error_reporting(E_ERROR | E_PARSE);
+require_once __DIR__ . '/editor_routes.php';
 
 $lang = explode('/', explode('?', ltrim($_SERVER['REQUEST_URI'], '/'), 2)[0], 2)[0];
 if (!$lang) {
@@ -9,6 +10,8 @@ if (!preg_match('/^[a-z0-9_]+$/i', $lang) || !file_exists('lang/' . $lang . '.js
     header('Location: /');
     exit();
 }
+
+$editor_path = editor_url($lang);
 
 //--- поехали
 include('counter.php');
@@ -33,7 +36,7 @@ foreach ($lang_data as $var => $val) {
             '%COUNT%',
         ],
         [
-            '/editor/' . $lang . '/',
+            $editor_path,
             $count,
         ],
         $val
@@ -122,7 +125,7 @@ if ($bottom_vernutsa . $bottom_izbrannoe . $bottom_start . $bottom_druga) {
         echo "\n<input TYPE=\"BUTTON\" VALUE=\"" . $bottom_druga . "\" onClick=\"window.alert('";
         echo str_replace("\\n##\\n", "'); window.alert('",
             str_replace("\n", "\\n", str_replace("я", "\\я", $bottom_drug)));
-        echo "'); window.location.href='/editor/" . $lang ."/' \">";
+        echo "'); window.location.href='" . $editor_path . "' \">";
     }
     echo '</center>';
 }
