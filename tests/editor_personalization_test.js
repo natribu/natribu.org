@@ -1,7 +1,6 @@
 const fs = require('fs');
 const vm = require('vm');
 
-vm.runInThisContext(fs.readFileSync(__dirname + '/../base64.js', 'utf8'));
 vm.runInThisContext(fs.readFileSync(__dirname + '/../personalization.js', 'utf8'));
 
 function assert(condition, message) {
@@ -36,7 +35,7 @@ function createDocument() {
   };
 }
 
-assert(base64_decode('4pyTIMOgIGxhIG1vZGU=') === '✓ à la mode', 'UTF-8 Base64 decoding must remain compatible');
+assert(personalization_decode('4pyTIMOgIGxhIG1vZGU=') === '✓ à la mode', 'Native UTF-8 Base64 decoding must work');
 
 const russianLink = personalization_link(
   {origin: 'https://natribu.org', protocol: 'https:', host: 'natribu.org'},
@@ -69,7 +68,7 @@ const combinations = [
 
 combinations.forEach(function (fields) {
   const payload = personalization_payload(fields);
-  const encoded = base64_encode(payload).replace(/=/g, '').replace(/\//g, '-');
+  const encoded = personalization_base64_encode(payload).replace(/=/g, '').replace(/\//g, '-');
   const decoded = personalization_decode(encoded);
   const restored = personalization_fields_from_payload(decoded);
   const documentMock = createDocument();
@@ -89,14 +88,14 @@ const specialCharacterFields = [
   'обратный \\ слэш и \\' + PERSONALIZATION_V2_SEPARATOR + ' вместе'
 ];
 const specialCharacterPayload = personalization_payload(specialCharacterFields);
-const specialCharacterEncoded = base64_encode(specialCharacterPayload).replace(/=/g, '').replace(/\//g, '-');
+const specialCharacterEncoded = personalization_base64_encode(specialCharacterPayload).replace(/=/g, '').replace(/\//g, '-');
 assertFields(
   personalization_fields_from_payload(personalization_decode(specialCharacterEncoded)),
   specialCharacterFields,
   'Version 2 Base64 round-trip must preserve percent signs, separators and escape characters'
 );
 
-const legacyUtf8Encoded = base64_encode('Имя % Причина % Совет').replace(/=/g, '').replace(/\//g, '-');
+const legacyUtf8Encoded = personalization_base64_encode('Имя % Причина % Совет').replace(/=/g, '').replace(/\//g, '-');
 const legacyUtf8Fields = personalization_fields_from_payload(personalization_decode(legacyUtf8Encoded));
 assertFields(legacyUtf8Fields, ['Имя', 'Причина', 'Совет'], 'Legacy UTF-8 payloads must remain readable');
 

@@ -1,6 +1,10 @@
 var PERSONALIZATION_V2_SEPARATOR = '\u241E';
 var PERSONALIZATION_V2_PREFIX = 'NATRIBU:2' + PERSONALIZATION_V2_SEPARATOR;
 
+function personalization_base64_encode(value) {
+  return btoa(unescape(encodeURIComponent(value)));
+}
+
 function personalization_fields(values) {
   var fields = [];
   var i;
@@ -32,7 +36,7 @@ function personalization_payload(fields) {
 
 function personalization_link(current_location, page_path, fields) {
   var origin = current_location.origin || (current_location.protocol + '//' + current_location.host);
-  var encoded = base64_encode(personalization_payload(fields)).replace(/=/g, '').replace(/\//g, '-');
+  var encoded = personalization_base64_encode(personalization_payload(fields)).replace(/=/g, '').replace(/\//g, '-');
 
   return origin + page_path + '#' + encoded;
 }
@@ -128,7 +132,7 @@ function personalization_decode(encoded) {
     throw new Error('Invalid personalization payload');
   }
 
-  binary = base64_decode_binary(normalized);
+  binary = atob(normalized);
 
   try {
     return decodeURIComponent(escape(binary));

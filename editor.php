@@ -40,7 +40,6 @@ print "</div>";
 <html>
 <head>
     <title><?=$e_head?></title>
-    <script src="/base64.js"></script>
     <script src="/personalization.js"></script>
     <script>
         function generateLink() {

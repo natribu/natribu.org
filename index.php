@@ -166,7 +166,7 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 
 </center>
 
-<script>if (window.location.search || window.location.hash) {document.write('<scri'+'pt src="/base64.js"></scri'+'pt><scri'+'pt src="/personalization.js"></scri'+'pt>')}</script>
+<script>if (window.location.search || window.location.hash) {document.write('<scri'+'pt src="/personalization.js"></scri'+'pt>')}</script>
 <script>
     function inject(src) {
         var s = document.createElement('script');
