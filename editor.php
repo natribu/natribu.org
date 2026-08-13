@@ -23,25 +23,20 @@ foreach (json_decode(file_get_contents(__DIR__ . '/lang/' . $lang .'.json'), tru
     $GLOBALS[$var] = $val;
 }
 
-//--- поехали
-print '<div id="custom_link_block" style="display: none;">';
-print '<p>ссылка готова: <a href=# id="custom_link_example">нажми</a>';
-
-echo '<SCRIPT language=JavaScript>
-function highlight(x){
-    document.forms[x].elements[0].focus()
-    document.forms[x].elements[0].select()
-}
-</SCRIPT>';
-echo '<form><center><textarea cols=120 rows=2 style="border: 1px solid #330000; font-size: 14px;" id="custom_link_text"></textarea>';
-echo '<font size=-1><br>херассе какая длинная! <a href="javascript:highlight(0)">выделить всю</a><p>хочется видеть эту ссылку короткой и загадочной? <a href=# id="custom_link_tiny">жми сюда</a></font></center></form>';
-print "</div>";
 ?>
+<!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
     <title><?=$e_head?></title>
     <script src="/personalization.js"></script>
     <script>
+        function highlight(id) {
+            var field = document.getElementById(id);
+            field.focus();
+            field.select();
+        }
+
         function generateLink() {
             var custom = personalization_fields([
                 document.getElementById("custom_name").value,
@@ -62,10 +57,24 @@ print "</div>";
         }
     </script>
 </head>
-<body bgcolor=white text=black background=/fon1.jpg>
+<body style="color: black; background: white url('/fon1.jpg');">
 
-<h1>
-    <center><?=$e_head?>
+<div id="custom_link_block" style="display: none;">
+    <p>ссылка готова: <a href="#" id="custom_link_example">нажми</a></p>
+    <div style="text-align: center;">
+        <textarea cols="120" rows="2"
+                  style="border: 1px solid #330000; font-size: 14px;"
+                  id="custom_link_text"></textarea>
+        <small><br>херассе какая длинная!
+            <a href="#" onclick="highlight('custom_link_text'); return false;">выделить всю</a><br><br>
+            хочется видеть эту ссылку короткой и загадочной?
+            <a href="#" id="custom_link_tiny">жми сюда</a>
+        </small>
+    </div>
+</div>
+
+<div style="text-align: center;">
+    <h1><?=$e_head?>
         <OBJECT
             classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
             codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0"
@@ -76,66 +85,63 @@ print "</div>";
             <PARAM NAME=loop VALUE=false>
             <EMBED src="/swf/chasto.swf" quality=high loop=false bgcolor=#FFFFFF
                    WIDTH=1 HEIGHT=1 TYPE="application/x-shockwave-flash"
-                   PLUGINSPAGE="https://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED>
+                   PLUGINSPAGE="https://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">
         </OBJECT>
-    </center>
-</h1>
-
-<center>
-    <table width=95%>
-        <td>
-            <div align=justify>
-                <p><?=$e_text?>
-
-                    <form action="<?=$editor_path?>" method="POST" onsubmit="return generateLink()">
-                        <center>
-                            <table width=80% border=1 cellspacing=0 cellpadding=20>
-                                <td valign=center>
-                                    <div align=justify>
-
-                                        <h1>
-                                            <small>
-                                                <center>
-                <p><?=$head?><br>
-                    <small><?=$official_site?><br>
-                        <font size=+1 color=red><u><?=$hello_you?> <input type=text name=name
-                                                                          size=40
-                                                                          style="border: 1px solid #330000; font-size: 16px;"
-                                                                          id="custom_name"></u></font></small>
-
-</center>
-</small></h1>
-
-
-<p><font color=red><b><?=$kak_eto_moglo?></b></font>
-<p><?=$vot_samye?>
-<ul>
-    <li><?=str_replace("\n", "</li><li>", $prichiny . "\n<font color=red><u>" . $hello_noprichina)?>
-        <input type=text name=prichina id="custom_how" size=50
-               style="border: 1px solid #330000; font-size: 16px;"></u></font></li>
-</ul>
-
-<p><font color=red><b><?=$chto_delat?></b></font>
-<p><?=$sovetuem?>
-<ul>
-    <li><?=str_replace("\n", "</li><li>", $sovety . "\n<font color=red><u>" . $hello_nosovet)?>
-        <input type=text name=delat id="custom_what" size=50
-               style="border: 1px solid #330000; font-size: 16px;"></u></font></li>
-</ul>
-
-</td>
-</table>
-</center>
-
-<p><br>
-<center><input type=submit value="<?=$e_submit?> "></center>
-
-</form>
-
-<?=$e_comment?>
-
+    </h1>
 </div>
-</td>
+
+<table style="width: 95%; margin: 0 auto;">
+    <tr>
+        <td>
+            <div style="text-align: justify;">
+                <p><?=$e_text?></p>
+
+                <form action="<?=$editor_path?>" method="POST" onsubmit="return generateLink()">
+                    <table style="width: 80%; margin: 0 auto; border: 1px solid; border-collapse: collapse;">
+                        <tr>
+                            <td style="vertical-align: middle; padding: 20px; border: 1px solid;">
+                                <div style="text-align: justify;">
+
+                                    <div style="text-align: center;">
+                                        <h1><small><?=$head?><br>
+                                            <small><?=$official_site?><br>
+                                                <span style="color: red; font-size: larger;"><u><?=$hello_you?>
+                                                    <input type="text" name="name" size="40"
+                                                           style="border: 1px solid #330000; font-size: 16px;"
+                                                           id="custom_name"></u></span>
+                                            </small>
+                                        </small></h1>
+                                    </div>
+
+                                    <p style="color: red;"><b><?=$kak_eto_moglo?></b></p>
+                                    <p><?=$vot_samye?></p>
+                                    <ul>
+                                        <li><?=str_replace("\n", "</li><li>", $prichiny . "\n<span style=\"color: red;\"><u>" . $hello_noprichina)?>
+                                            <input type="text" name="prichina" id="custom_how" size="50"
+                                                   style="border: 1px solid #330000; font-size: 16px;"></u></span></li>
+                                    </ul>
+
+                                    <p style="color: red;"><b><?=$chto_delat?></b></p>
+                                    <p><?=$sovetuem?></p>
+                                    <ul>
+                                        <li><?=str_replace("\n", "</li><li>", $sovety . "\n<span style=\"color: red;\"><u>" . $hello_nosovet)?>
+                                            <input type="text" name="delat" id="custom_what" size="50"
+                                                   style="border: 1px solid #330000; font-size: 16px;"></u></span></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p style="text-align: center;"><br>
+                        <input type="submit" value="<?=$e_submit?> ">
+                    </p>
+                </form>
+
+                <?=$e_comment?>
+            </div>
+        </td>
+    </tr>
 </table>
 
 </body>
