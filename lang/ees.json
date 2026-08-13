@@ -18,7 +18,7 @@
     "sovetuem": "Le estamos aconsejando:",
     "sovety": "Revalorizar su relación con esta persona.\nEnfadarse de verdad y para siempre y de paso intente no respirar.",
     "kak_mne_jit": "¿Cómo puedo existir después de esto?",
-    "zapomnite": "Guárdelo Usted en la memoria: no es único y no es el último visitante en esta página. La abrieron el 31 de agosto de 2007 y ya la han visitado $count personas.\n¡Cuidado con las falsificaciones! Esta página es única e inmortal. Nosotros continuamos  perfeccionándola.\nSabe que gracias a un mecanismo interactivo cada vez, cuando alguien va A TOMAR POR CULO, en el cuartel general de la Dirección oficial se oye un suspiro suave y triste. Estamos al corriente de las aventuras de Usted. ¡A TOMAR POR CULO les adora!",
+    "zapomnite": "Guárdelo Usted en la memoria: no es único y no es el último visitante en esta página. La abrieron el 31 de agosto de 2007 y ya la han visitado %COUNT% personas.\n¡Cuidado con las falsificaciones! Esta página es única e inmortal. Nosotros continuamos  perfeccionándola.\nSabe que gracias a un mecanismo interactivo cada vez, cuando alguien va A TOMAR POR CULO, en el cuartel general de la Dirección oficial se oye un suspiro suave y triste. Estamos al corriente de las aventuras de Usted. ¡A TOMAR POR CULO les adora!",
     "bottom_vernutsa": "Regresar",
     "bottom_vernut": "Usted es como un niño pequeño.\nDe aquí aun nadie había vuelto.\n##\nLo sentimos",
     "bottom_izbrannoe": "Agregar a favoritos",
@@ -46,6 +46,6 @@
     "disclamer": "Proyecto A TOMAR POR CULO se abrió el 9 de enero de 2004 en el ruso. Nosotros no mandamos a nadie, nos mandan a nosotros. Hay que entender que cualquier persona del mundo puede usar nuestro enlace. Pero nosotros ni sabemos quien a quien intentaba mandar por culo usando este  enlace. Simplemente nos alegra mucho ver a nuevos visitantes como si son ilustres invitados.",
     "lleo": "¿Quieres ver el site del autor de esta página?\n##\nSe llama Leonid Kaganov, es de Moscú y su site es en ruso. Mejor conectate con un traductor.",
     "e_head": "POR CULO-editor",
-    "e_text": "Usted puede mandar por culo personalmente a un amigo, jefe, trolls de Internet, etc. En el texto A TOMAR POR CULO puede agregar tres líneas: nombre de la persona, el motivo porqué le manda a tomar por culo y un consejo para el futuro. Agregue las líneas (no hace falta todas tres) y reciba el enlace. Le aconsejamos que no pierda el sentido del humor y no bájese hasta  brutalidad y la vulgaridad. $count personas ya habían probado este nuevo servicio.",
+    "e_text": "Usted puede mandar por culo personalmente a un amigo, jefe, trolls de Internet, etc. En el texto A TOMAR POR CULO puede agregar tres líneas: nombre de la persona, el motivo porqué le manda a tomar por culo y un consejo para el futuro. Agregue las líneas (no hace falta todas tres) y reciba el enlace. Le aconsejamos que no pierda el sentido del humor y no bájese hasta  brutalidad y la vulgaridad. %COUNT% personas ya habían probado este nuevo servicio.",
     "e_submit": "¡Listo! Pulsa este botón y reciba el enlace"
 }

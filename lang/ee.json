@@ -1,7 +1,7 @@
 {
     "headpage": "Mine Munni siia!!!",
     "epigraph": "\"Väike samm ühele inimesele - suur samm kõigile inimestele\" © N.Armstrong<br>\"Let my people go!\" © L.Armstrong",
-    "mp3": "ee_pime.mp3",
+    "mp3": "ee/pime.mp3",
     "head": "Mine Munni",
     "official_site": "Ametlik veebile<span lang=\"et\">he</span>külg sümboolilise suuna.",
     "national_office": "Eesti kontoori",
@@ -15,7 +15,7 @@
     "est_variant": "On muidugi variaant, et te asute siin juhtumisi, leiates, näitaks, googles. Mõelge: võib olla, te pidite tõsiselt ülevaadata oma vaadet elu poole, kui google suunab teid munni?",
     "chto_delat": "Mida tuleb mul teha?!",
     "sovetuem": "Nõuame:",
-    "sovety": "Ülevadata oma suhe selle inimese poole.\nHaavuma.\nTeha paneku ja saada lingi selle inimesele tagasi.\nKui teie kaaslane ei saa aru teid - saatke talle pime lingi: <a href=/media/ee_pime.mp3>http://natribu.org/media/ee_pime.mp3</a> (60kb)",
+    "sovety": "Ülevadata oma suhe selle inimese poole.\nHaavuma.\nTeha paneku ja saada lingi selle inimesele tagasi.\nKui teie kaaslane ei saa aru teid - saatke talle pime lingi: <a href=/media/ee/pime.mp3>http://natribu.org/media/ee/pime.mp3</a> (60kb)",
     "kak_mne_jit": "Kuidas mul tuleb elada?!",
     "zapomnite": "Määletage: te ei ole1, keda saadeti siia, mitte viimane. See lehekülg oli avatud 09.01.2004, siia saadeti %COUNT% inimest.\nSee lehekülg on ainsus ja originaalne. Koopiad keelatud.\nMääletage: tänu tarkvarale, iga kord, kui keegi läheb Munni, Ametliku suuna kontooris mängib kurb muusika. Me teame teie seiklusest. Mine Munni armastab teid!",
     "bottom_vernutsa": "Tagasi",

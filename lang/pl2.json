@@ -34,7 +34,7 @@
     "otvetstvenno": "<p><font size=-2>administracja wchuj nie ponosi odpowiedzialności za treści zawarte w czerwonych podkreślonych linijkach\n<br>sam możesz wymyślić przy pomocy <a href=%EDITOR_LINK%>wchuj-edytora</a></font>",
     "post": "n a p i s a ć    w i a d o m o ś ć    WCHUJ",
     "post_": "Napisać wiadomość WCHUJ",
-    "postprivet": "Witaj, numer count! Napisz swoją wiadomość WCHUJ:",
+    "postprivet": "Witaj, numer %COUNT%! Napisz swoją wiadomość WCHUJ:",
     "post_name": "Imię:",
     "post_mail": "Mail (URL):",
     "post_html": "włączyć html i php",

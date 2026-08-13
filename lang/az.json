@@ -28,7 +28,7 @@
     "hello_you": "Salam",
     "post": "siktir messajını göndər",
     "post_": "siktir messajını göndər",
-    "postprivet": "salam nömrə count ! Siktir mesajıvı yaz",
+    "postprivet": "salam nömrə %COUNT% ! Siktir mesajıvı yaz",
     "post_name": "As",
     "post_mail": "email",
     "post_html": "html komandsasına icazə",

@@ -26,7 +26,7 @@
     "perevod": "Neukermann",
     "post": "E e n   R O T O P   b e r i c h t   s c h r i j v e n",
     "post_": "Een ROTOP bericht schrijven",
-    "postprivet": "Dag, nummer count! Schrijf ons je ROTOP bericht:",
+    "postprivet": "Dag, nummer %COUNT%! Schrijf ons je ROTOP bericht:",
     "post_name": "Naam:",
     "post_mail": "E-mail adres (URL):",
     "post_html": "toelaten html en php commandos",

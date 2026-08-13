@@ -27,7 +27,7 @@
 <option value="//natribu.org/pl2/">pl2: Biuro polskie (wchuj)
 <option value="//natribu.org/se/">se: Svenskt kontor <!-- Шведский офис -->
 <option value="//natribu.org/bg/">bg: Български офис
-<option value="//natribu.org/cz/">cz: českб pobočka <!-- Чешский офис -->
+<option value="//natribu.org/cz/">cz: česká pobočka <!-- Чешский офис -->
 <option value="//natribu.org/nl/">nl: Nederlandse bureau <!-- Голландия -->
 <option value="//natribu.org/hr/">hr: Hrvatska poslovnica <!-- Хорватия? -->
 
