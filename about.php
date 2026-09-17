@@ -109,7 +109,7 @@
 <p><br>
 <FORM><select name=lo
 	onChange=" {for (var i=0; i < this.length; i++){if (this.options[i].selected){top.window.location=this.options[i].value;break;} } }">
-	<?
+	<?php
 	$lang="ru";
 	echo str_replace("/".$lang."/\">","/".$lang."/\"selected>",file_get_contents("select.txt"));
 ?>
